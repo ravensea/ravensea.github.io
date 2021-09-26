@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Raven Zhang">
+
+
+
+
+
+<title>Hello world，搭我自己。 | RAVENSEA HOME</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">RAVENSEA HOME</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Archives</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">RAVENSEA HOME</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Archives</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">Hello world，搭我自己。</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Raven Zhang</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">九月 25, 2021&nbsp;&nbsp;1:40:53</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <blockquote>
+<p>年轻人的第一篇blog来得还不算太晚，从夏秋暧昧不清的夜里搞一块树莓派套上hexo开始。</p>
+</blockquote>
+<p>造轮子这事要用在自己所能的刀尖上，成熟的blog框架和主题，嗯，真香。😁<br>
+简洁，简洁，还是特么的简洁的hexo，所以wp有缘再见。<br>
+那么，如何开始？</p>
+<h3 id="Git">Git</h3>
+<p>Mac OS自带了，不纠结。</p>
+<h3 id="Nodejs">Nodejs</h3>
+<p>打开terminal，快使用homebrew，一句话的事。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install node</span><br></pre></td></tr></table></figure>
+<p>Check一下。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ node -v</span><br><span class="line">v16.10.0</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm -v</span><br><span class="line">7.24.0</span><br></pre></td></tr></table></figure>
+<p>No warnings, no errors. 😎</p>
+<h3 id="Hexo">Hexo</h3>
+<h4 id="搭建">搭建</h4>
+<p>假设一个文件夹用来放自己的blog文件，就你了：<em>my_blog_path</em>，在terminal中<code>cd</code>到该文件夹。<br>
+安装hexo。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd my_blog_path</span><br><span class="line">$ npm i hexo-cli -g</span><br></pre></td></tr></table></figure>
+<p>Hexo版本check。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo -v</span><br><span class="line">hexo: 5.4.0</span><br><span class="line">hexo-cli: 4.3.0</span><br></pre></td></tr></table></figure>
+<p>遂进行下一步，初始化这个文件夹。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br><span class="line">INFO  Cloning hexo-starter https://github.com/hexojs/hexo-starter.git</span><br><span class="line">INFO  Install dependencies</span><br><span class="line">INFO  Start blogging with Hexo!</span><br></pre></td></tr></table></figure>
+<p>视情况执行：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+<p>本地blog搭建完毕。</p>
+<h4 id="写作">写作</h4>
+<p><code>cd</code>到本地blog文件夹，就是你：<em>my_blog_path</em>，<code>ls</code>一下。</p>
+<p>首先注意 <em><strong>_config.yml</strong></em> 文件和 <em><strong>source</strong></em> 文件夹。</p>
+<p><em>_config.yml</em> 是本blog文件的配置文件，非常灵活，支持瞎改。遂只进行必要的标题、作者等基础信息的修改。</p>
+<p><em>source</em> 文件夹就是写作的 <em>.md</em> 文件存放的地方。<em>_posts</em> 存博文，<em>_drafts</em> 存草稿。这两文件夹是hexo自动建立的。</p>
+<p>新建草稿or博文：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo n&lt;ew&gt; draft this_is_a_draft</span><br></pre></td></tr></table></figure>
+<p>在 <em>source/_drafts</em> 文件中出现 <em>this_is_a_draft.md</em> 文件。</p>
+<p>or</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo n&lt;ew&gt; &lt;post&gt; this_is_a_post</span><br></pre></td></tr></table></figure>
+<p>在 <em>source/_posts</em> 文件中出现 <em>this_is_a_post.md</em> 文件。好了，请开始愉快写作。😎</p>
+<p>最后，简明扼要。生成网页和开启预览：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g &amp;&amp; hexo s</span><br></pre></td></tr></table></figure>
+<p>然而，相当粗糙。遂美化。其实就是换主题。😂</p>
+<h4 id="主题">主题</h4>
+<p>当然精挑细选找自己最喜欢的<a target="_blank" rel="noopener" href="https://github.com/Siricee/hexo-theme-Chic">Chic</a>。<em>Fork</em> 一下适应需求。</p>
+<p><code>cd</code>到本地blog文件夹 <em>my_blog_path</em> 的 <em>themes</em> 执行：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone --depth=1 https://github.com/Siricee/hexo-theme-Chic.git Chic</span><br></pre></td></tr></table></figure>
+<p>记得把 <em>my_blog_path</em> 下的 <em>_config.yml</em> 文件中 themes 改成 Chic，开始尽情冲浪吧。😜</p>
+<hr>
+<p>❕<strong>首页小图标</strong></p>
+<p>上<a target="_blank" rel="noopener" href="https://www.iconfont.cn/">iconfont</a>注册一个账号，新建项目，选好喜欢的图标，添加到项目。回到项目页面，<strong>项目设置里所有选项都点上</strong>，然后下载。重命名这个文件夹 <em>my_iconfont</em>，放到 <em>Chic/source/fonts</em> 文件夹下。修改 <em>Chic/source/css/style.styl</em> ，把默认的 <em>iconfont.css</em> 注释掉避免冲突，添加一句：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@import &quot;../fonts/my_iconfont/iconfont.css&quot;</span><br></pre></td></tr></table></figure>
+<p>打开 <em>Chic/source/fonts/my_iconfont/iconfont.css</em>，查看 <em>icon-</em> 前缀后面的单词，拷贝到 <em>my_blog_path</em> 下的 <em>_config.yml</em> 的 <em>links</em> 下，即可用新图标添加跳转链接。啦啦啦。</p>
+<h2 id="Github">Github</h2>
+<h2 id="挖坑">挖坑</h2>
+<p>树莓派3b，没有网口供电功能。<br>
+挖个坑要填pcb，回手掏电烙铁等着。</p>
+<p>以上。</p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2021 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Raven Zhang | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
