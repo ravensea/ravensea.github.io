@@ -206,6 +206,13 @@
                         </span>
                     
                     
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/Hello-world/">Hello world</a>
+                            
+                        </span>
+                    
                 </div>
             
         </header>
@@ -262,8 +269,18 @@
 <p>上<a target="_blank" rel="noopener" href="https://www.iconfont.cn/">iconfont</a>注册一个账号，新建项目，选好喜欢的图标，添加到项目。回到项目页面，<strong>项目设置里所有选项都点上</strong>，然后下载。重命名这个文件夹 <em>my_iconfont</em>，放到 <em>Chic/source/fonts</em> 文件夹下。修改 <em>Chic/source/css/style.styl</em> ，把默认的 <em>iconfont.css</em> 注释掉避免冲突，添加一句：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@import &quot;../fonts/my_iconfont/iconfont.css&quot;</span><br></pre></td></tr></table></figure>
 <p>打开 <em>Chic/source/fonts/my_iconfont/iconfont.css</em>，查看 <em>icon-</em> 前缀后面的单词，拷贝到 <em>my_blog_path</em> 下的 <em>_config.yml</em> 的 <em>links</em> 下，即可用新图标添加跳转链接。啦啦啦。</p>
-<h2 id="Github">Github</h2>
-<h2 id="挖坑">挖坑</h2>
+<h3 id="Github">Github</h3>
+<p>为自己的 GitHub 新建一个 repo，选择 public，勾选 <a target="_blank" rel="noopener" href="http://readme.md">readme.md</a>，<br>
+repo 名 <strong>my_name.github.io</strong>。</p>
+<p>假设熟练使用 git，😉，且跟 github 用 ssh 正常链接。</p>
+<p>安装一键部署工具 hexo-deployer-git，</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>修改 <em>my_blog_path</em> 下的 <em>_config.yml</em> 中 deploy，</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: &lt;repository url&gt;</span><br><span class="line">  branch: branch</span><br></pre></td></tr></table></figure>
+<p>使用连续招式：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g -d</span><br></pre></td></tr></table></figure>
+<p>No warnings, no errors. 👍</p>
+<h3 id="挖坑">挖坑</h3>
 <p>树莓派3b，没有网口供电功能。<br>
 挖个坑要填pcb，回手掏电烙铁等着。</p>
 <p>以上。</p>
@@ -289,6 +306,12 @@
                 <span>Tag(s):</span>
                 <span class="tag">
                     
+                    
+                        <a href="/tags/hexo/"># hexo</a>
+                    
+                        <a href="/tags/github/"># github</a>
+                    
+                        
                 </span>
             </div>
             <div>
