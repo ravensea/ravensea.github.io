@@ -1,5 +1,12 @@
 [
   {
+    "day": "2026-10-20",
+    "kind": "brief",
+    "kind_label": "精简",
+    "title": "GitHub 趋势精简 2026-10-20",
+    "url": "/trends/2026-10-20-brief/"
+  },
+  {
     "day": "2026-10-19",
     "kind": "full",
     "kind_label": "长版",
