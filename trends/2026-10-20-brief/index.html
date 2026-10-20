@@ -99,43 +99,43 @@
 <h2>影像与相机形态</h2>
 <ul>
 <li>
-<p><strong>综合</strong>：<a href="https://github.com/AdrianEddy/telemetry-parser">AdrianEddy/telemetry-parser</a> · 316 star · 持续跟踪<br>这是一个用 Rust 编写的遥测解析工具，用于从视频文件内嵌的实时元数据或其他来源（如 Betaflight blackbox）中提取陀螺仪与加速度计等遥测数据。它面向需要处理多品牌相机与飞控日志的研究者，支持 GoPro、Sony、Insta360、DJI、Blackmagic RAW、RED RAW、Betaflight、ArduPilot 等大量格式，并提供 gyro2bb 命令行工具与 Python 模块。</p>
+<p><strong>综合</strong>：<a href="https://github.com/AdrianEddy/telemetry-parser">AdrianEddy/telemetry-parser</a> · 316 star · 持续跟踪<br>这是一个用于解析视频文件内嵌实时元数据及其他来源遥测数据的工具，面向需要从运动相机、无人机和RAW视频等素材中提取陀螺仪与加速度计等信息的研发者。它支持GoPro、Sony、Insta360、DJI、Blackmagic RAW、RED RAW、Betaflight blackbox、ArduPilot日志及多款手机传感器应用等大量格式，并提供gyro2bb命令行工具（可导出Betaflight blackbox CSV或转储元数据）以及发布在PyPI上的Python模块。</p>
 </li>
 <li>
-<p><strong>电子</strong>：<a href="https://github.com/10x-Engineers/Infinite-ISP">10x-Engineers/Infinite-ISP</a> · 402 star · 持续跟踪<br>Infinite-ISP 是一个面向硬件 ISP 全流程开发的全栈平台，用 Python 实现从简单到复杂的相机图像信号处理流水线模块，供算法开发与硬件实现研究使用。平台还包含定点参考模型、RTL 设计、面向 Xilinx Kria KV260 的 FPGA 集成框架与固件，以及可针对不同传感器和应用调参的独立 Python Tuning Tool，并提供 Linux 驱动与自定义应用开发栈。</p>
+<p><strong>电子</strong>：<a href="https://github.com/10x-Engineers/Infinite-ISP">10x-Engineers/Infinite-ISP</a> · 402 star · 持续跟踪<br>Infinite-ISP 是一个面向硬件 ISP 全流程开发的全栈平台，包含 Python 编写的相机流水线模块、定点参考模型、优化后的 RTL 设计、面向 Xilinx Kria KV260 开发板的 FPGA 集成框架与配套固件，并提供 Linux 驱动与自定义应用开发栈以支持 Linux 平台部署。平台还提供独立的 Python 调优工具，可针对不同传感器与应用调节 ISP 参数，并配有自动化测试框架用于块级与多块级测试以保证位精确设计。</p>
 </li>
 <li>
-<p><strong>机械</strong>：<a href="https://github.com/FerdiCildiz/pocket-control">FerdiCildiz/pocket-control</a> · 9 star · 持续跟踪<br>Pocket+ 是一款免费的 macOS 应用，用于将 DJI Osmo Pocket 3 作为可控桌面摄像头使用，支持录制、拍照、云台控制、变焦和人脸追踪。它面向需要在 Mac 上远程操作 Pocket 3 的用户，通过 USB-C 以 Webcam 模式连接，提供实时预览、H.264/HEVC 录制及蓝牙读取电量与录制状态；Pro 版额外支持 4K 录制、场景保存、自动构图、竖屏参考和 LUT 色彩等功能。</p>
+<p><strong>机械</strong>：<a href="https://github.com/FerdiCildiz/pocket-control">FerdiCildiz/pocket-control</a> · 9 star · 持续跟踪<br>Pocket+ 是一款免费的 macOS 应用，用于将 DJI Osmo Pocket 3 变为可控制的桌面摄像头，支持录制、拍照、云台控制、变焦和人脸跟踪。它面向需要在 Mac 上远程操作 Pocket 3 的用户，提供实时预览、H.264/HEVC 录制、网格与水平参考线、DJI Mic 自动切换及电量与磁盘信息显示；Pro 版额外支持 4K 录制、场景保存与快速切换、自动构图、9:16 竖屏参考、LUT 色彩外观以及预览区滚动变焦和拖动控制云台。</p>
 </li>
 <li>
-<p><strong>算法</strong>：<a href="https://github.com/neuromorphicsystems/neuromorphic-drivers">neuromorphicsystems/neuromorphic-drivers</a> · 41 star · 持续跟踪<br>Neuromorphic Drivers 是一个用 Rust 实现、同时提供 Python 接口的库，用于实时与 USB 和以太网事件相机交互，支持 Linux、macOS 和 Windows 等主流操作系统。它不依赖 Metavision、libcaer 或 dv-processing，而是自行实现相机的 USB 与以太网协议，便于跨平台使用并提供轻量预编译 Python wheel。该库本身不包含处理算法，可与 tonic、fae…</p>
+<p><strong>算法</strong>：<a href="https://github.com/neuromorphicsystems/neuromorphic-drivers">neuromorphicsystems/neuromorphic-drivers</a> · 41 star · 持续跟踪<br>Neuromorphic Drivers 是一个用于实时与 USB 和以太网事件相机交互的库，支持 Linux、macOS 和 Windows 等主流操作系统，面向需要构建实时处理流水线的研究者。它本身不提供处理算法，而是可与 tonic、faery 等库组合使用；其亮点在于不依赖 Metavision、libcaer 或 dv-processing，而是自行实现相机的 USB 与以太网协议，从而便于跨平台支持并提供轻量的预编译 Python 包，同时提供 Python 和 Rust 接口。</p>
 </li>
 </ul>
 <h2>视觉、世界模型与运控</h2>
 <ul>
 <li>
-<p><strong>世界模型</strong>：<a href="https://github.com/deeplethe/utopia">deeplethe/utopia</a> · 8452 star · 持续跟踪<br>Utopia 是 DeepLethe 用 Rust 构建的开源企业级世界模型（world model），面向研究者与企业场景。材料仅说明其定位为“世界模型”并提供快速开始、功能与路线图入口，未给出具体要解决的问题或技术能力细节。</p>
+<p><strong>世界模型</strong>：<a href="https://github.com/deeplethe/utopia">deeplethe/utopia</a> · 8452 star · 持续跟踪<br>Utopia 是由 DeepLethe 构建、以 Rust 实现并采用 Apache 2.0 许可的开源项目，提供官方站点、GHCR 容器镜像与讨论区等配套入口。现有 README 节选仅展示项目横幅、导航与徽章，未说明其具体功能、所解决的问题或面向的用户群体，也未给出关键技术能力与量化指标，因此无法据此判断其研究用途。</p>
 </li>
 <li>
-<p><strong>视觉运控</strong>：<a href="https://github.com/Unity-Technologies/ml-agents">Unity-Technologies/ml-agents</a> · 19775 star · 持续跟踪<br>Unity ML-Agents 是开源工具包，让游戏与仿真环境可用于训练智能体，面向游戏开发者和 AI 研究者。它基于 PyTorch 提供 PPO、SAC、MA-POCA、自博弈等深度强化学习算法，以及 BC、GAIL 模仿学习，并支持课程学习、环境随机化、多环境并行训练和自定义训练算法。</p>
+<p><strong>视觉运控</strong>：<a href="https://github.com/Unity-Technologies/ml-agents">Unity-Technologies/ml-agents</a> · 19775 star · 持续跟踪<br>Unity ML-Agents Toolkit 是开源项目，让游戏与仿真环境可作为训练智能体的平台，面向游戏开发者、爱好者及研究者。它提供基于 PyTorch 的先进算法实现和易用 Python API，支持强化学习、模仿学习、神经进化等方法，可用于 NPC 行为控制、游戏构建自动化测试与设计评估。亮点包括单智能体、多智能体协作与竞争场景训练（PPO、SAC、MA-POCA、自博弈）、BC 与 GAIL 模仿学习、课程学习、环境随机化、按需决策、多环境并行训练及跨平台推理支持。</p>
 </li>
 </ul>
 <h3>视觉算法</h3>
 <ul>
 <li>
-<p><strong>理解</strong>：<a href="https://github.com/openclaw/Peekaboo">openclaw/Peekaboo</a> · 5351 star · 持续跟踪<br>Peekaboo 是一个用 Swift 编写的 macOS 命令行工具与可选 MCP 服务器，也提供菜单栏应用，用于截取单个应用或整个系统的屏幕画面，并可通过本地或远程 AI 模型进行可选的视觉问答。它面向需要让 AI 代理“看见”屏幕并执行原生 UI 自动化的研究者与开发者，支持无障碍检查、多步任务规划，并可将同一套工具集暴露给 MCP 客户端。</p>
+<p><strong>理解</strong>：<a href="https://github.com/openclaw/Peekaboo">openclaw/Peekaboo</a> · 5351 star · 持续跟踪<br>Peekaboo 是一个面向 macOS 15 及以上系统的命令行工具与菜单栏应用，用于屏幕捕获、辅助功能检查与原生 UI 自动化。它解决的是让自动化流程“看见”屏幕并执行点击等界面操作的问题，既可直接使用，也可由其代理规划多步任务，或将同一套工具集暴露给 MCP 客户端（如 Codex、Claude Code、Cursor）。技术上基于 Swift 6.2 构建，提供 Homebrew 与 npm 两种安装方式，屏幕捕获需屏幕录制权限，UI 检查与控制需辅助功能权限。</p>
 </li>
 <li>
-<p><strong>生成</strong>：<a href="https://github.com/NVlabs/Sana">NVlabs/Sana</a> · 9405 star · 持续跟踪<br>NVlabs/Sana 是 NVIDIA 实验室开源的 Python 项目，围绕线性扩散 Transformer 实现高效高分辨率图像合成。它面向图像生成研究与应用，提供 SANA、SANA-1.5、SANA-Sprint、SANA-Video 等多个版本，并支持 4bit 量化、ControlNet 等能力。</p>
+<p><strong>生成</strong>：<a href="https://github.com/NVlabs/Sana">NVlabs/Sana</a> · 9405 star · 持续跟踪<br>NVlabs/Sana 是 NVIDIA 实验室发布的生成模型项目仓库，围绕 SANA 系列提供图像与视频生成相关模型及配套资源。材料显示其涵盖 SANA-1.5、SANA-Sprint、SANA-Video、SANA-Video 2.0、SANA-WM、SANA-Streaming 与 Sol-RL 等多个方向，并给出文档、演示和模型托管入口，面向研究者与开发者使用。仓库还列出 4bit、ControlNet 等演示形态以及与 ComfyUI、SGLang、Cosmos-RL 的集成入口，但材料未说明具体技术细节与性能指标。</p>
 </li>
 </ul>
 <h2>3D 与电子设计</h2>
 <ul>
-<li><strong>打印与建模</strong>：<a href="https://github.com/Adam-CAD/CADAM">Adam-CAD/CADAM</a> · 5298 star · 持续跟踪<br>CADAM 是一个开源文本到 CAD 的 Web 应用，用 TypeScript 开发，面向需要在浏览器中快速生成三维模型的研究者与开发者。它把自然语言和图像转换为 3D 模型，并提供参数滑块即时调整尺寸，支持导出 .STL、.SCAD、.DXF，借助 WebAssembly 在浏览器内运行，并集成 BOSL、BOSL2、MCAD 库。</li>
+<li><strong>打印与建模</strong>：<a href="https://github.com/Adam-CAD/CADAM">Adam-CAD/CADAM</a> · 5298 star · 持续跟踪<br>CADAM 是一个开源文本到 CAD 的网页应用，面向需要在浏览器中快速生成三维 CAD 模型的研究者与开发者。它主要解决从自然语言和图像生成 CAD 模型的问题，并提供参数化滑块用于即时调整尺寸。关键技术包括基于 WebAssembly 在浏览器内运行、支持导出 .STL、.SCAD 和 .DXF，以及集成 BOSL、BOSL2 和 MCAD 库。</li>
 </ul>
 <h2>量化交易</h2>
 <ul>
-<li><strong>综合</strong>：<a href="https://github.com/vnpy/vnpy">vnpy/vnpy</a> · 45952 star · 持续跟踪<br>VeighNa（vnpy）是基于 Python 的开源量化交易系统开发框架，面向私募、证券、期货等机构的量化研究者与开发者，支持策略与模块的二次开发。4.0 版本新增 vnpy.alpha 模块，提供多因子机器学习策略的数据集构建、模型训练、策略开发与投研流程管理能力，集成 Lasso、LightGBM、MLP 等算法，并支持截面多标的与时序单标的策略。</li>
+<li><strong>综合</strong>：<a href="https://github.com/vnpy/vnpy">vnpy/vnpy</a> · 45952 star · 持续跟踪<br>VeighNa（vnpy）是一套基于 Python 的开源量化交易系统开发框架，面向私募基金、证券公司、期货公司等金融机构及相关领域用户，支持在 Windows、Linux、macOS 上进行策略与模块的二次开发。其 4.0 版本新增 vnpy.alpha 模块，为专业量化交易员提供一站式多因子机器学习策略开发、投研与实盘交易方案，涵盖因子特征工程、预测模型训练、策略投研开发与投研流程管理，并集成 Lasso、LightGBM、MLP 等算法及 Alpha 158 因子集合。</li>
 </ul>
         </div>
     </article>
