@@ -89,47 +89,56 @@
         </header>
 
         <div class="post-content">
-<p>每个子方向只保留一项。优先全球日榜，其次新出现或 star 上涨，然后按 star 数。</p>
+<p>每个子方向只保留一项代表仓库，按下列优先级挑选：</p>
+<ol>
+<li>已出现在 GitHub 全球「今日」趋势榜的优先；</li>
+<li>其次看本跟踪器状态：首次收录 &gt; 显著涨星 &gt; 持续跟踪；</li>
+<li>同优先级再按 star 总数从高到低。</li>
+</ol>
+<p>状态含义：<br />
+- 首次收录：本地历史里第一次见到该仓库<br />
+- 显著涨星：相对上次记录，star 增加至少约 20% 或 50 颗<br />
+- 持续跟踪：以前见过，且未达到显著涨星门槛</p>
 <h2>影像与相机形态</h2>
 <ul>
 <li>
-<p><strong>综合</strong>：<a href="https://github.com/bubo-squared/GyroView">bubo-squared/GyroView</a> · 7 star · 新出现<br>Browser player for raw Insta360 .insv recordings (X3, X4, X5): the dual-fisheye video stitched and gyro-stabilized on the GPU, as a <gyro-view> web component or an iframe.</p>
+<p><strong>综合</strong>：<a href="https://github.com/erik-sutton95/OpenPocketCine">erik-sutton95/OpenPocketCine</a> · 338 star · 持续跟踪<br>OpenPocketCine 是一个用 Swift 开发的开源 iOS/Android 现场监视器应用，面向使用 DJI Osmo Pocket 系列相机的拍摄者。它把专业示波器、曝光辅助、相机与云台控制、回放和 LUT 导出集中到手机上，便于在拍摄现场监看和调整参数。</p>
 </li>
 <li>
-<p><strong>电子</strong>：<a href="https://github.com/viam-modules/viam-camera-oak">viam-modules/viam-camera-oak</a> · 5 star · 新出现<br>Python camera module for Luxonis OAK cameras</p>
+<p><strong>电子</strong>：<a href="https://github.com/openmv/openmv">openmv/openmv</a> · 2885 star · 持续跟踪<br>OpenMV 是开源机器视觉项目，提供可用 Python3 编程的摄像头模块，面向初学者和研究者，用于图像处理与嵌入式视觉应用开发。固件内置图像滤波、特征检测、颜色跟踪、二维码/条码解码、AprilTag 识别及 GIF/MJPEG 录制与流传输等库，并支持 TensorFlow、ST Edge AI 及基于 ARM Ethos-U55 和 ST Neural-ART 的 NPU 加速。</p>
 </li>
 <li>
-<p><strong>机械</strong>：<a href="https://github.com/FerdiCildiz/pocket-control">FerdiCildiz/pocket-control</a> · 9 star · 新出现<br>Free macOS app to control the DJI Osmo Pocket 3 from your Mac: record, photos, gimbal, zoom, face tracking.</p>
+<p><strong>机械</strong>：<a href="https://github.com/FerdiCildiz/pocket-control">FerdiCildiz/pocket-control</a> · 9 star · 持续跟踪<br>Pocket+ 是一款免费的 macOS 应用，用于将 DJI Osmo Pocket 3 变为 Mac 上可控的桌面摄像头，支持录制、拍照、云台控制、变焦与人脸追踪。它面向需要在 Mac 上远程操作 Pocket 3 的用户，免费版提供实时预览、1080p 录制、云台摇杆和快捷键等；Pro 版增加最高 4K 录制、场景保存、自动构图、竖屏参考、LUT 色彩及预览区变焦与瞄准等能力。</p>
 </li>
 <li>
-<p><strong>算法</strong>：<a href="https://github.com/SensorsINI/jaer">SensorsINI/jaer</a> · 206 star · 已见过<br>Full-featured cross-platform (Linux, Windows, MacOS) desktop application for neuromorphic event cameras and silicon cochleas from all major manufacturers</p>
+<p><strong>算法</strong>：<a href="https://github.com/SensorsINI/jaer">SensorsINI/jaer</a> · 206 star · 持续跟踪<br>jAER 是一款用 Java 开发、跨 Linux/Windows/macOS 的桌面应用，面向神经形态事件相机与硅耳蜗，支持 inilabs、iniVation、Prophesee、NRV 等主要厂商设备。它提供 USB 事件相机采集的高效流水线、DVS 像素偏置调节与快速去噪算法，并积累约 20 年事件传感器实践经验，适合研究者进行事件相机数据采集与处理。</p>
 </li>
 </ul>
 <h2>视觉、世界模型与运控</h2>
 <ul>
 <li>
-<p><strong>世界模型</strong>：<a href="https://github.com/NVIDIA/cosmos">NVIDIA/cosmos</a> · 12069 star · 已见过<br>NVIDIA Cosmos is an open platform of world models, datasets, and tools that enables developers to build Physical AI for robots, autonomous vehicles, smart infrastructure, and more.</p>
+<p><strong>世界模型</strong>：<a href="https://github.com/NVIDIA/cosmos">NVIDIA/cosmos</a> · 12069 star · 持续跟踪<br>NVIDIA Cosmos 是面向物理 AI 的开放世界基础模型平台，提供模型、数据集与工具，供开发者用于机器人、自动驾驶和智能基础设施等场景。其 Cosmos 3 模型族强调“看见、推理、模拟与行动”一体化，材料展示了物理感知生成、世界场景迁移和机器人动作策略等能力。仓库以 Jupyter Notebook 为主要语言，并附有技术报告与示例 cookbook。</p>
 </li>
 <li>
-<p><strong>视觉运控</strong>：<a href="https://github.com/Genesis-Embodied-AI/genesis-world">Genesis-Embodied-AI/genesis-world</a> · 30093 star · 已见过<br>Simulation platform for general-purpose robotics &amp; embodied AI learning.</p>
+<p><strong>视觉运控</strong>：<a href="https://github.com/Genesis-Embodied-AI/genesis-world">Genesis-Embodied-AI/genesis-world</a> · 30094 star · 持续跟踪<br>Genesis World 是面向通用机器人学与具身 AI 学习的 Python 仿真平台，原名 Genesis，始于 2024 年 12 月的学术项目。它把统一多物理引擎（刚体、FEM、MPM、PBD/SPH、uipc 等共享同一场景与状态）、照片级渲染器 Nyx 及跨平台编译器 Quadrants 整合在 Python 仿真接口之后，支持从单机笔记本扩展到数据中心级 GPU，便于研究者阅读、扩展并嵌入研究代码。</p>
 </li>
 </ul>
 <h3>视觉算法</h3>
 <ul>
 <li>
-<p><strong>理解</strong>：<a href="https://github.com/Motor-Mind/MotorMind-Code">Motor-Mind/MotorMind-Code</a> · 125 star · 新出现<br>MotorMind: Scaffolding General Vision Language Models for Zero-Shot Robot Manipulation</p>
+<p><strong>理解</strong>：<a href="https://github.com/Blaizzy/mlx-vlm">Blaizzy/mlx-vlm</a> · 5641 star · 持续跟踪<br>MLX-VLM 是一个基于 MLX 的 Python 包，用于在 Mac 上对视觉语言模型（VLM）及支持音频、视频的 Omni 模型进行推理与微调。它面向需要在本地运行或调优此类模型的研究者，提供 CLI、Gradio 聊天界面、FastAPI 服务端，以及投机解码、连续批处理、前缀缓存、KV 缓存量化、多图对话和分布式推理等能力。</p>
 </li>
 <li>
-<p><strong>生成</strong>：<a href="https://github.com/Anil-matcha/Flux-3-Dev-API">Anil-matcha/Flux-3-Dev-API</a> · 184 star · 新出现<br>Python wrapper for Black Forest Labs' FLUX 3 Dev API, available now — fast, low-cost FLUX 3 variant, plus the full FLUX 3 family (Text-to-Image, Image-to-Image, Text-to-Video, Image-to-Video).</p>
+<p><strong>生成</strong>：<a href="https://github.com/Tencent-Hunyuan/HunyuanVideo">Tencent-Hunyuan/HunyuanVideo</a> · 12637 star · 持续跟踪<br>HunyuanVideo 是腾讯混元团队提出的大型视频生成模型系统化框架，仓库提供 PyTorch 模型定义、预训练权重及推理/采样代码，面向研究者复现与二次开发。材料显示其配套技术报告与 HuggingFace、Diffusers 集成，并衍生出 HunyuanVideo-1.5、HunyuanVideo-Avatar、HunyuanCustom 等后续模型。</p>
 </li>
 </ul>
 <h2>3D 与电子设计</h2>
 <ul>
-<li><strong>打印与建模</strong>：<a href="https://github.com/earthtojake/text-to-cad">earthtojake/text-to-cad</a> · 21790 star · 已见过<br>Give your agent CAD superpowers.</li>
+<li><strong>打印与建模</strong>：<a href="https://github.com/earthtojake/text-to-cad">earthtojake/text-to-cad</a> · 21800 star · 持续跟踪<br>text-to-cad 是一个 Python 插件，为智能体提供本地工作流，把文本需求生成为 STEP、GLB、STL 或 3MF 格式的 3D 模型。它面向需要快速建模与制造准备的研究者，支持可制造性检查、工程图生成，并可对接 3D 打印、钣金和 CNC 加工服务。该插件兼容 Claude Code、Codex、Cursor、Gemini、Grok 等支持插件或 skills 框架的智能体。</li>
 </ul>
 <h2>量化交易</h2>
 <ul>
-<li><strong>综合</strong>：<a href="https://github.com/wshobson/maverick-mcp">wshobson/maverick-mcp</a> · 707 star · 新出现<br>Stock market MCP server for Yahoo Finance data, technical analysis, portfolio tracking, and Python backtesting. Runs locally with no API key for core tools.</li>
+<li><strong>综合</strong>：<a href="https://github.com/freqtrade/freqtrade">freqtrade/freqtrade</a> · 55654 star · 持续跟踪<br>Freqtrade 是一个用 Python 编写的免费开源加密货币交易机器人，面向需要自动化交易与策略研究的研究者，支持多家主流现货及期货交易所，并可通过 Telegram 或 WebUI 控制。它提供回测、绘图和资金管理工具，并支持用机器学习进行策略优化；官方建议先在 Dry-Run 模式下运行并具备 Python 知识。</li>
 </ul>
         </div>
     </article>
