@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Raven Zhang">
+<title>GitHub 趋势日报 2026-10-19 | RAVENSEA HOME</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <script src="/js/tocbot.min.js"></script>
+<meta name="generator" content="trends-tracking"></head>
+
+<body>
+    <script>
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+            } else {
+                pagebody.classList.remove('dark-theme');
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">RAVENSEA HOME</a></div>
+            <div class="menu navbar-right">
+                    <a class="menu-item" href="/archives">Archives</a>
+                    <a class="menu-item" class="active" href="/trends">Trends</a>
+                    <a class="menu-item" href="/category">Categories</a>
+                    <a class="menu-item" href="/tag">Tags</a>
+                    <a class="menu-item" href="/about">About</a>
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">RAVENSEA HOME</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                    <a class="menu-item" href="/archives">Archives</a>
+                    <a class="menu-item" class="active" href="/trends">Trends</a>
+                    <a class="menu-item" href="/category">Categories</a>
+                    <a class="menu-item" href="/tag">Tags</a>
+                    <a class="menu-item" href="/about">About</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">GitHub 趋势日报 2026-10-19</h1>
+                <div class="post-meta">
+                        Author: <a itemprop="author" rel="author" href="/">Raven Zhang</a>
+                        <span class="post-time">
+                        Date: <a href="#">2026年10月19日</a>
+                        </span>
+                        <span class="post-category">
+                    Category:
+                                <a href="/trends/">Trends</a>
+                        </span>
+                </div>
+        </header>
+
+        <div class="post-content">
+<h1>GitHub 趋势日报 2026-10-19</h1>
+<h2>影像与相机形态</h2>
+<h3>综合</h3>
+<ul>
+<li><a href="https://github.com/erik-sutton95/OpenPocketCine">erik-sutton95/OpenPocketCine</a> · Swift · 338 star · 新出现<br>Open-source iOS and Android field monitor for DJI Osmo Pocket cameras.<br>入选：pocket camera。来源：主题检索。</li>
+<li><a href="https://github.com/AdrianEddy/telemetry-parser">AdrianEddy/telemetry-parser</a> · Rust · 316 star · 新出现<br>A tool to parse real-time metadata embedded in video files or telemetry from other sources like Betaflight blackbox. Supported formats: Sony, GoPro GPMF, Insta360, Betaflight blackbox (csv and binary)<br>入选：insta360。来源：主题检索。</li>
+<li><a href="https://github.com/ai4ce/insta360_ros_driver">ai4ce/insta360_ros_driver</a> · C++ · 268 star · 新出现<br>A ROS driver for Insta360 cameras, enabling real-time image capture, processing, and publishing in ROS environments.<br>入选：360 camera、insta360。来源：主题检索。</li>
+<li><a href="https://github.com/vulture-s/arkiv">vulture-s/arkiv</a> · Python · 78 star · 新出现<br>Local-first media asset manager with AI semantic search — reads pro-camera metadata (Sony XAVC sidecar, FX-series) and 360 footage (Insta360/GoPro Max) that consumer DAMs drop. FFmpeg + ChromaDB + local LLM.<br>入选：insta360。来源：主题检索。</li>
+<li><a href="https://github.com/stechdrive/Insta360Convert-GUI">stechdrive/Insta360Convert-GUI</a> · Python · 48 star · 新出现<br>GUI tool to extract multiple perspective views (pitch, yaw, FOV) from 360° equirectangular videos as MP4 clips or image sequences, plus COLMAP/RealityScan‑ready rig outputs for streamlined photogrammetry and 3D Gaussian Splatting workflows.<br>入选：360°、insta360。来源：主题检索。</li>
+<li><a href="https://github.com/derrickyau9/insta360-luna-ultra-reverse-engineering">derrickyau9/insta360-luna-ultra-reverse-engineering</a> · Python · 21 star · 新出现<br>Insta360 Luna Ultra Reverse Engineering<br>入选：insta360。来源：主题检索。</li>
+<li><a href="https://github.com/Ripwords/insta360-luna-ultra-desktop">Ripwords/insta360-luna-ultra-desktop</a> · TypeScript · 13 star · 新出现<br>Unofficial Insta360 Luna Ultra Companion Desktop Application<br>入选：insta360。来源：主题检索。</li>
+<li><a href="https://github.com/dstrat28/action-multicam-remote">dstrat28/action-multicam-remote</a> · Swift · 13 star · 新出现<br>iOS app for controlling multiple DJI &amp; GoPro action cameras over Bluetooth.<br>入选：action camera。来源：主题检索。</li>
+<li><a href="https://github.com/TToTMooN/KIWI_software">TToTMooN/KIWI_software</a> · Python · 11 star · 新出现<br>Kinematic Interface for the Wild: bimanual robot demonstration capture with two consumer 360° cameras and passive 3D-printed tools<br>入选：360°。来源：主题检索。</li>
+<li><a href="https://github.com/erik-sutton95/OpenInstaCine">erik-sutton95/OpenInstaCine</a> · Swift · 7 star · 新出现<br>Open-source iOS and Android field monitor for the Insta360 Luna Ultra.<br>入选：insta360。来源：主题检索。</li>
+</ul>
+<h3>电子</h3>
+<ul>
+<li><a href="https://github.com/openmv/openmv">openmv/openmv</a> · C · 2884 star · 新出现<br>OpenMV Camera Module<br>入选：camera module。来源：主题检索。</li>
+<li><a href="https://github.com/10x-Engineers/Infinite-ISP">10x-Engineers/Infinite-ISP</a> · Python · 402 star · 新出现<br>A camera ISP (image signal processor) pipeline that contains modules with simple to complex algorithms implemented at the application level.<br>入选：image signal processor、isp。来源：主题检索。</li>
+<li><a href="https://github.com/christianrauch/camera_ros">christianrauch/camera_ros</a> · C++ · 171 star · 新出现<br>ROS 2 node for libcamera supported cameras (V4L2, Raspberry Pi Camera Modules)<br>入选：camera module。来源：主题检索。</li>
+<li><a href="https://github.com/nspired-Hackers/nternet-Link">nspired-Hackers/nternet-Link</a> · Python · 51 star · 新出现<br>Wi-Fi, AI chat, and camera module for TI-Nspire calculators. Custom ESP32 PCBs + firmware. (Yes, 'nternet' is intentional, Nspire community naming.)<br>入选：firmware、camera module。来源：主题检索。</li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-CameraPlus-S3">Xinyuan-LilyGO/T-CameraPlus-S3</a> · C · 35 star · 新出现<br />
+   T-CameraPlus-S3 is an intelligent camera module developed based on the ESP32S3 chip, equipped with a 240x240 TFT display, digital microphone, speaker, one independent button, power control chip, and SD card module.<br />
+  入选：camera module。来源：主题检索。</li>
+<li><a href="https://github.com/404GamerNotFound/TBC-camera-manager">404GamerNotFound/TBC-camera-manager</a> · Python · 31 star · 新出现<br>TBC is a modular, Docker-based camera manager. Camera vendors are integrated through installable camera modules. Reolink, Aqara, TP-Link/Tapo, Axis, Foscam, Hikvision, Dahua (including Amcrest/Annke OEM devices), Ubiquiti/UniFi Protect, and SONOFF are available as directly installable standard repositories.<br>入选：camera module。来源：主题检索。</li>
+<li><a href="https://github.com/aalsmile/yi-lite-firmware-kitchen">aalsmile/yi-lite-firmware-kitchen</a> · Shell · 14 star · 新出现<br>YI Lite Action Camera firmware kitchen<br>入选：firmware。来源：主题检索。</li>
+<li><a href="https://github.com/aawobdev/pi-camera-timelapse">aawobdev/pi-camera-timelapse</a> · Python · 10 star · 新出现<br>A simple set of Python scripts to enable a timelapse camera using a Raspberry Pi and Pi Camera module<br>入选：camera module。来源：主题检索。</li>
+<li><a href="https://github.com/viam-modules/viam-camera-realsense">viam-modules/viam-camera-realsense</a> · C++ · 3 star · 新出现<br>C++ camera module for the RealSense<br>入选：camera module。来源：主题检索。</li>
+<li><a href="https://github.com/gmoraleda/BabyPi">gmoraleda/BabyPi</a> · 未知语言 · 3 star · 新出现<br>🐣 Baby monitor using a Raspberry Pi, the NoIR camera module 🎥 and a DHT22 temperature sensor 🌡<br>入选：camera module。来源：主题检索。</li>
+<li><a href="https://github.com/PiSugar/whisplay-optocamzero">PiSugar/whisplay-optocamzero</a> · Python · 3 star · 新出现<br>Open-source DIY digital camera for Raspberry Pi Zero 2 W with Whisplay HAT, PiSugar 3 Air, Camera Module 3, and 3D-printable hardware.<br>入选：camera module。来源：主题检索。</li>
+<li><a href="https://github.com/OpenwaterHealth/openmotion-camera-fpga">OpenwaterHealth/openmotion-camera-fpga</a> · Verilog · 2 star · 新出现<br>Firmware for camera module FPGA<br>入选：firmware、camera module。来源：主题检索。</li>
+<li><a href="https://github.com/dwaipayanray95/vesper-cine">dwaipayanray95/vesper-cine</a> · C++ · 2 star · 新出现<br>Developing a cinema-grade 10-bit Raw &amp; Log camera for Android. Bypasses OEM computational photography &amp; ISP noise reduction with real-time Vulkan 5x5 Bayer demosaicing, calibrated R-Log OETF, Rec.2020 color science, and 180° cinema controls.<br>入选：isp。来源：主题检索。</li>
+<li><a href="https://github.com/Kurokesu/camlab-rpi">Kurokesu/camlab-rpi</a> · Python · 2 star · 新出现<br>Camera preview and test bench GUI for Raspberry Pi. Easy-install kiosk viewfinder for Kurokesu and other MIPI CSI camera modules (AR0234, AR0822, IMX283, IMX462, IMX477, IMX585, OS08E10), built on libcamera / picamera2<br>入选：camera module。来源：主题检索。</li>
+<li><a href="https://github.com/lionelnoah/Photon2Pixel-ISP">lionelnoah/Photon2Pixel-ISP</a> · C · 1 star · 新出现<br>From Photon to Pixel - Image Sensor,Raw,ISP,Computational Photography and AI ISP.<br>入选：isp、image sensor。来源：主题检索。</li>
+<li><a href="https://github.com/Abhishekog19/NXTCart-Cam">Abhishekog19/NXTCart-Cam</a> · Python · 1 star · 新出现<br>Camera module backend for the NXTcart hardware project.<br>入选：camera module。来源：主题检索。</li>
+<li><a href="https://github.com/Hey-Salad/Food_Assistant">Hey-Salad/Food_Assistant</a> · C++ · 1 star · 新出现<br>Open Source Food Assistant using Open AI + ESP32-S3 AI Camera Module<br>入选：camera module。来源：主题检索。</li>
+</ul>
+<h3>机械</h3>
+<ul>
+<li><a href="https://github.com/LYHrmer/gimbal-lqr-eso">LYHrmer/gimbal-lqr-eso</a> · Python · 8 star · 新出现<br>面向 STM32 的 C11 云台控制器：LQR + ESO；支持 Yaw/Pitch、GM6020 电流模式与 DM4310 MIT，提供分电机辨识指南、数据模板和可复现仿真。<br>入选：gimbal。来源：主题检索。</li>
+</ul>
+<h3>算法</h3>
+<ul>
+<li><a href="https://github.com/SensorsINI/jaer">SensorsINI/jaer</a> · Java · 206 star · 新出现<br>Full-featured cross-platform (Linux, Windows, MacOS) desktop application for neuromorphic event cameras and silicon cochleas from all major manufacturers<br>入选：event camera。来源：主题检索。</li>
+<li><a href="https://github.com/neuromorphicsystems/neuromorphic-drivers">neuromorphicsystems/neuromorphic-drivers</a> · Rust · 41 star · 新出现<br>Python and Rust libraries to interact with event cameras in real-time<br>入选：event camera。来源：主题检索。</li>
+<li><a href="https://github.com/worldbench/awesome-event-camera-vision">worldbench/awesome-event-camera-vision</a> · TeX · 11 star · 新出现<br>🌐 Event Camera Vision in the Era of Large Models: A Survey<br>入选：event camera。来源：主题检索。</li>
+<li><a href="https://github.com/afauzan-885/Pixel-Refine">afauzan-885/Pixel-Refine</a> · Perl · 2 star · 新出现<br>Computational Photography applications to improve image quality<br>入选：computational photography。来源：主题检索。</li>
+</ul>
+<h2>视觉、世界模型与运控</h2>
+<h3>世界模型</h3>
+<ul>
+<li><a href="https://github.com/NVIDIA/cosmos">NVIDIA/cosmos</a> · Jupyter Notebook · 12068 star · 新出现<br>NVIDIA Cosmos is an open platform of world models, datasets, and tools that enables developers to build Physical AI for robots, autonomous vehicles, smart infrastructure, and more.<br>入选：world model、world models。来源：主题检索。</li>
+<li><a href="https://github.com/deeplethe/utopia">deeplethe/utopia</a> · Rust · 8448 star · 新出现<br>World's first open-source enterprise world model.<br>入选：world model。来源：主题检索。</li>
+<li><a href="https://github.com/NVlabs/LongLive">NVlabs/LongLive</a> · Python · 2807 star · 新出现<br>Long Video Gen / World Model / World Action Model (Embodied) Infrastructure<br>入选：world model。来源：主题检索。</li>
+<li><a href="https://github.com/thu-ml/Motus">thu-ml/Motus</a> · Python · 1312 star · 新出现<br>Official code of Motus: A Unified Latent Action World Model<br>入选：world model。来源：主题检索。</li>
+<li><a href="https://github.com/Gen-Verse/RSI-Anything">Gen-Verse/RSI-Anything</a> · HTML · 798 star · 新出现<br>RSI-Anything: Unlocking Recursive Self-Improvement with World Models<br>入选：world model、world models。来源：主题检索。</li>
+<li><a href="https://github.com/Junchao-cs/SolarWM">Junchao-cs/SolarWM</a> · Python · 779 star · 新出现<br>Open data and scalable training for long-horizon video world models.<br>入选：world model、world models、video world model。来源：主题检索。</li>
+<li><a href="https://github.com/NucleoidAI/Nucleoid">NucleoidAI/Nucleoid</a> · Rust · 772 star · 新出现<br>Synthesized Logic Language for World Models 🌱🐋🌍<br>入选：world model、world models。来源：主题检索。</li>
+<li><a href="https://github.com/NoizAI/HelixWorld">NoizAI/HelixWorld</a> · Python · 623 star · 新出现<br>🪐 HelixWorld: real-time interactive audio-visual world model.<br>入选：world model。来源：主题检索。</li>
+<li><a href="https://github.com/NVlabs/GRAIL">NVlabs/GRAIL</a> · Python · 576 star · 新出现<br>🤖 GRAIL is a fully digital data-generation pipeline that synthesizes humanoid loco-manipulation data from world models. 🌟 CoRL 2026 (Oral)<br>入选：world model、world models。来源：主题检索。</li>
+<li><a href="https://github.com/Visionary-Laboratory/visionary">Visionary-Laboratory/visionary</a> · Python · 530 star · 新出现<br>Visionary: The World Model Carrier Built on WebGPU-Powered Gaussian Splatting Platform<br>入选：world model。来源：主题检索。</li>
+<li><a href="https://github.com/NVIDIA/flashdreams">NVIDIA/flashdreams</a> · Python · 518 star · 新出现<br>high-performance inference and serving library for interactive autoregressive video and world models<br>入选：world model、world models。来源：主题检索。</li>
+<li><a href="https://github.com/TencentARC/WorldCrafter">TencentARC/WorldCrafter</a> · Python · 511 star · 新出现<br>[Arxiv 2026] WorldCrafter: Consistent Video World Model with Implicit 3D-aware Memory<br>入选：world model、video world model。来源：主题检索。</li>
+<li><a href="https://github.com/luohongk/Embodied-AI-Daily">luohongk/Embodied-AI-Daily</a> · HTML · 482 star · 新出现<br>📚这个仓库是在arxiv上收集的有关VLN，VLA，World Model，SLAM，Gaussian Splatting,非线性优化等相关论文。每天都会自动更新！issue区域是最新10篇论文<br>入选：world model。来源：主题检索。</li>
+<li><a href="https://github.com/Sunbeam23333/WorldDistill">Sunbeam23333/WorldDistill</a> · Python · 60 star · 新出现<br><strong>A unified toolkit for distilling and accelerating video generation models and world models.</strong><br>入选：world model、world models。来源：主题检索。</li>
+<li><a href="https://github.com/mrvgao/tiny-atlas">mrvgao/tiny-atlas</a> · Python · 15 star · 新出现<br>A tiny end-to-end world model (pose-conditioned autoregressive rectified flow) you can train on a laptop — for teaching how models like World Labs' Atlas work<br>入选：world model。来源：主题检索。</li>
+</ul>
+<h3>视觉运控</h3>
+<ul>
+<li><a href="https://github.com/Genesis-Embodied-AI/genesis-world">Genesis-Embodied-AI/genesis-world</a> · Python · 30088 star · 新出现<br>Simulation platform for general-purpose robotics &amp; embodied AI learning.<br>入选：embodied ai。来源：主题检索。</li>
+<li><a href="https://github.com/Unity-Technologies/ml-agents">Unity-Technologies/ml-agents</a> · C# · 19770 star · 新出现<br>The Unity Machine Learning Agents Toolkit (ML-Agents) is an open-source project that enables games and simulations to serve as environments for training intelligent agents using deep reinforcement learning and imitation learning.<br>入选：imitation learning。来源：主题检索。</li>
+<li><a href="https://github.com/starVLA/starVLA">starVLA/starVLA</a> · Python · 3829 star · 新出现<br>StarVLA: A Lego-like Codebase for Vision-Language-Action Model Developing<br>入选：vision-language-action。来源：主题检索。</li>
+<li><a href="https://github.com/StanfordVL/BEHAVIOR-1K">StanfordVL/BEHAVIOR-1K</a> · Python · 1767 star · 新出现<br>BEHAVIOR-1K: a platform for accelerating Embodied AI research. Join our Discord for support: https://discord.gg/bccR5vGFEx<br>入选：embodied ai。来源：主题检索。</li>
+<li><a href="https://github.com/lagadic/visp">lagadic/visp</a> · C++ · 931 star · 新出现<br>Open Source Visual Servoing Platform<br>入选：visual servoing。来源：主题检索。</li>
+<li><a href="https://github.com/haosulab/SAPIEN">haosulab/SAPIEN</a> · C++ · 857 star · 新出现<br>SAPIEN Embodied AI Platform<br>入选：embodied ai。来源：主题检索。</li>
+<li><a href="https://github.com/FluxVLA/FluxVLA">FluxVLA/FluxVLA</a> · Python · 750 star · 新出现<br>An all-in-one VLA engineering platform for embodied AI — from data to real-robot deployment.<br>入选：embodied ai。来源：主题检索。</li>
+<li><a href="https://github.com/sou350121/VLA-Handbook">sou350121/VLA-Handbook</a> · HTML · 721 star · 新出现<br>本项目旨在为致力于进入VLA(Vision-Language-Action)领域的算法工程师提供一份全中文、实战导向的学习/面试手册。  不同于通用的 CV/NLP 面试指南，本项目聚焦于 Robotics 特有的挑战<br>入选：vision-language-action。来源：主题检索。</li>
+<li><a href="https://github.com/H-EmbodVis/TurboVLA">H-EmbodVis/TurboVLA</a> · Python · 705 star · 新出现<br>TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090 with &lt;1 GB VRAM<br>入选：vision-language-action。来源：主题检索。</li>
+<li><a href="https://github.com/spear-sim/spear">spear-sim/spear</a> · C++ · 617 star · 新出现<br>SPEAR: A Simulator for Photorealistic Embodied AI Research<br>入选：embodied ai。来源：主题检索。</li>
+<li><a href="https://github.com/Kaixhin/imitation-learning">Kaixhin/imitation-learning</a> · Python · 575 star · 新出现<br>Imitation learning algorithms<br>入选：imitation learning。来源：主题检索。</li>
+</ul>
+<h3>视觉算法</h3>
+<h4>理解</h4>
+<ul>
+<li><a href="https://github.com/Blaizzy/mlx-vlm">Blaizzy/mlx-vlm</a> · Python · 5639 star · 新出现<br>MLX-VLM is a package for inference and fine-tuning of Vision Language Models (VLMs) on your Mac using MLX.<br>入选：vision language model。来源：主题检索。</li>
+<li><a href="https://github.com/openclaw/Peekaboo">openclaw/Peekaboo</a> · Swift · 5345 star · 新出现<br>Peekaboo is a macOS CLI &amp; optional MCP server that enables AI agents to capture screenshots of applications, or the entire system, with optional visual question answering through local or remote AI models.<br>入选：visual question answering。来源：主题检索。</li>
+<li><a href="https://github.com/facebookresearch/pytorchvideo">facebookresearch/pytorchvideo</a> · Python · 3570 star · 新出现<br>A deep learning library for video understanding research.<br>入选：video understanding。来源：主题检索。</li>
+<li><a href="https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization">NVIDIA-AI-Blueprints/video-search-and-summarization</a> · Python · 1933 star · 新出现<br>NVIDIA AI Blueprint for video search and summarization (VSS) is a GPU-accelerated reference architecture for building video analytics agents with real-time verified alerts, visual Q&amp;A, and automated reporting. The VSS Blueprint uses vision language models (VLMs) such as NVIDIA Cosmos, LLMs such as NVIDIA Nemotron, RAG, and NVIDIA NIMs.<br>入选：vision language model。来源：主题检索。</li>
+<li><a href="https://github.com/OpenMOSS/MOSS-VL">OpenMOSS/MOSS-VL</a> · C++ · 775 star · 新出现<br>An open-weight 11B model series for long-form and real-time video understanding<br>入选：video understanding。来源：主题检索。</li>
+<li><a href="https://github.com/NVIDIA-AI-IOT/live-vlm-webui">NVIDIA-AI-IOT/live-vlm-webui</a> · Python · 473 star · 新出现<br>Real-time Vision Language Model interaction via webcam - WebRTC-based web interface<br>入选：vision language model。来源：主题检索。</li>
+<li><a href="https://github.com/MugheesMehdi07/langvio">MugheesMehdi07/langvio</a> · Python · 431 star · 新出现<br />
+   A powerful AI library that bridges Large Language Models (LLMs) with video processing frameworks like YOLO, enabling seamless integration of vision and language for advanced video understanding, object detection, and contextual analysis. <br />
+  入选：video understanding。来源：主题检索。</li>
+<li><a href="https://github.com/google-deepmind/videoprism">google-deepmind/videoprism</a> · Python · 399 star · 新出现<br>Official repository for "VideoPrism: A Foundational Visual Encoder for Video Understanding" (ICML 2024)<br>入选：video understanding。来源：主题检索。</li>
+<li><a href="https://github.com/MCG-NJU/VideoJev">MCG-NJU/VideoJev</a> · Python · 179 star · 新出现<br>VideoJev: System One Model for Video Understanding and Interaction<br>入选：video understanding。来源：主题检索。</li>
+<li><a href="https://github.com/Xuchen-Li/llm-arxiv-daily">Xuchen-Li/llm-arxiv-daily</a> · Python · 146 star · 新出现<br>Automatically update arXiv papers about LLM Reasoning, LLM Evaluation, LLM &amp; MLLM and Video Understanding using Github Actions.<br>入选：video understanding。来源：主题检索。</li>
+</ul>
+<h4>生成</h4>
+<ul>
+<li><a href="https://github.com/Tencent-Hunyuan/HunyuanVideo">Tencent-Hunyuan/HunyuanVideo</a> · Python · 12633 star · 新出现<br>HunyuanVideo: A Systematic Framework For Large Video Generation Model<br>入选：video generation model。来源：主题检索。</li>
+<li><a href="https://github.com/NVlabs/Sana">NVlabs/Sana</a> · Python · 9399 star · 新出现<br>SANA: Efficient High-Resolution Image Synthesis with Linear Diffusion Transformer<br>入选：diffusion transformer。来源：主题检索。</li>
+<li><a href="https://github.com/enricoros/big-AGI">enricoros/big-AGI</a> · TypeScript · 7150 star · 新出现<br>AI suite powered by state-of-the-art models and providing advanced AI/AGI functions. Includes AI personas, AGI functions, world-class Beam multi-model chats, text-to-image, voice, response streaming, code highlighting and execution, PDF import, presets for developers, much more. Deploy on-prem or in the cloud.<br>入选：text-to-image。来源：主题检索。</li>
+<li><a href="https://github.com/Tencent-Hunyuan/HunyuanDiT">Tencent-Hunyuan/HunyuanDiT</a> · Jupyter Notebook · 4290 star · 新出现<br>Hunyuan-DiT : A Powerful Multi-Resolution Diffusion Transformer with Fine-Grained Chinese Understanding<br>入选：diffusion transformer。来源：主题检索。</li>
+<li><a href="https://github.com/genmoai/mochi">genmoai/mochi</a> · Python · 3749 star · 新出现<br>The best OSS video generation models, created by Genmo<br>入选：video generation model。来源：主题检索。</li>
+<li><a href="https://github.com/FurkanGozukara/Stable-Diffusion">FurkanGozukara/Stable-Diffusion</a> · Jupyter Notebook · 2782 star · 新出现<br>FLUX, Stable Diffusion, SDXL, SD3, LoRA, Fine Tuning, DreamBooth, Training, Automatic1111, Forge WebUI, SwarmUI, DeepFake, TTS, Animation, Text To Video, Tutorials, Guides, Lectures, Courses, ComfyUI, Google Colab, RunPod, Kaggle, NoteBooks, ControlNet, TTS, Voice Cloning, AI, AI News, ML, ML News, News, Tech, Tech News, Kohya, Midjourney, RunPod<br>入选：text to video。来源：主题检索。</li>
+<li><a href="https://github.com/xdit-project/xDiT">xdit-project/xDiT</a> · Python · 2739 star · 新出现<br>xDiT: A Scalable Inference Engine for Diffusion Transformers (DiTs) with Massive Parallelism<br>入选：diffusion transformer。来源：主题检索。</li>
+<li><a href="https://github.com/QwenLM/Qwen-Image-2.1">QwenLM/Qwen-Image-2.1</a> · Python · 2009 star · 新出现<br>Qwen's most powerful open-source image generation model<br>入选：image generation model。来源：主题检索。</li>
+<li><a href="https://github.com/huawei-bayerlab/marigold-v2">huawei-bayerlab/marigold-v2</a> · Python · 918 star · 新出现<br>Marigold V2: Revisiting Diffusion Transformers for Monocular Depth Estimation<br>入选：diffusion transformer。来源：主题检索。</li>
+<li><a href="https://github.com/visualbruno/3DGenStudio">visualbruno/3DGenStudio</a> · JavaScript · 727 star · 新出现<br>Orchestrate complete 3D generation pipelines — from text-to-image, image editing, mesh generation, UV unwrapping, to texturing — all in a single visual workspace powered by ComfyUI and external APIs.<br>入选：text-to-image。来源：主题检索。</li>
+<li><a href="https://github.com/thu-ml/SLA">thu-ml/SLA</a> · Python · 551 star · 新出现<br>SLA: Beyond Sparsity in Diffusion Transformers via Fine-Tunable Sparse–Linear Attention<br>入选：diffusion transformer。来源：主题检索。</li>
+<li><a href="https://github.com/SamurAIGPT/Seedance-2.5-API">SamurAIGPT/Seedance-2.5-API</a> · Python · 499 star · 新出现<br>Python wrapper for ByteDance's Seedance 2.5 API — Text-to-Video, Image-to-Video, realistic human faces, native 4K, consistent character generation.<br>入选：text-to-video。来源：主题检索。</li>
+<li><a href="https://github.com/lucidrains/rectified-flow-pytorch">lucidrains/rectified-flow-pytorch</a> · Python · 488 star · 新出现<br>Implementation of rectified flow and some of its followup research / improvements in Pytorch<br>入选：rectified flow。来源：主题检索。</li>
+<li><a href="https://github.com/Anil-matcha/Seedance-2-API">Anil-matcha/Seedance-2-API</a> · Python · 358 star · 新出现<br>Python wrapper for ByteDance's Seedance 2.0 , Seedance 2.5 and Seedance 2 Mini API — Text-to-Video, Image-to-Video, realistic human faces, 1080p, consistent character generation.<br>入选：text-to-video。来源：主题检索。</li>
+<li><a href="https://github.com/viiika/Meissonic">viiika/Meissonic</a> · Python · 347 star · 新出现<br>[ICLR 2025] Official Implementation of Meissonic: Revitalizing Masked Generative Transformers for Efficient High-Resolution Text-to-Image Synthesis<br>入选：text-to-image。来源：主题检索。</li>
+<li><a href="https://github.com/Bria-AI/FIBO">Bria-AI/FIBO</a> · Python · 345 star · 新出现<br>FIBO is a SOTA, first open-source, JSON-native text-to-image model built for controllable, predictable, and legally safe image generation.<br>入选：text-to-image。来源：主题检索。</li>
+<li><a href="https://github.com/nihui/qwenimage-ncnn-vulkan">nihui/qwenimage-ncnn-vulkan</a> · C++ · 313 star · 新出现<br>ncnn implementation of Qwen-Image-2.1, with text-to-image, image editing, multi-reference image input and transparent RGBA output<br>入选：text-to-image。来源：主题检索。</li>
+<li><a href="https://github.com/idwts/Crayotter">idwts/Crayotter</a> · Python · 246 star · 新出现<br>🦦 Crayotter: A Multimodal AI-Agent for Video-Editing, Video-Composing, and Video Production. Powered by Multimodal LLMs for autonomous Text-to-Video agentic framework. | 基于多模态大模型 (Multimodal LLMs) 的 AI 剪辑智能体，支持从文字需求到视频成品的端到端全自动生产与创作。<br>入选：text-to-video。来源：主题检索。</li>
+<li><a href="https://github.com/neopen/story-shot-agent">neopen/story-shot-agent</a> · Python · 228 star · 新出现<br>剧本分镜智能体（PenShot）：电影/动漫/短剧/小说→分镜片段→视频提示词。基于 LLM 通过 LangGraph+LlamaIndex实现任意格式剧本的自动解析，生成 Sora/Veo/Runway 等模型可用的连贯text-to-video提示词。保持角色/剧情跨片段一致，支持 MCP/REST API/Function Calls/A2A 集成。（LLM-powered text-to-video-prompt agent. Break scripts into Sora/Veo-ready shots with character consistency）<br>入选：text-to-video。来源：主题检索。</li>
+<li><a href="https://github.com/speridlabs/iris-3b">speridlabs/iris-3b</a> · Python · 190 star · 新出现<br>Iris-3B: pixel-space generation &amp; general vision learner. A 3B diffusion transformer that generates every pixel directly (no VAE); the same prior, fine-tuned, does monocular depth estimation and 4x image restoration. Paper, weights, training code and demo.<br>入选：diffusion transformer。来源：主题检索。</li>
+<li><a href="https://github.com/apimart-API-Gateway/grok-image-api">apimart-API-Gateway/grok-image-api</a> · Python · 145 star · 新出现<br>Grok Image API (Grok Imagine 1.5, grok-imagine-1.5-apimart): model ids, per-image pricing, text-to-image and edit routes, moderation behaviour and runnable API examples.<br>入选：text-to-image。来源：主题检索。</li>
+<li><a href="https://github.com/cafermutluozkan/free-ai-notebooks">cafermutluozkan/free-ai-notebooks</a> · Jupyter Notebook · 143 star · 新出现<br>Free ready-to-run AI notebooks for Text-to-Video, Image-to-Video, Voice Cloning, TTS &amp; AI Music. Run on Kaggle, Colab, HuggingFace Spaces, Paperspace &amp; Vast.ai — zero setup, one-click launch.<br>入选：text-to-video。来源：主题检索。</li>
+<li><a href="https://github.com/atfortes/BokehDiffusion">atfortes/BokehDiffusion</a> · Python · 130 star · 新出现<br>[SIGGRAPH Asia 2025] Official code for "Bokeh Diffusion: Defocus Blur Control in Text-to-Image Diffusion Models."<br>入选：text-to-image。来源：主题检索。</li>
+<li><a href="https://github.com/cpldcpu/pico-faces">cpldcpu/pico-faces</a> · C · 83 star · 新出现<br>A GenAI image generation model on a microcontroller - RP Pico 2 (RP2350)<br>入选：image generation model。来源：主题检索。</li>
+<li><a href="https://github.com/wavtechyukky/LeapSinger">wavtechyukky/LeapSinger</a> · Python · 62 star · 新出现<br>Fast singing-voice acoustic model: harmonic + noise excitation refined into a mel by a 1-step rectified flow (bundled NHVSing vocoder). Multi-speaker + style control; ONNX/OpenUTAU export.<br>入选：rectified flow。来源：主题检索。</li>
+<li><a href="https://github.com/YukinoshitaLove/ScaleResfusion">YukinoshitaLove/ScaleResfusion</a> · Python · 55 star · 新出现<br>Official Paper Implementation of ScaleResfusion: Residual Rectified Flow Based on Residual Vector Field<br>入选：rectified flow。来源：主题检索。</li>
+<li><a href="https://github.com/duncangrimsby/minimax-h3-api">duncangrimsby/minimax-h3-api</a> · Python · 39 star · 新出现<br>MiniMax H3 API guide for asynchronous text-to-video generation, model limits, request fields, polling, and Argolink integration.<br>入选：text-to-video。来源：主题检索。</li>
+<li><a href="https://github.com/fyting/ArtifactWorld">fyting/ArtifactWorld</a> · Python · 30 star · 新出现<br>[ACM MM 2026] ArtifactWorld: Scaling 3D Gaussian Splatting Artifact Restoration via Video Generation Models<br>入选：video generation model。来源：主题检索。</li>
+<li><a href="https://github.com/FerrisMind/candle-video">FerrisMind/candle-video</a> · Rust · 28 star · 新出现<br>The Rust library for video generation models based on Candle (HF)<br>入选：video generation model。来源：主题检索。</li>
+<li><a href="https://github.com/jamesmcroft/openai-image-token-calculator">jamesmcroft/openai-image-token-calculator</a> · JavaScript · 28 star · 新出现<br>A calculator to estimate the number of tokens and cost associated with processing images using Azure OpenAI's multimodal models, including GPT-5.x, o-series, and image generation models<br>入选：image generation model。来源：主题检索。</li>
+<li><a href="https://github.com/multimodal-ai-lab/Obliviate">multimodal-ai-lab/Obliviate</a> · Python · 14 star · 新出现<br>Obliviate: Erasing Concepts from Autoregressive Image Generation Models (ECCV'26)<br>入选：image generation model。来源：主题检索。</li>
+</ul>
+<h2>量化交易</h2>
+<h3>综合</h3>
+<ul>
+<li><a href="https://github.com/freqtrade/freqtrade">freqtrade/freqtrade</a> · Python · 55618 star · 新出现<br>Free, open source crypto trading bot<br>入选：freqtrade。来源：主题检索。</li>
+<li><a href="https://github.com/vnpy/vnpy">vnpy/vnpy</a> · Python · 45948 star · 新出现<br>基于Python的开源量化交易平台开发框架<br>入选：vnpy。来源：主题检索。</li>
+<li><a href="https://github.com/QuantConnect/Lean">QuantConnect/Lean</a> · C# · 22101 star · 新出现<br>Lean Algorithmic Trading Engine by QuantConnect (Python, C#)<br>入选：algorithmic trading。来源：主题检索。</li>
+<li><a href="https://github.com/OpenByteInc/QuantDinger">OpenByteInc/QuantDinger</a> · Python · 12922 star · 新出现<br>Open-source AI Trading OS, agent trading, and vibe trading, with Jev System One integration. Research, build Python strategies, backtest, and paper/live trade across crypto, stocks, and forex. Launch your own multi-tenant trading SaaS with built-in user management, billing, payments, and settlement.<br>入选：backtest。来源：主题检索。</li>
+<li><a href="https://github.com/StockSharp/StockSharp">StockSharp/StockSharp</a> · C# · 10931 star · 新出现<br>Algorithmic trading and quantitative trading open source platform to develop trading robots (stock markets, forex, crypto, bitcoins, and options).<br>入选：quantitative trading、algorithmic trading。来源：主题检索。</li>
+<li><a href="https://github.com/polakowo/vectorbt">polakowo/vectorbt</a> · Python · 9433 star · 新出现<br>The backtesting engine that gives you an unfair advantage. Run thousands of trading ideas before others finish one.<br>入选：backtesting、backtest。来源：主题检索。</li>
+<li><a href="https://github.com/ricequant/rqalpha">ricequant/rqalpha</a> · Python · 6830 star · 新出现<br>A extendable, replaceable Python algorithmic backtest &amp;&amp; trading framework supporting multiple securities<br>入选：backtest。来源：主题检索。</li>
+<li><a href="https://github.com/Superalgos/Superalgos">Superalgos/Superalgos</a> · JavaScript · 5710 star · 新出现<br>Free, open-source crypto trading bot, automated bitcoin / cryptocurrency trading software, algorithmic trading bots. Visually design your crypto trading bot, leveraging an integrated charting system, data-mining, backtesting, paper trading, and multi-server crypto bot deployments.<br>入选：backtesting、backtest、algorithmic trading。来源：主题检索。</li>
+<li><a href="https://github.com/chrisleekr/binance-trading-bot">chrisleekr/binance-trading-bot</a> · TypeScript · 5586 star · 新出现<br>Automated Binance trading bot with pluggable strategies, historical backtesting, and a live dashboard<br>入选：backtesting、backtest。来源：主题检索。</li>
+<li><a href="https://github.com/atilaahmettaner/tradingview-mcp">atilaahmettaner/tradingview-mcp</a> · Python · 5086 star · 新出现<br>MCP server for market analysis in AI assistants: screeners, multi-timeframe technical analysis, backtests and sentiment for crypto, stocks, forex and futures. 39 tools. Self-host free, or use the hosted version, TradingMCP.<br>入选：backtest。来源：主题检索。</li>
+<li><a href="https://github.com/edtechre/pybroker">edtechre/pybroker</a> · Python · 3620 star · 新出现<br>Algorithmic Trading in Python with Machine Learning<br>入选：algorithmic trading。来源：主题检索。</li>
+<li><a href="https://github.com/fasiondog/hikyuu">fasiondog/hikyuu</a> · C++ · 3564 star · 新出现<br>An open-source, high-performance quantitative trading framework in C++/Python focused on strategy analysis and backtesting Trading model R&amp;D · Ultra-fast engine · Efficient backtesting<br>入选：quantitative trading、backtesting、backtest。来源：主题检索。</li>
+<li><a href="https://github.com/iterativv/NostalgiaForInfinity">iterativv/NostalgiaForInfinity</a> · Python · 3489 star · 新出现<br>Trading strategy for the Freqtrade crypto bot<br>入选：freqtrade。来源：主题检索。</li>
+<li><a href="https://github.com/diced/zipline">diced/zipline</a> · TypeScript · 3457 star · 新出现<br>A ShareX/file upload server that is easy to use, packed with features, and with an easy setup!<br>入选：zipline。来源：主题检索。</li>
+<li><a href="https://github.com/pmorissette/bt">pmorissette/bt</a> · Python · 2996 star · 新出现<br>bt - flexible backtesting for Python<br>入选：backtesting、backtest。来源：主题检索。</li>
+<li><a href="https://github.com/cashapp/zipline">cashapp/zipline</a> · C · 2310 star · 新出现<br>Run Kotlin/JS libraries in Kotlin/JVM and Kotlin/Native programs<br>入选：zipline。来源：主题检索。</li>
+<li><a href="https://github.com/coding-kitties/investing-algorithm-framework">coding-kitties/investing-algorithm-framework</a> · Python · 2183 star · 新出现<br>Framework for quantitative trading. Complete framework for development, backtesting, and deploying automated trading algorithms and trading bots.<br>入选：quantitative trading、backtesting、backtest。来源：主题检索。</li>
+<li><a href="https://github.com/quantskills/quantskills">quantskills/quantskills</a> · JavaScript · 2146 star · 新出现<br>QuantSkills组织的全景导航 ：面向 AI Agent 的开源量化 Skill &amp; Agent 生态，从数据、因子研究、回测验证到风险监控与交易自动化。｜Open-source Quant Skills &amp; Agents for AI-driven research, backtesting, risk and trading automation.——Panoramic navigator for the QuantSkills organization<br>入选：backtesting、backtest。来源：主题检索。</li>
+<li><a href="https://github.com/Lumiwealth/lumibot">Lumiwealth/lumibot</a> · Python · 2137 star · 新出现<br>AI agents that actually place the trade. 12 brokers, real backtests, stocks options futures forex crypto and prediction markets.<br>入选：backtest。来源：主题检索。</li>
+<li><a href="https://github.com/facioquo/stock-indicators-dotnet">facioquo/stock-indicators-dotnet</a> · C# · 1249 star · 新出现<br>Stock Indicators for .NET is a C# NuGet package that transforms raw equity, commodity, forex, or cryptocurrency financial market price quotes into technical indicators and trading insights. You'll need this essential data in the investment tools that you're building for algorithmic trading, technical analysis, machine learning, or visual charting.<br>入选：algorithmic trading。来源：主题检索。</li>
+<li><a href="https://github.com/freqtrade/frequi">freqtrade/frequi</a> · Vue · 1095 star · 新出现<br>Freqtrade UI - Frontend for Freqtrade<br>入选：freqtrade。来源：主题检索。</li>
+<li><a href="https://github.com/freqtrade/technical">freqtrade/technical</a> · Python · 1034 star · 新出现<br>Various indicators developed or collected for the Freqtrade<br>入选：freqtrade。来源：主题检索。</li>
+<li><a href="https://github.com/merovinh/best-of-algorithmic-trading">merovinh/best-of-algorithmic-trading</a> · 未知语言 · 1007 star · 新出现<br>A ranked list of algorithmic trading open-source libraries, frameworks, bots, tools, books, communities, education materials. Updated weekly.<br>入选：algorithmic trading。来源：主题检索。</li>
+<li><a href="https://github.com/Superior-Trade/trading-terminal">Superior-Trade/trading-terminal</a> · TypeScript · 904 star · 新出现<br>Self-hosted AI trading terminal for Hyperliquid: chart read in, validated Freqtrade/Nautilus-Trader strategy out, deployed live.<br>入选：freqtrade。来源：主题检索。</li>
+<li><a href="https://github.com/joaquinbejar/OrderBook-rs">joaquinbejar/OrderBook-rs</a> · Rust · 545 star · 新出现<br>A high-performance, thread-safe limit order book implementation written in Rust. This project provides a comprehensive order matching engine designed for low-latency trading systems, with a focus on concurrent access patterns and lock-free data structures.<br>入选：order book。来源：主题检索。</li>
+<li><a href="https://github.com/alexanderwanyoike/the0">alexanderwanyoike/the0</a> · TypeScript · 430 star · 新出现<br>Open Source Algorithmic Trading Engine<br>入选：algorithmic trading。来源：主题检索。</li>
+<li><a href="https://github.com/TorchTrade/torchtrade">TorchTrade/torchtrade</a> · Python · 428 star · 新出现<br>Modular reinforcement learning framework for algorithmic trading<br>入选：algorithmic trading。来源：主题检索。</li>
+<li><a href="https://github.com/Kautenja/limit-order-book">Kautenja/limit-order-book</a> · C++ · 312 star · 新出现<br>A header-only C++ limit order book with price-time priority matching, a C API, and Python bindings.<br>入选：order book。来源：主题检索。</li>
+<li><a href="https://github.com/Ellipsis-Labs/phoenix-v1">Ellipsis-Labs/phoenix-v1</a> · Rust · 279 star · 新出现<br>On-chain order book that atomically settles trades<br>入选：order book。来源：主题检索。</li>
+<li><a href="https://github.com/donewiththedollar/directionalscalper">donewiththedollar/directionalscalper</a> · Python · 216 star · 新出现<br>CCXT based algorithmic trading framework for Bybit and other CCXT supported exchanges<br>入选：algorithmic trading。来源：主题检索。</li>
+<li><a href="https://github.com/Synpath-ai/synpath">Synpath-ai/synpath</a> · Python · 181 star · 新出现<br>One open-source API for prediction markets. Trade Kalshi, Polymarket, Polymarket US and Opinion with one Python SDK: unified market data, smart order routing across venues, and advanced order types. Plus tick-level Kalshi order book history.<br>入选：order book。来源：主题检索。</li>
+<li><a href="https://github.com/zzhahn/a_stock_level2_data">zzhahn/a_stock_level2_data</a> · 未知语言 · 167 star · 新出现<br>A股level2行情数据接口 level2行情 level2数据 level2接口 level2实时行情 L2实时行情 level2实时 L2实时 实时level2 实时L2 实时行情 level2行情数据 level2数据接口 股票level2 A股level2 L2行情 L2数据 L2接口 逐笔成交 逐笔成交明细 逐笔委托 委托明细 十档盘口 盘口数据 委托队列 订单簿 集合竞价 实时行情接口 行情数据接口 毫秒级行情 低延迟行情 资金流向 龙虎榜 K线 无界面服务器 AI Agent 自动取数 | A-share Level-2 realtime market data API: level2 quotes, tick trades, order book, order queue<br>入选：order book。来源：主题检索。</li>
+<li><a href="https://github.com/semrincaballero/Polymarket-Prediction-Bot">semrincaballero/Polymarket-Prediction-Bot</a> · Python · 151 star · 新出现<br>Polymarket trading bot for prediction markets — browse CLOB markets, watch the order book in the terminal, run edge detection, liquidity provision and cross-market arbitrage strategies with paper trading and risk limits. Educational open-source toolkit — not financial advice. Unofficial community project, not affiliated with Polymarket.<br>入选：order book。来源：主题检索。</li>
+<li><a href="https://github.com/7skooooo/mql5-systems-mirror">7skooooo/mql5-systems-mirror</a> · HTML · 117 star · 新出现<br>MQL5 Algorithmic Trading Scripts 2026 – Automated MT5 Strategies<br>入选：algorithmic trading。来源：主题检索。</li>
+<li><a href="https://github.com/s-stolz/algotrader">s-stolz/algotrader</a> · Python · 83 star · 新出现<br>Custom Trading App for Algorithmic Trading<br>入选：algorithmic trading。来源：主题检索。</li>
+<li><a href="https://github.com/buzzsubash/algo_trading_strategies_india">buzzsubash/algo_trading_strategies_india</a> · Python · 82 star · 新出现<br>Open-source Python repository for algorithmic trading on NSE and BSE, focusing on option selling in NIFTY 50, BANK NIFTY, FIN NIFTY, MIDCAP NIFTY, and SENSEX. Currently supports Zerodha, with plans for multi-broker integration.<br>入选：algorithmic trading。来源：主题检索。</li>
+<li><a href="https://github.com/ilahuerta-IA/backtrader-pullback-window-xauusd">ilahuerta-IA/backtrader-pullback-window-xauusd</a> · Python · 76 star · 新出现<br>Professional algorithmic trading strategy for Gold (XAU/USD) with 4-phase state machine entry system. Sharpe 0.89 | PF 1.64 | WR 55.43% | DD 5.81% | +44.75% return over 5 years.<br>入选：algorithmic trading。来源：主题检索。</li>
+</ul>
+<h2>3D 与电子设计 AI</h2>
+<h3>打印与建模</h3>
+<ul>
+<li><a href="https://github.com/earthtojake/text-to-cad">earthtojake/text-to-cad</a> · Python · 21653 star · 新出现<br>Give your agent CAD superpowers.<br>入选：text-to-cad。来源：主题检索。</li>
+<li><a href="https://github.com/Adam-CAD/CADAM">Adam-CAD/CADAM</a> · TypeScript · 5296 star · 新出现<br>CADAM is the open source text-to-CAD web application<br>入选：text-to-cad。来源：主题检索。</li>
+<li><a href="https://github.com/Pan-Chera/Multi-Agent-CAD">Pan-Chera/Multi-Agent-CAD</a> · Python · 1042 star · 新出现<br>MAC (Multi-Agent CAD): A decoupled multi-agent framework for text-to-CAD generation via constrained test-time compute<br>入选：text-to-cad。来源：主题检索。</li>
+<li><a href="https://github.com/KittyCAD/text-to-cad-blender-addon">KittyCAD/text-to-cad-blender-addon</a> · Python · 37 star · 新出现<br>A Blender plugin to interact with the text-to-cad API<br>入选：blender、text-to-cad。来源：主题检索。</li>
+<li><a href="https://github.com/nanassound/mnft">nanassound/mnft</a> · Elixir · 26 star · 新出现<br>Text-to-CAD tools in Elixir with build123d, OpenSCAD, and smlibpy.<br>入选：openscad、text-to-cad。来源：主题检索。</li>
+<li><a href="https://github.com/Masoudjafaripour/Vibe_CADing">Masoudjafaripour/Vibe_CADing</a> · Python · 13 star · 新出现<br>Vibe-CADing: Conditional CAD Generation and Retrieval for a Text-to-CAD Design Pipeline<br>入选：text-to-cad。来源：主题检索。</li>
+</ul>
+<h2>运行说明</h2>
+<ul>
+<li>全球日榜解析到 12 个仓库。</li>
+<li>全球周榜解析到 14 个仓库。</li>
+<li>影像与相机形态 检索到 40 个仓库，Search 剩余 28。</li>
+<li>视觉、世界模型与运控 检索到 100 个仓库，Search 剩余 23。</li>
+<li>量化交易 检索到 40 个仓库，Search 剩余 21。</li>
+<li>3D 与电子设计 AI 检索到 20 个仓库，Search 剩余 18。</li>
+</ul>
+        </div>
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Raven Zhang | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
