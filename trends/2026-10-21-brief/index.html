@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Ravensea">
+<title>GitHub 趋势日报 2026-10-21 | RAVENSEA HOME</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <script src="/js/tocbot.min.js"></script>
+<meta name="generator" content="trends-tracking"></head>
+
+<body>
+    <script>
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+            } else {
+                pagebody.classList.remove('dark-theme');
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">RAVENSEA HOME</a></div>
+            <div class="menu navbar-right">
+                    <a class="menu-item active" href="/trends">Trends</a>
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">RAVENSEA HOME</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                    <a class="menu-item active" href="/trends">Trends</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">GitHub 趋势日报 2026-10-21</h1>
+                <div class="post-meta">
+                        Author: <a itemprop="author" rel="author" href="/">Ravensea</a>
+                        <span class="post-time">
+                        Date: <a href="#">2026年10月21日</a>
+                        </span>
+                        <span class="post-category">
+                    Category:
+                                <a href="/trends/">Trends</a>
+                        </span>
+                </div>
+        </header>
+
+        <div class="post-content">
+<p>每个子方向只保留一项代表仓库，按下列优先级挑选：</p>
+<ol>
+<li>已出现在 GitHub 全球「今日」趋势榜的优先；</li>
+<li>其次看本跟踪器状态：首次收录 &gt; 显著涨星 &gt; 持续跟踪；</li>
+<li>同优先级再按 star 总数从高到低；</li>
+<li>同一 GitHub「This week」近 7 天内，更早日报已出现过的仓库不再入选；同日各子方向之间也不重复。</li>
+</ol>
+<h2>影像与相机形态</h2>
+<ul>
+<li>
+<p><strong>综合</strong>：<a href="https://github.com/ai4ce/insta360_ros_driver">ai4ce/insta360_ros_driver</a> · 269 star · 持续跟踪<br>这是一个面向 ROS 环境的 Insta360 相机驱动，用于实时采集、处理并发布相机图像。它主要服务于在 ROS2 Humble（Ubuntu 22.04）下使用 Insta360 X2、X3 相机的研究者，支持 3840×1920 至 1920×960 四种 30 FPS 分辨率。使用前需申请 Insta360 SDK 并安装相应头文件与库，同时将相机设为双镜头模式和 Android USB 模式，并通过 udev 配置解决 USB 访问权限问题。</p>
+</li>
+<li>
+<p><strong>电子</strong>：<a href="https://github.com/Camemake/ROCKCHIP_MIPI_CAMERAS">Camemake/ROCKCHIP_MIPI_CAMERAS</a> · 1 star · 首次收录<br>这是面向 Rockchip 平台的 Camemake MIPI CSI-2 摄像头模块开源 Linux 驱动仓库，用 C 语言编写，已在 Luckfox Aura（RV1126B，CSI1 接口）上实测，覆盖 GC4023、HM2170、OX05B1S、IMX908、SC450AI、IMX675、IMX586 等模块，并给出各模块的分辨率、RAW 格式、lane 数、I2C 地址与链路速率。它主要解决这些模块在 Rockchip 板卡上的驱动适配与出流验证问题，供需要在 Rockchip 上复用传感器配置的研究者使用；附带浏览器实时预览用于确认传感器正在出流，而非完整色彩处理流程。其他 Rockchip 板卡可复用传感器设置，但需把 overlay 指向本板自己的摄像头接口；MIRA220 为同 SoC 的独立测试驱动，不来自该 Aura CSI1 测试。</p>
+</li>
+<li>
+<p><strong>机械</strong>：<a href="https://github.com/mzahana/siyi_sdk">mzahana/siyi_sdk</a> · 135 star · 首次收录<br>这是 SIYI 相机云台系统的 Python 版 SDK（Legacy 版本），面向需要在 PC 或机载计算机上通过 UDP 与相机云台通信的研究者，提供云台控制、消息封装与 CRC 校验等基础能力，并附带测试脚本和 Tkinter 图形界面示例。仓库还给出基于 OpenCV、Gstreamer 的视频流接收示例以及向 RTMP 服务器推流的示例，README 同时提示已有异步原生的 siyi-sdk-v2 分支可供选用。</p>
+</li>
+<li>
+<p><strong>算法</strong>：<a href="https://github.com/worldbench/awesome-event-camera-vision">worldbench/awesome-event-camera-vision</a> · 11 star · 持续跟踪<br>这是面向事件相机视觉研究的综述仓库，以 TeX 撰写，围绕“大模型时代的事件相机视觉”梳理该领域的研究脉络。它主要服务于希望快速了解事件相机感知与重建方向的研究者，目录覆盖目标检测、语义分割、深度与光流估计、目标跟踪、动作识别与姿态估计，以及事件到视频重建等主题，并按 CNN/RNN/图方法、Transformer/注意力、SNN 等路线细分。</p>
+</li>
+</ul>
+<h2>视觉、世界模型与运控</h2>
+<ul>
+<li>
+<p><strong>世界模型</strong>：<a href="https://github.com/nicklashansen/tdmpc2">nicklashansen/tdmpc2</a> · 984 star · 首次收录<br>该仓库是论文《TD-MPC2: Scalable, Robust World Models for Continuous Control》的官方 Python 实现，提供单任务在线强化学习与多任务离线强化学习智能体的训练和评估代码。它面向连续控制领域的模型强化学习研究，用一套超参数覆盖多个领域的 104 个任务，并支持训练单个 3.17 亿参数智能体完成跨领域、跨本体和跨动作空间的 80 个任务。代码支持状态和像素观测，附带 300 多个模型检查点及 30 任务、80 任务数据集，最新版本还新增了可通过 episodic=true 启用的回合制任务支持。</p>
+</li>
+<li>
+<p><strong>视觉运控</strong>：<a href="https://github.com/starVLA/starVLA">starVLA/starVLA</a> · 3839 star · 持续跟踪<br>StarVLA 是一个面向通用机器人研究的开源视觉-语言-动作（VLA）模型开发代码库，采用类似乐高的模块化设计，将模型、数据、训练器、配置和评估等功能组件按自顶向下、高内聚低耦合的原则分离，支持即插即用、快速原型开发和独立调试。它旨在为研究者提供集成与探索前沿 VLA 技术的平台，并作为 StarVLA、StarVLA-α 和 VLAct 等团队工作的官方实现。</p>
+</li>
+</ul>
+<h3>视觉算法</h3>
+<ul>
+<li>
+<p><strong>理解</strong>：<a href="https://github.com/facebookresearch/pytorchvideo">facebookresearch/pytorchvideo</a> · 3571 star · 持续跟踪<br>PyTorchVideo 是 Facebook Research 基于 PyTorch 开发的深度学习库，面向视频理解研究，提供可复用、模块化且高效的组件以加速相关研究。它涵盖视频模型、视频数据集和视频专用变换等组件，并附带可复现的模型库，包含多种预训练视频模型及其对应基准。材料还展示了基于该库的 X3D 模型在手机上约 8 倍于实时的运行表现，以及 SlowFast 模型用于视频动作检测的示例。</p>
+</li>
+<li>
+<p><strong>生成</strong>：<a href="https://github.com/WeChatCV/Wan-Alpha">WeChatCV/Wan-Alpha</a> · 423 star · 首次收录<br>Wan-Alpha 是面向带 Alpha 通道高质量文本到视频生成的研究仓库，基于 Wan2.1-14B-T2V 适配权重与推理代码，提供 v1.0 和 v2.0 模型及 VAE 检查点。它主要解决视频生成中稳定透明度的合成问题，通过可移位 RGB-A 分布学习器（Shiftable RGB-A Distribution Learner）支持半透明物体、发光效果和发丝等细粒度透明细节的渲染。仓库还开源了 VAE 与 T2V 训练代码、训练数据集，并发布 Wan-Alpha-I2V 图生视频模型权重。</p>
+</li>
+</ul>
+<h2>3D 与电子设计</h2>
+<ul>
+<li><strong>打印与建模</strong>：<a href="https://github.com/Pan-Chera/Multi-Agent-CAD">Pan-Chera/Multi-Agent-CAD</a> · 1043 star · 持续跟踪<br>MAC 是一个基于 Python 的解耦多智能体框架，用于从自然语言生成可编辑的 CAD 零件与多零件装配体，面向需要将设计简述转化为工程几何的研究者与设计流程。它通过约束测试时计算（constrained test-time compute）组织规划与配合、零件生成与修复、独立 Judge 校验等环节，并支持装配、验证及导出供下游检查与仿真使用的产物。该仓库在原有单零件 Text-to-CAD 工作流基础上，新增了视觉验证、独立 Judge 与实验性多零件装配生成能力。</li>
+</ul>
+<h2>量化交易</h2>
+<ul>
+<li><strong>综合</strong>：<a href="https://github.com/gbeced/basana">gbeced/basana</a> · 871 star · 首次收录<br>Basana 是一个用 Python 编写的异步、事件驱动的算法交易框架，重点面向加密货币交易场景。它主要解决策略在投入真实资金前的验证与实盘接入问题，提供回测交易所，并支持通过 Binance、Bitstamp 及 CCXT 集成接入 100 多家加密货币交易所进行实盘交易。其关键技术能力包括异步 I/O 与事件驱动架构，以及基于 REST 快照和 WebSocket 增量持续同步并定期校验的订单簿镜像示例。</li>
+</ul>
+        </div>
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Ravensea | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
