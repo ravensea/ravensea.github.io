@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Ravensea">
+<title>GitHub 趋势日报 2026-10-22 | RAVENSEA HOME</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <script src="/js/tocbot.min.js"></script>
+<meta name="generator" content="trends-tracking"></head>
+
+<body>
+    <script>
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+            } else {
+                pagebody.classList.remove('dark-theme');
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">RAVENSEA HOME</a></div>
+            <div class="menu navbar-right">
+                    <a class="menu-item active" href="/trends">Trends</a>
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">RAVENSEA HOME</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                    <a class="menu-item active" href="/trends">Trends</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">GitHub 趋势日报 2026-10-22</h1>
+                <div class="post-meta">
+                        Author: <a itemprop="author" rel="author" href="/">Ravensea</a>
+                        <span class="post-time">
+                        Date: <a href="#">2026年10月22日</a>
+                        </span>
+                        <span class="post-category">
+                    Category:
+                                <a href="/trends/">Trends</a>
+                        </span>
+                </div>
+        </header>
+
+        <div class="post-content">
+<p>每个子方向只保留一项代表仓库，按下列优先级挑选：</p>
+<ol>
+<li>已出现在 GitHub 全球「今日」趋势榜的优先；</li>
+<li>其次看本跟踪器状态：首次收录 &gt; 显著涨星 &gt; 持续跟踪；</li>
+<li>同优先级再按 star 总数从高到低；</li>
+<li>同一 GitHub「This week」近 7 天内，更早日报已出现过的仓库不再入选；同日各子方向之间也不重复。</li>
+</ol>
+<h2>影像与相机形态</h2>
+<ul>
+<li>
+<p><strong>综合</strong>：<a href="https://github.com/Insta360-Research-Team/GGPS">Insta360-Research-Team/GGPS</a> · 44 star · 首次收录<br>GGPS 是 Insta360 Research 团队提出的全景户外重建项目，对应论文《Geometry and Gradient-based Partitioning for Panoramic Outdoor Reconstruction》，代码以 Python 实现。它面向大尺度户外场景的三维重建，解决等距柱状投影全景图像因全向可见性导致现有基于局部相机视锥的分块策略失效、分块优化退化为全局训练的问题。其核心是几何与梯度驱动的分区策略 G²PS：粗阶段借助天空球建模与全景单目深度监督获得可靠几何，精化阶段利用视差驱动的不确定性构建自适应包围体，并以基于梯度的重要性评分分配相机；项目还构建了首个大规模全景户外场景重建基准 Pano360。</p>
+</li>
+<li>
+<p><strong>电子</strong>：<a href="https://github.com/ChaitanyaG26/The-Spider-Crab-and-MAST-CAM">ChaitanyaG26/The-Spider-Crab-and-MAST-CAM</a> · 1 star · 首次收录<br>这是一个以“毅力号”为粗略原型的巡视器项目，采用带差速杆的摇臂转向架悬挂和围绕STS-3215舵机设计的更新版无RASSOR机构，并配有相机模块。它面向研究者与制作者，旨在实现目标检测与避障（使用RPi AI相机和US-100传感器）、远程控制以及借助板载GPS的自主行驶，可用于废墟/不稳定地形救援或野火后BAER评估拍照等场景。该构建不含PCB、采用无焊接方式，整车约4.5 kg，材料还提供了BOM、打印、Pi设置、接线与装配文档。</p>
+</li>
+<li>
+<p><strong>机械</strong>：<a href="https://github.com/FerdiCildiz/pocket-plus">FerdiCildiz/pocket-plus</a> · 12 star · 持续跟踪<br>Pocket+ 是一款免费的 macOS 应用，用于将 DJI Osmo Pocket 2、3、4 或 4P 变成可由 Mac 控制的桌面摄像头，支持录制、拍照、云台控制、变焦和人脸追踪。它面向需要从 Mac 端操控 Osmo Pocket 的用户，免费版提供实时预览、H.264/HEVC 录制、1080p 录制、云台摇杆、变焦快捷键、人脸追踪、网格与水平参考线以及音频和电量信息；Pro 版额外解锁 4K 录制、场景保存与快速切换、自动构图、竖屏视频、LUT 色彩外观、广角镜头校正、重连后回到上次位置以及预览区缩放与瞄准等能力。应用要求 macOS 14 Sonoma 或更高版本，设备需以 USB-C 连接并设为 Webcam 模式。</p>
+</li>
+<li>
+<p><strong>算法</strong>：<a href="https://github.com/afauzan-885/Pixel-Refine">afauzan-885/Pixel-Refine</a> · 2 star · 持续跟踪<br>Pixel Refine 是一个用 Perl 编写的计算摄影工具，通过多帧融合与对齐算法降低图像噪声并增强细节，旨在弥合单反/无反相机与现代智能手机计算摄影功能之间的差距。它面向需要改善老款手机原厂相机处理效果或替代已停更工具的研究者与用户，支持 JPG、TIFF、PNG 及多种 RAW 格式（RAW 输出暂不支持 DNG 导出）。其对齐算法包括 AKAZE、ORB 和基于深度学习的 LightGlue，降噪提供平均、中值及基于像素相似性的自定义方法，并含暂时禁用的插值超分辨率。</p>
+</li>
+</ul>
+<h2>视觉、世界模型与运控</h2>
+<ul>
+<li>
+<p><strong>世界模型</strong>：<a href="https://github.com/NVlabs/LongLive">NVlabs/LongLive</a> · 2821 star · 持续跟踪<br>NVlabs/LongLive 是 NVIDIA 面向长视频生成、世界模型与具身世界动作模型的研究基础设施，仓库按项目分目录组织，各项目自带代码、文档与模型权重。它主要服务于需要训练或部署长视频生成模型、以及在 YAM、Franka、Unitree G1 等平台上训练评估机器人策略的研究者。关键技术能力包括：Long-WAM 的长上下文世界动作建模，LongLive-Plug 的一次性蒸馏并跨下游模型复用，LongLive2.0 的 NVFP4 量化与序列并行训练推理，以及 LongLive1.0 的实时交互式长视频生成。</p>
+</li>
+<li>
+<p><strong>视觉运控</strong>：<a href="https://github.com/HCPLab-SYSU/Embodied_AI_Paper_List">HCPLab-SYSU/Embodied_AI_Paper_List</a> · 2190 star · 首次收录<br>这是中山大学HCP Lab与鹏城实验室维护的具身智能论文列表与资源仓库，配套其发表于IEEE/ASME Transactions on Mechatronics 2025的综述《Aligning Cyber Space with Physical World: A Comprehensive Survey on Embodied AI》。该仓库面向具身智能方向的研究者，汇总代表性具身机器人与仿真器工作，并围绕具身感知、具身交互、具身智能体和仿真到现实迁移四个研究目标整理前沿方法、范式与数据集，同时探讨多模态大模型与世界模型在虚拟和真实具身智能体中的作用。仓库还提供综述PDF与arXiv链接，并欢迎同行通过issue、邮件或pull request提出改进建议。</p>
+</li>
+</ul>
+<h3>视觉算法</h3>
+<ul>
+<li>
+<p><strong>理解</strong>：<a href="https://github.com/thunderbolt215/UniPercept">thunderbolt215/UniPercept</a> · 173 star · 首次收录<br>UniPercept 是一个面向图像感知层面理解的研究项目（ICML 2026 Spotlight），旨在将美学、质量、结构与纹理四个维度的图像理解统一到同一框架中。它主要服务于需要细粒度感知评估与理解的研究者，并提供配套的 UniPercept-Bench 基准以及可通过 PyPI 安装的 unipercept-reward 组件。</p>
+</li>
+<li>
+<p><strong>生成</strong>：<a href="https://github.com/aws-samples/amazon-sagemaker-generativeai">aws-samples/amazon-sagemaker-generativeai</a> · 220 star · 首次收录<br>这是一个基于 Amazon SageMaker AI 的生成式 AI 工作流示例仓库，以 Jupyter Notebook 形式提供从基础概念到企业级部署的端到端实现，覆盖文本生成、文生图与提示工程等场景。它主要面向希望在 SageMaker 上训练、微调和部署生成式 AI 模型的研究者与开发者，提供配置驱动的微调配方，支持 20 多个基础模型以及 QLoRA、Spectrum、全量微调三种策略，并自动处理数据格式化、适配器合并与评估。仓库还包含分布式训练（DDP、FSDP、DeepSpeed ZeRO-3）、强化学习（DPO、GRPO）、RAG、智能体与 MLOps 自动化等深入实践。</p>
+</li>
+</ul>
+<h2>3D 与电子设计</h2>
+<ul>
+<li><strong>打印与建模</strong>：<a href="https://github.com/KittyCAD/text-to-cad-blender-addon">KittyCAD/text-to-cad-blender-addon</a> · 37 star · 持续跟踪<br>这是一个用于在 Blender 中调用 Zoo Text-to-CAD API 的 Python 插件，用户通过文本提示、输出格式和输出目录三项输入生成并下载 CAD 模型。插件需配置 KITTYCAD_API_TOKEN 环境变量，可通过快捷键 ctrl+shift+T 或对象模式下的 Add 菜单启动，处理提示时可能耗时数分钟，需在仪表盘查看进度。README 说明其更适合描述单一几何对象而非复杂装配体，并建议提示尽量明确具体。</li>
+</ul>
+<h2>量化交易</h2>
+<ul>
+<li><strong>综合</strong>：<a href="https://github.com/QuantConnect/Lean">QuantConnect/Lean</a> · 22138 star · 持续跟踪<br>QuantConnect/Lean 是一个用 C# 编写、支持 Python 与 C# 的事件驱动算法交易引擎，面向量化研究者与交易策略开发者。它提供开箱即用的另类数据与实盘交易支持，并采用模块化设计，各组件可插拔、可定制，且为主要插件点附带模型。</li>
+</ul>
+        </div>
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Ravensea | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
