@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Ravensea">
+<title>GitHub 趋势日报 2026-10-23 | RAVENSEA HOME</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <script src="/js/tocbot.min.js"></script>
+<meta name="generator" content="trends-tracking"></head>
+
+<body>
+    <script>
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+            } else {
+                pagebody.classList.remove('dark-theme');
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">RAVENSEA HOME</a></div>
+            <div class="menu navbar-right">
+                    <a class="menu-item active" href="/trends">Trends</a>
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">RAVENSEA HOME</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                    <a class="menu-item active" href="/trends">Trends</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">GitHub 趋势日报 2026-10-23</h1>
+                <div class="post-meta">
+                        Author: <a itemprop="author" rel="author" href="/">Ravensea</a>
+                        <span class="post-time">
+                        Date: <a href="#">2026年10月23日</a>
+                        </span>
+                        <span class="post-category">
+                    Category:
+                                <a href="/trends/">Trends</a>
+                        </span>
+                </div>
+        </header>
+
+        <div class="post-content">
+<p>每个子方向只保留一项代表仓库，按下列优先级挑选：</p>
+<ol>
+<li>已出现在 GitHub 全球「今日」趋势榜的优先；</li>
+<li>其次看本跟踪器状态：首次收录 &gt; 显著涨星 &gt; 持续跟踪；</li>
+<li>同优先级再按 star 总数从高到低；</li>
+<li>同一 GitHub「This week」近 7 天内，更早日报已出现过的仓库不再入选；同日各子方向之间也不重复。</li>
+</ol>
+<h2>影像与相机形态</h2>
+<ul>
+<li>
+<p><strong>综合</strong>：<a href="https://github.com/vulture-s/arkiv">vulture-s/arkiv</a> · 78 star · 持续跟踪<br>arkiv 是一个本地优先的媒体资产管理器，面向个人 DIT 和小型团队，用于解决消费级 DAM 无法读取索尼 XAVC 侧车文件、FX 系列及 Insta360/GoPro Max 等 360 素材元数据的问题。它通过 FFmpeg、ChromaDB 和本地 LLM 为素材生成转录、视觉标签、氛围、能量与剪辑位置等 AI 元数据，支持中、日、英多语言语义搜索，并提供 Resolve 插件、EDL/FCPXML 导出及 API/MCP 接口。</p>
+</li>
+<li>
+<p><strong>电子</strong>：<a href="https://github.com/christianrauch/camera_ros">christianrauch/camera_ros</a> · 171 star · 持续跟踪<br>这是一个基于 C++ 的 ROS 2 节点，通过 libcamera 为多种相机提供支持，包括 V4L2 设备和树莓派相机模块。它主要面向需要在 ROS 2 环境中接入 libcamera 兼容相机的开发者与研究者，解决相机接入与驱动适配问题。该节点依赖 libcamera 0.1 或更高版本，可通过 ROS 二进制包安装，也支持从源码构建，并可与 libcamera 在 colcon 工作区中一起编译。</p>
+</li>
+</ul>
+<h2>视觉、世界模型与运控</h2>
+<ul>
+<li>
+<p><strong>世界模型</strong>：<a href="https://github.com/thu-ml/Motus">thu-ml/Motus</a> · 1313 star · 持续跟踪<br>Motus 是 thu-ml 发布的官方 Python 代码库，对应论文《Motus: A Unified Latent Action World Model》，面向机器人学习与世界模型研究。它提出统一的潜在动作世界模型，通过 Mixture-of-Transformers 架构整合理解、动作与视频生成三类专家，并借助 UniDiffuser 式调度器在世界模型、视觉-语言-动作模型、逆动力学模型、视频生成模型和视频-动作联合预测模型之间灵活切换。其关键技术还包括利用光流学习潜在动作，以及采用三阶段训练流程和六层数据金字塔，以支持大规模动作预训练。</p>
+</li>
+<li>
+<p><strong>视觉运控</strong>：<a href="https://github.com/dexmal/dexbotic">dexmal/dexbotic</a> · 3228 star · 首次收录<br>Dexbotic 是一个基于 PyTorch 的开源视觉-语言-动作（VLA）开发工具箱，面向具身智能研究，提供预训练、微调、推理与评估的统一流程，并支持 π0、CogACT、OFT、MemVLA 等主流策略。它通过分层配置、工厂注册与入口分发的模块化架构，便于修改配置、更换模型或添加任务，同时提供面向 π0、CogACT 等算法的优化预训练模型。该工具箱还支持云端与本地训练，并为 UR5、Franka、ALOHA 等机器人提供统一训练数据格式和部署脚本。</p>
+</li>
+</ul>
+<h3>视觉算法</h3>
+<ul>
+<li>
+<p><strong>理解</strong>：<a href="https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization">NVIDIA-AI-Blueprints/video-search-and-summarization</a> · 1941 star · 持续跟踪<br>这是 NVIDIA 面向视频搜索与摘要的 AI Blueprint（VSS），一个基于 Python 的 GPU 加速参考架构，用于构建能对实时或录制视频进行搜索、分析、摘要与推理的视频分析智能体。它面向需要自然语言视频检索、视觉问答、告警核验、片段提取和长视频摘要的研究与开发场景，结合 Cosmos 等视觉语言模型、Nemotron 等大语言模型、RAG 与 NVIDIA NIM 微服务，并按实时视频智能、下游分析、智能体与离线处理三部分组织处理流程。</p>
+</li>
+<li>
+<p><strong>生成</strong>：<a href="https://github.com/Zeying-Gong/FLUX">Zeying-Gong/FLUX</a> · 32 star · 首次收录<br>FLUX 是论文《FLUX: Accelerating Cross-Embodiment Generative Navigation Policies via Rectified Flow and Static-to-Dynamic Learning》（IROS'26）的官方 Python 代码仓库，面向跨平台（轮式、四足、人形机器人）导航策略研究。它提出首个基于流的统一跨具身导航策略，通过静态到动态课程学习与整流流将概率流线性化，实现高效直线轨迹生成，并支持无需微调的零样本仿真到现实迁移。仓库提供 Docker 环境配置，并标注支持 IsaacSim。</p>
+</li>
+</ul>
+<h2>3D 与电子设计</h2>
+<ul>
+<li><strong>打印与建模</strong>：<a href="https://github.com/nanassound/mnft">nanassound/mnft</a> · 30 star · 持续跟踪<br>mnft 是使用 Elixir 构建的文本到 CAD 工具，核心 mnft_cad 将自然语言描述经多提供商 LLM 生成 CAD 代码，再由受保护的引擎执行，输出 STL、STEP 文件和可在浏览器中旋转查看的 3D 预览。它主要面向希望用提示词快速生成可加工零件模型的研究者与开发者，提供可插拔的 build123d、OpenSCAD 引擎和可插拔存储，并以纯 Elixir/OTP 实现、不依赖 Web 框架、认证层或数据库服务器。仓库还包含 Phoenix 参考应用、无头参考实现，以及带静态检查、rlimits 和硬性时间限制的 Python cad_worker 运行时。</li>
+</ul>
+<h2>量化交易</h2>
+<ul>
+<li><strong>综合</strong>：<a href="https://github.com/billpwchan/futu_algo">billpwchan/futu_algo</a> · 610 star · 首次收录<br>futu_algo 是一个基于富途 OpenAPI 的 Python 港股量化交易系统，面向需要本地化数据与策略研究的量化研究者。它提供本地 K 线 Parquet 缓存、通达信风格指标策略、按港股真实费用与港交所价位表滑点计算的回测，以及逐笔与回测一致的模拟盘引擎，并支持富途服务器端选股、邮件与 Telegram 通知和网页控制台操作。</li>
+</ul>
+        </div>
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Ravensea | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
