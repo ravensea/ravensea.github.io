@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Ravensea">
+<title>GitHub 趋势日报 2026-10-24 | RAVENSEA HOME</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <script src="/js/tocbot.min.js"></script>
+<meta name="generator" content="trends-tracking"></head>
+
+<body>
+    <script>
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+            } else {
+                pagebody.classList.remove('dark-theme');
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">RAVENSEA HOME</a></div>
+            <div class="menu navbar-right">
+                    <a class="menu-item active" href="/trends">Trends</a>
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">RAVENSEA HOME</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                    <a class="menu-item active" href="/trends">Trends</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">GitHub 趋势日报 2026-10-24</h1>
+                <div class="post-meta">
+                        Author: <a itemprop="author" rel="author" href="/">Ravensea</a>
+                        <span class="post-time">
+                        Date: <a href="#">2026年10月24日</a>
+                        </span>
+                        <span class="post-category">
+                    Category:
+                                <a href="/trends/">Trends</a>
+                        </span>
+                </div>
+        </header>
+
+        <div class="post-content">
+<p>每个子方向只保留一项代表仓库，按下列优先级挑选：</p>
+<ol>
+<li>已出现在 GitHub 全球「今日」趋势榜的优先；</li>
+<li>其次看本跟踪器状态：首次收录 &gt; 显著涨星 &gt; 持续跟踪；</li>
+<li>同优先级再按 star 总数从高到低；</li>
+<li>同一 GitHub「This week」近 7 天内，更早日报已出现过的仓库不再入选；同日各子方向之间也不重复。</li>
+</ol>
+<h2>影像与相机形态</h2>
+<ul>
+<li>
+<p><strong>综合</strong>：<a href="https://github.com/93won/360_visual_inertial_odometry">93won/360_visual_inertial_odometry</a> · 184 star · 首次收录<br>该仓库是面向360°全景相机的视觉-惯性里程计项目，现已成为OpenVIO框架的一部分，后者支持360°等距柱状投影、针孔和鱼眼相机。原代码保留在本仓库历史记录中，建议使用者转向OpenVIO。</p>
+</li>
+<li>
+<p><strong>电子</strong>：<a href="https://github.com/AhoyaVR/VRCSquish">AhoyaVR/VRCSquish</a> · 1 star · 首次收录<br>VRCSquish 是面向 Poiyomi 着色器的深度相机模块，用 C# 编写，允许在虚拟形象上设置“Squish Zones”，使其在好友触碰时产生下压效果。它主要服务于使用 Poiyomi 的 VRChat 形象作者，通过工具栏 Ahoya -&gt; VRCSquish 入口开始配置。材料给出的兼容范围包括 Poiyomi Pro 9.2.6 已知可用、多个 Pro 9.0.x 至 10.0.x 版本及 Free v10.0.20+ 可能可用，但低于 v10.0.20 的非 Pro 版本不受支持。</p>
+</li>
+</ul>
+<h2>视觉、世界模型与运控</h2>
+<ul>
+<li>
+<p><strong>世界模型</strong>：<a href="https://github.com/OpenDCAI/OpenWorldLib">OpenDCAI/OpenWorldLib</a> · 887 star · 持续跟踪<br>OpenWorldLib 是一个面向先进世界模型（World Models）的统一代码库，采用 Python 实现，旨在为世界模型相关研究提供统一的代码基础。其扩展仓库覆盖 3D 生成、VLA 与模拟器等方向，README 展示的示例涉及 Matrix-Game-2、Hunyuan-GameCraft、Hunyuan-Worldplay、Lingbot-World、YUME-1.5 与 FlashWorld 等模型。材料未进一步说明具体技术架构与能力细节。</p>
+</li>
+<li>
+<p><strong>视觉运控</strong>：<a href="https://github.com/robfiras/loco-mujoco">robfiras/loco-mujoco</a> · 1473 star · 首次收录<br>LocoMuJoCo 是一个基于 MuJoCo 的模仿学习基准，面向全身控制研究，提供四足、人形及（肌肉）骨骼人体模型等多类环境，并附带每个模型超过 22,000 条的动作捕捉数据集。它支持 MuJoCo 单环境与 MJX/MJWarp 并行仿真，内置 PPO、GAIL、AMP、DeepMimic 等单文件 JAX 算法，以及机器人间动作重定向、轨迹比较指标、Gymnasium 接口和域与地形随机化，也可通过自定义奖励函数用于纯强化学习。</p>
+</li>
+</ul>
+<h3>视觉算法</h3>
+<ul>
+<li>
+<p><strong>理解</strong>：<a href="https://github.com/yunlong10/BVB">yunlong10/BVB</a> · 114 star · 首次收录<br>BVB（Blender-VideoBench）是一个用 Python 实现的基准，要求智能体把真实世界视频重建为 Blender 动画场景，以此检验其是否真正理解视频内容。所有智能体都通过统一的轻量框架 Mini-BVB，在同一沙箱和相同成本限制下完成重建，且不允许使用外部素材库，从而保证比较公平。</p>
+</li>
+<li>
+<p><strong>生成</strong>：<a href="https://github.com/antirez/iris.c">antirez/iris.c</a> · 2003 star · 首次收录<br>Iris 是一个完全用 C 实现、除 C 标准库外无外部依赖的文生图推理管线，基于开放权重的扩散 Transformer 模型从文本提示生成图像，可选启用 MPS、CUDA、ROCm 与 BLAS 加速。它支持 FLUX.2 Klein（4B/9B 的蒸馏版与 base 版）、Z-Image-Turbo 6B 以及 FLUX.3 Image Klein 5.6B 等模型家族，并提供文生图、图像编辑与多参考图生成能力，模型可全部在 Metal、CUDA 和 ROCm 后端上运行于 GPU。</p>
+</li>
+</ul>
+<h2>3D 与电子设计</h2>
+<ul>
+<li><strong>打印与建模</strong>：<a href="https://github.com/Masoudjafaripour/Vibe_CADing">Masoudjafaripour/Vibe_CADing</a> · 13 star · 持续跟踪<br>Vibe-CADing 是一个面向文本到 CAD 设计流程的 Python 仓库，核心思路是“几何即代码”：由大语言模型把文本提示写成 CadQuery/build123d 程序或 GLSL 符号距离函数，执行后把错误回传给模型修复。它主要服务于需要从文本生成、检索和复用三维 CAD 部件的研究者，提供体素扩散/VAE/VQ-VAE/自回归生成、PixelCNN 风格二维 CAD 布局生成、基于开源 CAD 库的检索增强生成，以及几何反馈与可制造性评分。其亮点是 Planner/Retriever/Generator/Critic 多智能体编排形成的迭代反馈工作流，并支持 B-rep/STEP、GPU 渲染隐式曲面和文本到三维角色动画等可运行路径。</li>
+</ul>
+<h2>量化交易</h2>
+<ul>
+<li><strong>综合</strong>：<a href="https://github.com/chronoxor/CppTrader">chronoxor/CppTrader</a> · 1086 star · 首次收录<br>CppTrader 是一套用 C++ 编写的高性能交易平台组件库，主要面向需要构建低延迟交易系统的研究者与开发者，提供超快撮合引擎、订单簿处理器和 NASDAQ ITCH 消息处理器。项目强调跨平台支持（Linux、MacOS、Windows），并附带基准测试、示例与测试代码，便于评估和集成。</li>
+</ul>
+        </div>
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Ravensea | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
