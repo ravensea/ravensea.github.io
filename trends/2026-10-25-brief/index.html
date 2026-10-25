@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Ravensea">
+<title>GitHub 趋势日报 2026-10-25 | RAVENSEA HOME</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <script src="/js/tocbot.min.js"></script>
+<meta name="generator" content="trends-tracking"></head>
+
+<body>
+    <script>
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+            } else {
+                pagebody.classList.remove('dark-theme');
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">RAVENSEA HOME</a></div>
+            <div class="menu navbar-right">
+                    <a class="menu-item active" href="/trends">Trends</a>
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">RAVENSEA HOME</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                    <a class="menu-item active" href="/trends">Trends</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">GitHub 趋势日报 2026-10-25</h1>
+                <div class="post-meta">
+                        Author: <a itemprop="author" rel="author" href="/">Ravensea</a>
+                        <span class="post-time">
+                        Date: <a href="#">2026年10月25日</a>
+                        </span>
+                        <span class="post-category">
+                    Category:
+                                <a href="/trends/">Trends</a>
+                        </span>
+                </div>
+        </header>
+
+        <div class="post-content">
+<p>每个子方向只保留一项代表仓库，按下列优先级挑选：</p>
+<ol>
+<li>已出现在 GitHub 全球「今日」趋势榜的优先；</li>
+<li>其次看本跟踪器状态：首次收录 &gt; 显著涨星 &gt; 持续跟踪；</li>
+<li>同优先级再按 star 总数从高到低；</li>
+<li>同一 GitHub「This week」近 7 天内，更早日报已出现过的仓库不再入选；同日各子方向之间也不重复。</li>
+</ol>
+<h2>影像与相机形态</h2>
+<ul>
+<li>
+<p><strong>综合</strong>：<a href="https://github.com/derrickyau9/insta360-luna-ultra-reverse-engineering">derrickyau9/insta360-luna-ultra-reverse-engineering</a> · 23 star · 持续跟踪<br>该仓库是面向 Insta360 Luna Ultra（项目代号 z03，已在固件 1.0.47 上测试）开发者环境的逆向工程资料与工具集，汇集设备配置说明、持久化 root SSH 与持久化 root ADB 服务的实现方法。它主要解决在相机上获取并长期保持 root 访问的问题，提供通过开发者模式经 Wi-Fi 获取临时 root shell 的无依赖脚本，以及开机自动以 root 启动 adbd、开放 5555 端口无线 ADB 并保留 USB 大容量存储功能的方案。材料还记录了仅密钥认证的 root SSH 安装方式，并提示无线 ADB 认证被禁用、应将相关服务限制在可信相机 Wi-Fi 网络内使用。</p>
+</li>
+<li>
+<p><strong>电子</strong>：<a href="https://github.com/heysalad-ai/Food_Assistant">heysalad-ai/Food_Assistant</a> · 1 star · 首次收录<br>这是一个基于 ESP32-S3 AI 摄像头模块的开源食物助手，采用 C++ 开发，集成摄像头、音频与 AI 能力。它面向需要语音交互与食物识别的使用者，提供按键说话录音、OV3660 摄像头拍照识别、PDM 麦克风与 I2S 扬声器音频输入输出，以及响应式网页界面和 WiFi 配置门户。设备还可接入 OpenAI Realtime API 与 ElevenLabs Conversational AI 实现 AI 语音通话。</p>
+</li>
+<li>
+<p><strong>算法</strong>：<a href="https://github.com/risehgal/180">risehgal/180</a> · 1 star · 首次收录<br>这是加州大学伯克利分校 CS 180 计算机视觉与计算摄影入门课程的项目作品集，以 HTML 构建并发布为个人网页。仓库主要汇集作者在该课程中的项目成果，供课程学习记录与作品展示使用；材料未说明具体技术实现或能力亮点。</p>
+</li>
+</ul>
+<h2>视觉、世界模型与运控</h2>
+<ul>
+<li>
+<p><strong>世界模型</strong>：<a href="https://github.com/Gen-Verse/RSI-Anything">Gen-Verse/RSI-Anything</a> · 827 star · 持续跟踪<br>RSI-Anything 是一个领域通用的递归自我改进框架，基于 JEPA-Anything 构建，把世界模型预测与交互反馈连接成候选生成、预测引导选择、外部评估与学习的统一流程。它面向研究者，用于在代码修复、GUI 交互、实验室规划、反应优化和免疫科学等不同领域中，按“提出候选、预判后果、评估所选动作、保留改进”的同一循环迭代提升后续决策。</p>
+</li>
+<li>
+<p><strong>视觉运控</strong>：<a href="https://github.com/StanfordVL/BEHAVIOR-1K">StanfordVL/BEHAVIOR-1K</a> · 1777 star · 持续跟踪<br>BEHAVIOR-1K 是一个面向具身智能研究的综合仿真基准，用于在 1000 项日常家务活动中训练和评估智能体，任务涵盖清洁、烹饪与整理等，均选自真实人类时间使用调查和偏好研究。该仓库为单体式代码库，提供训练与评估所需的全部组件，并配有支持模块化安装的安装脚本，可按需只安装所需部分。</p>
+</li>
+</ul>
+<h3>视觉算法</h3>
+<ul>
+<li>
+<p><strong>理解</strong>：<a href="https://github.com/OpenMOSS/MOSS-VL">OpenMOSS/MOSS-VL</a> · 787 star · 持续跟踪<br>MOSS-VL 是 OpenMOSS 推出的开放权重 11B 参数模型系列，基于统一的 cross-attention 架构，面向长视频与实时视频理解。该系列包含三个模型：MOSS-VL-Realtime 支持在连续视频流上进行实时交互，可随时打断、即时作答并自主决定何时回应或继续观看；MOSS-VL-Instruct 面向离线场景，侧重复杂长视频理解与深入对话；MOSS-VL-Base 提供预训练基础，供继续预训练和下游微调使用。其关键特点是 Realtime 模型在持续到达的视频流上并行运行多模态感知与文本生成，区别于“先看完再回答”的离线范式。</p>
+</li>
+<li>
+<p><strong>生成</strong>：<a href="https://github.com/enricoros/big-AGI">enricoros/big-AGI</a> · 7151 star · 持续跟踪<br>Big-AGI 是一个用 TypeScript 编写的 AI 套件，基于先进模型提供 AI/AGI 功能，面向需要高级 AI 交互能力的研究者与开发者。它主要解决多模型对话与多模态 AI 使用需求，提供 AI 人格、AGI 函数、Beam 多模型聊天、文本生成图像、语音、响应流式传输、代码高亮与执行、PDF 导入以及面向开发者的预设等功能。该套件支持本地部署或云端部署。</p>
+</li>
+</ul>
+<h2>3D 与电子设计</h2>
+<p>今日无命中。</p>
+<h2>量化交易</h2>
+<ul>
+<li><strong>综合</strong>：<a href="https://github.com/OpenByteInc/QuantDinger">OpenByteInc/QuantDinger</a> · 13083 star · 持续跟踪<br>QuantDinger 是 Open Byte Inc. 开源的自托管 AI 交易操作系统，面向研究者与开发者，将交易想法转化为 Python 策略，并在同一套栈内完成回测、模拟交易、实盘执行与监控，覆盖加密货币、股票和外汇市场。其能力亮点包括 AI 研究、Agent 交易与 MCP 集成、Jev System One 集成，以及内置用户管理、计费、支付与结算的多租户交易 SaaS 搭建支持。</li>
+</ul>
+        </div>
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Ravensea | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
