@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Ravensea">
+<title>GitHub 趋势日报 2026-10-26 | RAVENSEA HOME</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <script src="/js/tocbot.min.js"></script>
+<meta name="generator" content="trends-tracking"></head>
+
+<body>
+    <script>
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+            } else {
+                pagebody.classList.remove('dark-theme');
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">RAVENSEA HOME</a></div>
+            <div class="menu navbar-right">
+                    <a class="menu-item active" href="/trends">Trends</a>
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">RAVENSEA HOME</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                    <a class="menu-item active" href="/trends">Trends</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">GitHub 趋势日报 2026-10-26</h1>
+                <div class="post-meta">
+                        Author: <a itemprop="author" rel="author" href="/">Ravensea</a>
+                        <span class="post-time">
+                        Date: <a href="#">2026年10月26日</a>
+                        </span>
+                        <span class="post-category">
+                    Category:
+                                <a href="/trends/">Trends</a>
+                        </span>
+                </div>
+        </header>
+
+        <div class="post-content">
+<p>每个子方向只保留一项代表仓库，按下列优先级挑选：</p>
+<ol>
+<li>已出现在 GitHub 全球「今日」趋势榜的优先；</li>
+<li>其次看本跟踪器状态：首次收录 &gt; 显著涨星 &gt; 持续跟踪；</li>
+<li>同优先级再按 star 总数从高到低；</li>
+<li>同一 GitHub「This week」近 7 天内，更早日报已出现过的仓库不再入选；同日各子方向之间也不重复。</li>
+</ol>
+<h2>影像与相机形态</h2>
+<ul>
+<li>
+<p><strong>综合</strong>：<a href="https://github.com/erik-sutton95/OpenPocketCine">erik-sutton95/OpenPocketCine</a> · 358 star · 持续跟踪<br>OpenPocketCine 是一个用 Swift 开发的开源 iOS 与 Android 现场监视器应用，面向使用 DJI Osmo Pocket 系列相机的拍摄者。它把专业示波器、曝光辅助、相机与云台控制、回放以及 LUT 导出等功能集成到手机上，作为外接现场监视工具使用。项目以 Apache 2.0 许可开源，并提供 iPhone/iPad 的 TestFlight 测试与 Android 测试版渠道。</p>
+</li>
+<li>
+<p><strong>电子</strong>：<a href="https://github.com/nh428/ULX3S-TFT-Display-Sobel-Object-Detection">nh428/ULX3S-TFT-Display-Sobel-Object-Detection</a> · 1 star · 首次收录<br>这是一个基于 Radiona ULX3S FPGA 的 Verilog 实时图像处理项目，连接 OVO7670 摄像头模块与 2.1 英寸 Newhaven TFT 显示屏，用于检测无人机、飞机、鸟类等飞行目标。系统对摄像头像素数据执行 Sobel 卷积边缘检测，并将结果图像输出到 TFT 显示；摄像头与显示屏分别采用 DVP/I2C 和 40 针接口，便于替换为同类模块。README 还给出了各处理阶段的近似延迟，其中光栅等待约 13–27 ms，是主要延迟来源。</p>
+</li>
+<li>
+<p><strong>机械</strong>：<a href="https://github.com/amirmxt/gimbal-bar">amirmxt/gimbal-bar</a> · 11 star · 首次收录<br>GimbalBar 是一个用 Swift 编写的 macOS 菜单栏应用，用于在 DJI Osmo Pocket 3 以 USB 摄像头模式连接时控制其云台，并提供实时预览。它通过 IOKit 向相机暴露的标准 UVC Pan/Tilt Absolute 控制发送请求，绕开 macOS 系统 UVC 驱动占用接口、libusb 无法直接操作的限制，支持拖动、方向按钮、5°/15°/30° 步进以及全局快捷键移动和回中。</p>
+</li>
+<li>
+<p><strong>算法</strong>：<a href="https://github.com/SensorsINI/jaer">SensorsINI/jaer</a> · 207 star · 持续跟踪<br>jAER 是一款用 Java 开发的全功能跨平台桌面应用，支持 Linux、Windows 和 macOS，用于连接并采集各大厂商的神经形态事件相机与硅耳蜗输出。它面向事件传感器研究者与开发者，提供高效的 USB 采集流水线、统一的 DVS 像素偏置调节以优化传感器设置，以及快速准确的去噪算法，并支持通过文档扩展新设备。</p>
+</li>
+</ul>
+<h2>视觉、世界模型与运控</h2>
+<ul>
+<li>
+<p><strong>世界模型</strong>：<a href="https://github.com/NVIDIA/cosmos">NVIDIA/cosmos</a> · 12146 star · 持续跟踪<br>NVIDIA Cosmos 是一个面向物理 AI 的开放平台，汇集世界基础模型、数据集与工具，供开发者构建机器人、自动驾驶和智能基础设施等应用。其 Cosmos 3 模型族强调在同一模型体系中完成感知、推理、仿真与行动，覆盖物理感知生成、世界场景迁移、动作策略、驾驶仿真和动作条件世界模型等能力。</p>
+</li>
+<li>
+<p><strong>视觉运控</strong>：<a href="https://github.com/Genesis-Embodied-AI/genesis-world">Genesis-Embodied-AI/genesis-world</a> · 30121 star · 持续跟踪<br>Genesis World 是一个面向通用机器人学与具身智能学习的 Python 仿真平台，为物理 AI 开发提供统一的仿真接口。它把多物理引擎（刚体、FEM、MPM、粒子及 uipc 等共享同一场景与状态）、照片级渲染器 Nyx 和跨平台编译器 Quadrants 整合在 Pythonic 接口之后，并支持从单机笔记本扩展到数据中心级 GPU，便于研究者阅读、扩展和嵌入研究代码。</p>
+</li>
+</ul>
+<h3>视觉算法</h3>
+<ul>
+<li>
+<p><strong>理解</strong>：<a href="https://github.com/BBBBchan/DeltaStreamer">BBBBchan/DeltaStreamer</a> · 88 star · 首次收录<br>DeltaStreamer 是一个用 Python 实现的面向流式视频理解的智能体（agentic）研究仓库，目标是让智能体在持续到达的视频流上实现更接近人类的在线理解。它主要服务于流式视频理解方向的研究者，并在 StreamingBench 与 OVOBench 等基准上提供评测入口；材料还提到基于它构建的直播陪伴应用 AI 同担（AI-Tongdan），具备持续观察、上下文问答与弹幕建议能力。</p>
+</li>
+<li>
+<p><strong>生成</strong>：<a href="https://github.com/genmoai/mochi">genmoai/mochi</a> · 3754 star · 持续跟踪<br>genmoai/mochi 是 Genmo 开源的视频生成模型仓库，以 Python 实现，提供 Mochi 1 preview 这一开放视频生成模型。它主要面向研究者与开发者，用于在 Apache 2.0 许可下开展视频生成研究与应用，初步评估中具备高保真运动和较强提示词遵循能力。仓库提供权重下载脚本、Gradio 界面与命令行生成入口、可编程 API，并支持 LoRA 微调及 ComfyUI 消费级 GPU 使用。</p>
+</li>
+</ul>
+<h2>3D 与电子设计</h2>
+<ul>
+<li><strong>打印与建模</strong>：<a href="https://github.com/earthtojake/text-to-cad">earthtojake/text-to-cad</a> · 23200 star · 持续跟踪<br>text-to-cad 是一个面向智能体（agent）的 Python 插件，为智能体提供本地生成 STEP、GLB、STL、3MF 等 3D 模型文件的工作流。它主要解决从文本到 CAD 模型的生成与后续工程处理问题，支持可制造性设计检查、工程图生成，并可对接 3D 打印、钣金和 CNC 加工服务。该插件兼容 Claude Code、Codex、Cursor、Gemini、Grok 等支持插件或 skills 框架的智能体，底层涉及 cadgen、build123d 与 Open CASCADE。</li>
+</ul>
+<h2>量化交易</h2>
+<ul>
+<li><strong>综合</strong>：<a href="https://github.com/jianweiweng05/qsx-strategy-score">jianweiweng05/qsx-strategy-score</a> · 931 star · 首次收录<br>qsx-strategy-score 是一个用 Python 编写的免费开源回测筛查工具，面向交易策略研究者，用于判断回测结果更像真实 alpha、市场 beta、运气，还是证据不足。它接收收益曲线、净值曲线或交易日志，提供 0–100 的 QSX 评分及历史路径初筛，并包含过拟合与“好得不像真的”检查、买入持有对比、随机择时检验和蒙特卡洛压力测试，可输出可分享的 PNG 评分卡。工具支持本地 CLI 与六种语言的本地化输出，另提供免费 Chrome 扩展和可选的 Overlay Preview；需注意平仓交易日志仅给出描述性统计，不计算账户分数或 Overlay。</li>
+</ul>
+        </div>
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Ravensea | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
