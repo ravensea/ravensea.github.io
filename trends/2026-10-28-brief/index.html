@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Ravensea">
+<title>GitHub 趋势日报 2026-10-28 | RAVENSEA HOME</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <script src="/js/tocbot.min.js"></script>
+<meta name="generator" content="trends-tracking"></head>
+
+<body>
+    <script>
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+            } else {
+                pagebody.classList.remove('dark-theme');
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">RAVENSEA HOME</a></div>
+            <div class="menu navbar-right">
+                    <a class="menu-item active" href="/trends">Trends</a>
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">RAVENSEA HOME</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                    <a class="menu-item active" href="/trends">Trends</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">GitHub 趋势日报 2026-10-28</h1>
+                <div class="post-meta">
+                        Author: <a itemprop="author" rel="author" href="/">Ravensea</a>
+                        <span class="post-time">
+                        Date: <a href="#">2026年10月28日</a>
+                        </span>
+                        <span class="post-category">
+                    Category:
+                                <a href="/trends/">Trends</a>
+                        </span>
+                </div>
+        </header>
+
+        <div class="post-content">
+<p>每个子方向只保留一项代表仓库，按下列优先级挑选：</p>
+<ol>
+<li>已出现在 GitHub 全球「今日」趋势榜的优先；</li>
+<li>其次看本跟踪器状态：首次收录 &gt; 显著涨星 &gt; 持续跟踪；</li>
+<li>同优先级再按 star 总数从高到低；</li>
+<li>同一 GitHub「This week」近 7 天内，更早日报已出现过的仓库不再入选；同日各子方向之间也不重复。</li>
+</ol>
+<h2>影像与相机形态</h2>
+<ul>
+<li>
+<p><strong>综合</strong>：<a href="https://github.com/MapMindAI/EasyGaussianSplatting">MapMindAI/EasyGaussianSplatting</a> · 14 star · 首次收录<br>EasyGaussianSplatting 是一个端到端流水线，用于把 Insta360 和 DJI 的 360° 全景素材转换为 Gaussian Splatting 重建结果。它主要面向需要处理全景视频的研究者，将每帧全景重投影为针孔立方体面组成的 rig，并用 SuperPoint、LightGlue 和 SALAD（经 EasyTensorRT 以 gRPC 提供）做特征匹配与全局 SfM。流程还包含重力水平校正、可选 GPS 对齐、人物与天空掩码、可选 DA3 深度、gsplat 训练以及 TSDF 网格和查看器输出，并支持单条命令驱动、断点续跑。</p>
+</li>
+<li>
+<p><strong>电子</strong>：<a href="https://github.com/veyeimaging/nvidia_jetson_veye_bsp">veyeimaging/nvidia_jetson_veye_bsp</a> · 56 star · 首次收录<br>该仓库是 VEYE 与 CS 系列摄像头模组面向 NVIDIA Jetson 平台的 BSP（板级支持包），使用 C 语言实现，覆盖 Jetson Nano、TX2、Xavier 与 Orin 等平台。它主要解决这些摄像头模组在 Jetson 平台上的驱动适配与集成问题，供需要在 Jetson 上接入 VEYE/CS 摄像头的开发者使用。</p>
+</li>
+<li>
+<p><strong>算法</strong>：<a href="https://github.com/mickeykang16/Ev3DOD">mickeykang16/Ev3DOD</a> · 37 star · 首次收录<br>Ev3DOD 是 CVPR 2025 Highlight 论文《Ev-3DOD: Pushing the Temporal Boundaries of 3D Object Detection with Event Cameras》的官方实现，基于 Python，面向使用事件相机进行 3D 目标检测的研究者。它主要解决传统帧相机在盲时区间难以检测的问题，采用两阶段训练：第一阶段不使用事件数据的常规框提议，第二阶段将事件数据与其他传感器模态融合，以支持盲时区间内的检测。仓库已发布 Ev-Waymo 与 DSEC-3DOD 数据集及训练和评估代码，其中 DSEC-3DOD 由作者手工标注。</p>
+</li>
+</ul>
+<h2>视觉、世界模型与运控</h2>
+<ul>
+<li>
+<p><strong>世界模型</strong>：<a href="https://github.com/lightly-ai/lightly">lightly-ai/lightly</a> · 3823 star · 首次收录<br>LightlySSL 是一个面向计算机视觉的 Python 框架，用于在图像上开展自监督学习与潜在世界模型训练，适合需要利用无标注图像学习表征或建模场景动态的研究者。它提供自监督学习与潜在世界模型相关能力，并已支持 LeJEPA 自监督学习方法及基于 LeWM 的世界模型训练与规划教程。</p>
+</li>
+<li>
+<p><strong>视觉运控</strong>：<a href="https://github.com/Unity-Technologies/ml-agents">Unity-Technologies/ml-agents</a> · 19801 star · 持续跟踪<br>Unity ML-Agents Toolkit 是一个开源项目，使游戏和仿真环境可用于训练智能体。它主要面向需要构建训练环境的研究者，支持使用深度强化学习和模仿学习来训练智能体。项目以 C# 实现，并提供包文档，涵盖安装、版本兼容、功能、教程与 API 参考等内容。</p>
+</li>
+</ul>
+<h3>视觉算法</h3>
+<ul>
+<li>
+<p><strong>理解</strong>：<a href="https://github.com/yoloytang/BVB">yoloytang/BVB</a> · 116 star · 首次收录<br>BVB（Blender-VideoBench）是一个用 Python 实现的基准，要求智能体把真实世界视频重建为可动画的 Blender 场景，以此检验其是否真正理解视频内容。所有智能体都在同一沙箱、同一成本限制下通过统一的轻量框架 Mini-BVB 编写重建程序，且不允许使用外部素材库，从而保证比较公平。该基准面向视频理解与智能体能力评测的研究者，核心亮点是“程序化重建”这一评测范式及配套的排行榜。</p>
+</li>
+<li>
+<p><strong>生成</strong>：<a href="https://github.com/ivanmikhnenkov/tinydit">ivanmikhnenkov/tinydit</a> · 16 star · 首次收录<br>tinydit 是一个 210M 参数、从零训练的文本到图像扩散 Transformer，在单块 GPU 上以 256² 分辨率训练 3.5 天，使用冻结的 FLUX.2 自编码器与 flan-t5-base 文本编码器，基于 4.2M 精选图像、rectified flow、宽高比分桶和 registers。它面向希望理解现代图像生成流程的研究者，并作为后续强化学习练习的基座模型，每项设计决策在 notes/ 中附有来源，另提供实时仪表盘与注意力实验场。仓库还包含 DGPO 强化学习后训练结果（对齐 pass@1 从 0.81 升至 0.85，pass@64 不变）以及 diffusers 加载与导出代码。</p>
+</li>
+</ul>
+<h2>3D 与电子设计</h2>
+<ul>
+<li><strong>打印与建模</strong>：<a href="https://github.com/armpro24-blip/cad-cae-copilot">armpro24-blip/cad-cae-copilot</a> · 78 star · 首次收录<br>CAD/CAE Copilot 是一个面向 AI 智能体的 AI 原生 CAD/CAE/CAX 工作台，用 Python 实现，支持从工程规格文本生成可编辑、可验证的真实 CAD 模型并延伸到 CAE 流程。它主要解决 AI CAD 工具只停留在生成图片、无法产出可复现工程产物的问题，面向需要文本转 CAD/CAE 的研究者与工程用户。关键技术能力包括基于 build123d/OpenCASCADE 的真实几何、STEP/STL/GLB 导出、命名零件与可编辑参数、稳定拓扑指针、确定性评审，以及 MCP 服务器工具，并将全部产物保存在可复现的 <code>.aieng</code> 包中。</li>
+</ul>
+<h2>量化交易</h2>
+<ul>
+<li><strong>综合</strong>：<a href="https://github.com/freqtrade/freqtrade">freqtrade/freqtrade</a> · 56035 star · 持续跟踪<br>Freqtrade 是一个用 Python 编写的免费开源加密货币交易机器人，面向需要自动化交易与策略研究的研究者，支持多家主流现货及期货交易所，并可通过 Telegram 或 WebUI 控制。它提供回测、绘图和资金管理工具，并支持通过机器学习进行策略优化，便于在实盘前进行策略验证与评估。</li>
+</ul>
+        </div>
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Ravensea | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
