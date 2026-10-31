@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Ravensea">
+<title>GitHub 趋势日报 2026-10-31 | RAVENSEA HOME</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <script src="/js/tocbot.min.js"></script>
+<meta name="generator" content="trends-tracking"></head>
+
+<body>
+    <script>
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+            } else {
+                pagebody.classList.remove('dark-theme');
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">RAVENSEA HOME</a></div>
+            <div class="menu navbar-right">
+                    <a class="menu-item active" href="/trends">Trends</a>
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">RAVENSEA HOME</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                    <a class="menu-item active" href="/trends">Trends</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">GitHub 趋势日报 2026-10-31</h1>
+                <div class="post-meta">
+                        Author: <a itemprop="author" rel="author" href="/">Ravensea</a>
+                        <span class="post-time">
+                        Date: <a href="#">2026年10月31日</a>
+                        </span>
+                        <span class="post-category">
+                    Category:
+                                <a href="/trends/">Trends</a>
+                        </span>
+                </div>
+        </header>
+
+        <div class="post-content">
+<p>每个子方向只保留一项代表仓库，按下列优先级挑选：</p>
+<ol>
+<li>已出现在 GitHub 全球「今日」趋势榜的优先；</li>
+<li>其次看本跟踪器状态：首次收录 &gt; 显著涨星 &gt; 持续跟踪；</li>
+<li>同优先级再按 star 总数从高到低；</li>
+<li>同一 GitHub「This week」近 7 天内，更早日报已出现过的仓库不再入选；同日各子方向之间也不重复。</li>
+</ol>
+<h2>影像与相机形态</h2>
+<ul>
+<li>
+<p><strong>综合</strong>：<a href="https://github.com/whmou/insta360-auto-converter">whmou/insta360-auto-converter</a> · 96 star · 首次收录<br>这是一个面向 Insta360 全景视频处理的研究者与重度用户的自动化转换仓库：它从存储卡或 Google Drive 读取成对的 <code>.insv</code> 文件，用官方 Insta360 MediaSDK 拼接为 360° MP4 并注入、校验球面元数据，再通过 YouTube Data API 上传并加入播放列表。其亮点包括自动识别 <code>_00_</code>/<code>_10_</code> 配对、跳过不完整文件、源文件只读不改、断点续传、上传成功后才删除临时 MP4，以及用原子本地账本避免重启或盘符变化导致重复上传，并设有每日上传配额上限。当前工作流面向 Windows 与官方 MediaSDK，已在 Insta360 X3 素材上测试。</p>
+</li>
+<li>
+<p><strong>电子</strong>：<a href="https://github.com/bigboxer23/FrontDoorClarifai">bigboxer23/FrontDoorClarifai</a> · 2 star · 首次收录<br>这是一个面向树莓派与 Pi Camera Module 的 Python 服务，用于在设备端监测画面运动并执行人员检测，替代原先 motion 守护进程加 Spring Boot 调用已停用 Clarifai 视觉 API 的旧方案。它先用低分辨率帧差法触发运动检测，再抓取全分辨率静态图，由 ONNX 格式的 YOLO11n 模型在本地打分判断是否有人，并按阈值将结果分别上传至 S3 的失败或成功目录，成功事件还会触发邮件与通知 webhook。服务通过批处理与静默窗口减少重复通知，支持配置运动掩码，并提供部署脚本与 systemd 服务集成。</p>
+</li>
+<li>
+<p><strong>算法</strong>：<a href="https://github.com/mickeykang16/Ev-Stereo3D">mickeykang16/Ev-Stereo3D</a> · 12 star · 持续跟踪<br>Ev-Stereo3D 是 ICCV 2025 收录的研究仓库，提出首个仅依赖双目事件相机的连续时间三维目标检测框架，无需 LiDAR 或 RGB 传感器。它面向快速动态环境下的连续三维感知研究，通过双滤波机制从事件数据中提取语义与几何信息，并用以目标为中心的回归改善边界框对齐。仓库提供安装与训练流程及预训练模型，基于 Python 与 PyTorch 实现。</p>
+</li>
+</ul>
+<h2>视觉、世界模型与运控</h2>
+<ul>
+<li>
+<p><strong>世界模型</strong>：<a href="https://github.com/leggedrobotics/robotic_world_model">leggedrobotics/robotic_world_model</a> · 697 star · 首次收录<br>该仓库是 ETH Zurich 团队为其 Robotic World Model（RWM）与 Uncertainty-Aware Robotic World Model（RWM-U）两篇论文提供的代码扩展，基于 Isaac Lab 构建环境与训练流程，面向研究基于模型强化学习的研究者。它支持在 Isaac Lab 中在线联合训练策略与神经网络动力学模型、在无仿真器条件下用学习到的动力学离线训练策略，并支持基于模型与无模型策略的对比评估、自回归想象推演及策略可视化。</p>
+</li>
+<li>
+<p><strong>视觉运控</strong>：<a href="https://github.com/dexmal/dexbotic">dexmal/dexbotic</a> · 3235 star · 持续跟踪<br>Dexbotic 是一个基于 PyTorch 的开源视觉-语言-动作（VLA）开发工具箱，面向具身智能研究，提供预训练、微调、推理与评估的统一流程，并支持 π0、CogACT、OFT、MemVLA 等主流策略。它通过分层配置、工厂注册与入口分发的模块化架构，便于修改配置、更换模型或添加任务，同时提供面向 π0、CogACT 等算法的优化预训练模型。该工具箱还支持云端与本地训练，并为 UR5、Franka、ALOHA 等机器人提供统一训练数据格式和部署脚本。</p>
+</li>
+</ul>
+<h3>视觉算法</h3>
+<ul>
+<li>
+<p><strong>理解</strong>：<a href="https://github.com/Tencent/WeMM-Embedding">Tencent/WeMM-Embedding</a> · 1800 star · 首次收录<br>WeMM-Embedding 是腾讯微信视觉团队开发的多模态嵌入模型系列，为文本、图像、视频、视觉文档及交错多模态输入提供统一表示，面向多模态理解与检索任务。该系列包含 2B、4B、9B 三个规模，支持 Matryoshka 可变维度（如 64 至 4096），嵌入取自专用 <code>&lt;embedding&gt;</code> 位置的末层隐状态并做 L2 归一化，在多项基准上取得领先表现，目前不支持音频输入。</p>
+</li>
+<li>
+<p><strong>生成</strong>：<a href="https://github.com/mrbizarro/Phosphene">mrbizarro/Phosphene</a> · 274 star · 首次收录<br>Phosphene 是一款面向 Mac 用户的免费开源 AI 视频生成器，可在 Apple Silicon（M1–M5）上本地运行 LTX-2.5 与 MiniMax H3（Hailuo），支持带声音的文生视频和图生视频。它主要解决本地离线创作视频的需求，无需云服务、API 密钥或 NVIDIA GPU，提示词与素材不离开本机。其亮点包括同一次生成中产出画面与声音、口型同步、角色 LoRA 训练、由歌词生成歌曲（YuE2）、图像编辑（Qwen-Image-Edit 等），并可通过 Pinokio 一键安装。</p>
+</li>
+</ul>
+<h2>3D 与电子设计</h2>
+<ul>
+<li><strong>打印与建模</strong>：<a href="https://github.com/Pan-Chera/Multi-Agent-CAD">Pan-Chera/Multi-Agent-CAD</a> · 1060 star · 持续跟踪<br>MAC 是一个基于 Python 的解耦多智能体框架，用于从自然语言生成可编辑的 CAD 零件与多零件装配体，面向需要将设计简述转化为工程几何的研究者与设计流程。它通过约束测试时计算（constrained test-time compute）组织规划与配合、零件生成与修复、独立 Judge 校验等环节，并支持装配、验证及导出供下游检查与仿真使用的产物。该仓库在原有单零件 Text-to-CAD 工作流基础上，新增了视觉验证、独立 Judge 与实验性多零件装配生成能力。</li>
+</ul>
+<h2>量化交易</h2>
+<ul>
+<li><strong>综合</strong>：<a href="https://github.com/DemonDamon/FinnewsHunter">DemonDamon/FinnewsHunter</a> · 1504 star · 首次收录<br>FinnewsHunter 是一个基于 AgenticX 框架构建的多智能体金融新闻分析平台，面向量化研究者与投资决策场景，实时监控新浪财经、每日经济新闻、证券时报等多个财经新闻源。它通过 NewsAnalyst、Researcher 等智能体团队结合大语言模型完成新闻深度解读、情感分析与市场影响评估，并借助知识图谱挖掘潜在投资机会与风险，输出决策级 alpha 信号。系统支持五家 LLM 提供商一键切换、批量新闻分析、基于 akshare 的股票 K 线与智能搜索，以及异步向量化，技术栈为 FastAPI、PostgreSQL、Milvus、Redis 与 React，并可通过 Docker Compose 一键部署。</li>
+</ul>
+        </div>
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Ravensea | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
