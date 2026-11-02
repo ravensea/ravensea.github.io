@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Ravensea">
+<title>GitHub 趋势日报 2026-11-02 | RAVENSEA HOME</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <script src="/js/tocbot.min.js"></script>
+<meta name="generator" content="trends-tracking"></head>
+
+<body>
+    <script>
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+            } else {
+                pagebody.classList.remove('dark-theme');
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">RAVENSEA HOME</a></div>
+            <div class="menu navbar-right">
+                    <a class="menu-item active" href="/trends">Trends</a>
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">RAVENSEA HOME</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                    <a class="menu-item active" href="/trends">Trends</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">GitHub 趋势日报 2026-11-02</h1>
+                <div class="post-meta">
+                        Author: <a itemprop="author" rel="author" href="/">Ravensea</a>
+                        <span class="post-time">
+                        Date: <a href="#">2026年11月2日</a>
+                        </span>
+                        <span class="post-category">
+                    Category:
+                                <a href="/trends/">Trends</a>
+                        </span>
+                </div>
+        </header>
+
+        <div class="post-content">
+<p>每个子方向只保留一项代表仓库，按下列优先级挑选：</p>
+<ol>
+<li>已出现在 GitHub 全球「今日」趋势榜的优先；</li>
+<li>其次看本跟踪器状态：首次收录 &gt; 显著涨星 &gt; 持续跟踪；</li>
+<li>同优先级再按 star 总数从高到低；</li>
+<li>同一 GitHub「This week」近 7 天内，更早日报已出现过的仓库不再入选；同日各子方向之间也不重复。</li>
+</ol>
+<h2>影像与相机形态</h2>
+<ul>
+<li>
+<p><strong>综合</strong>：<a href="https://github.com/erik-sutton95/OpenPocketCine">erik-sutton95/OpenPocketCine</a> · 392 star · 持续跟踪<br>OpenPocketCine 是一个用 Swift 开发的开源 iOS 与 Android 现场监视器应用，面向使用 DJI Osmo Pocket 系列相机的拍摄者。它把专业示波器、曝光辅助、相机与云台控制、回放以及 LUT 导出等功能集成到手机上，作为外接现场监视工具使用。项目以 Apache 2.0 许可开源，并提供 iPhone/iPad 的 TestFlight 测试与 Android 测试版渠道。</p>
+</li>
+<li>
+<p><strong>电子</strong>：<a href="https://github.com/10x-Engineers/Infinite-ISP">10x-Engineers/Infinite-ISP</a> · 404 star · 持续跟踪<br>Infinite-ISP 是一个面向硬件 ISP 全流程开发的全栈平台，核心是用 Python 实现的应用级相机 ISP 流水线模块，算法覆盖从简单到复杂。它主要服务于 ISP 算法开发与硬件实现研究者，提供定点参考模型、优化 RTL 设计、面向 Xilinx Kria KV260 的 FPGA 集成框架与固件，以及可针对不同传感器和应用调参的独立 Python 调优工具。平台还包含 Linux 软件方案（驱动与自定义应用开发栈），并配套自动化块级与多块级测试框架以保障设计位精确。</p>
+</li>
+<li>
+<p><strong>机械</strong>：<a href="https://github.com/amirmxt/gimbal-bar">amirmxt/gimbal-bar</a> · 11 star · 持续跟踪<br>GimbalBar 是一个用 Swift 编写的 macOS 菜单栏应用，用于在 DJI Osmo Pocket 3 以 USB 摄像头模式连接时控制其云台，并提供实时预览。它通过 IOKit 向相机暴露的标准 UVC Pan/Tilt Absolute 控制发送请求，绕开 macOS 系统 UVC 驱动占用接口、libusb 无法直接操作的限制，支持拖动、方向按钮、5°/15°/30° 步进以及全局快捷键移动和回中。</p>
+</li>
+<li>
+<p><strong>算法</strong>：<a href="https://github.com/SensorsINI/jaer">SensorsINI/jaer</a> · 208 star · 持续跟踪<br>jAER 是一款用 Java 开发的全功能跨平台桌面应用，支持 Linux、Windows 和 macOS，用于连接并采集各大厂商的神经形态事件相机与硅耳蜗输出。它面向事件传感器研究者与开发者，提供高效的 USB 采集流水线、统一的 DVS 像素偏置调节以优化传感器设置，以及快速准确的去噪算法，并支持通过文档扩展新设备。</p>
+</li>
+</ul>
+<h2>视觉、世界模型与运控</h2>
+<ul>
+<li>
+<p><strong>世界模型</strong>：<a href="https://github.com/NVIDIA/cosmos">NVIDIA/cosmos</a> · 12226 star · 持续跟踪<br>NVIDIA Cosmos 是一个面向物理 AI 的开放平台，汇集世界基础模型、数据集与工具，供开发者构建机器人、自动驾驶和智能基础设施等应用。其模型家族强调在同一体系中完成感知、推理、仿真与行动，覆盖物理感知生成、世界场景迁移、动作策略执行以及面向自动驾驶的合成数据与仿真等能力。</p>
+</li>
+<li>
+<p><strong>视觉运控</strong>：<a href="https://github.com/Genesis-Embodied-AI/genesis-world">Genesis-Embodied-AI/genesis-world</a> · 30153 star · 持续跟踪<br>Genesis World 是一个面向通用机器人学与具身智能学习的 Python 仿真平台，为物理 AI 开发提供统一的仿真接口。它把多物理引擎（刚体、FEM、MPM、粒子及 uipc 等共享同一场景与状态）、照片级渲染器 Nyx 和跨平台编译器 Quadrants 整合在 Pythonic 接口之后，并支持从单机笔记本扩展到数据中心级 GPU，便于研究者阅读、扩展和嵌入研究代码。</p>
+</li>
+</ul>
+<h3>视觉算法</h3>
+<ul>
+<li>
+<p><strong>理解</strong>：<a href="https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization">NVIDIA-AI-Blueprints/video-search-and-summarization</a> · 1959 star · 持续跟踪<br>这是 NVIDIA 面向视频搜索与摘要的 AI Blueprint（VSS），一个基于 Python 的 GPU 加速参考架构，用于构建能对实时或录制视频进行搜索、分析、摘要与推理的视频分析智能体。它面向需要自然语言视频检索、视觉问答、告警核验、片段提取和长视频摘要的研究与开发场景，结合 Cosmos 等视觉语言模型、Nemotron 等大语言模型、RAG 与 NVIDIA NIM 微服务，并按实时视频智能、下游分析、智能体与离线处理三部分组织处理流程。</p>
+</li>
+<li>
+<p><strong>生成</strong>：<a href="https://github.com/PKU-YuanGroup/Helios">PKU-YuanGroup/Helios</a> · 2247 star · 首次收录<br>Helios 是北京大学团队提出的实时长视频生成模型（TPAMI 2026），面向需要分钟级高质量视频合成的研究者。它在单张 H100 GPU 上以 19.5 FPS 实现端到端推理（单张昇腾 NPU 约 10 FPS），且不依赖常见的防漂移策略（如自强制、误差库、关键帧采样、反向采样）和标准加速技术（如 KV-cache、因果掩码、稀疏/线性注意力、TinyVAE、渐进噪声调度、隐状态缓存、量化）。材料还提到其引入的优化可同时提升训练与推理吞吐并降低显存占用，14B 版本在成本与速度上可优于 1.3B 模型。</p>
+</li>
+</ul>
+<h2>3D 与电子设计</h2>
+<ul>
+<li><strong>打印与建模</strong>：<a href="https://github.com/earthtojake/text-to-cad">earthtojake/text-to-cad</a> · 24770 star · 持续跟踪<br>text-to-cad 是一个用 AI 设计实体产品的 Python 仓库，通过插件为 Claude Code、Codex、Cursor、Gemini、Grok 等支持插件或 skills 框架的智能体提供本地工作流，将模型生成为 STEP、GLB、STL 或 3MF 文件。其核心机制是让智能体用基于 Open CASCADE 的 build123d 编写 Python 脚本，由 cadgen 引擎构建含部件、名称、颜色、材料和关节的 .xbf 文档，并在内存中保留模型工作状态以实现增量重建，同时提供 CAD 查看器跟随每次重建。该插件还支持面向制造的设计检查、生成工程图纸，并连接主流 3D 打印、钣金和 CNC 加工服务。</li>
+</ul>
+<h2>量化交易</h2>
+<ul>
+<li><strong>综合</strong>：<a href="https://github.com/OpenByteInc/QuantDinger">OpenByteInc/QuantDinger</a> · 13407 star · 持续跟踪<br>QuantDinger 是 Open Byte Inc. 开源的自托管 AI 量化研究平台，面向研究者与开发者，将交易想法转化为 Python 策略，并在同一套栈内完成回测、模拟交易、实盘执行与监控。它覆盖加密货币、股票和外汇市场，支持 AI 研究、agent 交易与 vibe 交易，并集成 Jev System One。平台还提供多租户交易 SaaS 能力，内置用户管理、计费、支付与结算。</li>
+</ul>
+        </div>
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Ravensea | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
