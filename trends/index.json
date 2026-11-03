@@ -1,5 +1,12 @@
 [
   {
+    "day": "2026-11-03",
+    "kind": "brief",
+    "kind_label": "日报",
+    "title": "GitHub 趋势日报 2026-11-03",
+    "url": "/trends/2026-11-03-brief/"
+  },
+  {
     "day": "2026-10-27_2026-11-02",
     "kind": "full",
     "kind_label": "周报",
