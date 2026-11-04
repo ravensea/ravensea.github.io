@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Ravensea">
+<title>GitHub 趋势日报 2026-11-04 | RAVENSEA HOME</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <script src="/js/tocbot.min.js"></script>
+<meta name="generator" content="trends-tracking"></head>
+
+<body>
+    <script>
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+            } else {
+                pagebody.classList.remove('dark-theme');
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">RAVENSEA HOME</a></div>
+            <div class="menu navbar-right">
+                    <a class="menu-item active" href="/trends">Trends</a>
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">RAVENSEA HOME</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                    <a class="menu-item active" href="/trends">Trends</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">GitHub 趋势日报 2026-11-04</h1>
+                <div class="post-meta">
+                        Author: <a itemprop="author" rel="author" href="/">Ravensea</a>
+                        <span class="post-time">
+                        Date: <a href="#">2026年11月4日</a>
+                        </span>
+                        <span class="post-category">
+                    Category:
+                                <a href="/trends/">Trends</a>
+                        </span>
+                </div>
+        </header>
+
+        <div class="post-content">
+<p>每个子方向只保留一项代表仓库，按下列优先级挑选：</p>
+<ol>
+<li>已出现在 GitHub 全球「今日」趋势榜的优先；</li>
+<li>其次看本跟踪器状态：首次收录 &gt; 显著涨星 &gt; 持续跟踪；</li>
+<li>同优先级再按 star 总数从高到低；</li>
+<li>同一 GitHub「This week」近 7 天内，更早日报已出现过的仓库不再入选；同日各子方向之间也不重复。</li>
+</ol>
+<h2>影像与相机形态</h2>
+<ul>
+<li>
+<p><strong>综合</strong>：<a href="https://github.com/93won/360_visual_inertial_odometry">93won/360_visual_inertial_odometry</a> · 184 star · 持续跟踪<br>该仓库是面向360°全景相机的视觉-惯性里程计项目，现已成为OpenVIO框架的一部分，后者支持360°等距柱状投影、针孔和鱼眼相机。原代码保留在本仓库历史记录中，建议使用者转向OpenVIO。</p>
+</li>
+<li>
+<p><strong>电子</strong>：<a href="https://github.com/friendlytofu/diy-dual-cmos-camera">friendlytofu/diy-dual-cmos-camera</a> · 1 star · 首次收录<br>这是一个基于两块 ESP32-WROVER-E 与 OV2640 传感器搭建的双摄像头手持相机原型，配有 2 英寸 LCD 本地预览、双 microSD 卡存储、按键与状态指示灯，并提供设备自托管网页用于浏览和下载两张卡中的照片。仓库面向复现该 DIY 硬件的研究者，包含物料清单、接线设计与图示、可打印外壳 STL 与装配说明、U1 外向相机和 U4 自拍/控制器的 Arduino 固件，以及网页源码与设备 API 说明。材料同时说明，组合接线、外壳装配、供电、全分辨率下载和预览性能等仍需在整机上验证。</p>
+</li>
+<li>
+<p><strong>机械</strong>：<a href="https://github.com/yzytz17/1.5-joint-module">yzytz17/1.5-joint-module</a> · 53 star · 首次收录<br>这是一个超低成本机器人关节模块，将约1.5美元的四层FOC驱动板嵌入1503无刷云台电机，并搭配全3D打印的高减速比精密齿轮箱，面向需要低成本执行器规模化的研究者与开发者，可用于六自由度机械臂、四足机器人或云台等场景。其亮点在于以原型价格实现板内集成驱动与单级10:1减速，在不牺牲减速比和定位分辨率的前提下压低成本，并开放PCB Gerber、驱动固件、SolidWorks CAD和可打印STL。仓库目前仍在完善中，部分缺失内容以TODO标注，占位数值尚未验证。</p>
+</li>
+<li>
+<p><strong>算法</strong>：<a href="https://github.com/mickeykang16/Ev3DOD">mickeykang16/Ev3DOD</a> · 37 star · 持续跟踪<br>Ev3DOD 是 CVPR 2025 Highlight 论文《Ev-3DOD: Pushing the Temporal Boundaries of 3D Object Detection with Event Cameras》的官方实现，基于 Python，面向使用事件相机进行 3D 目标检测的研究者。它主要解决传统帧相机在盲时区间难以检测的问题，采用两阶段训练：第一阶段不使用事件数据的常规框提议，第二阶段将事件数据与其他传感器模态融合，以支持盲时区间内的检测。仓库已发布 Ev-Waymo 与 DSEC-3DOD 数据集及训练和评估代码，其中 DSEC-3DOD 由作者手工标注。</p>
+</li>
+</ul>
+<h2>视觉、世界模型与运控</h2>
+<ul>
+<li>
+<p><strong>世界模型</strong>：<a href="https://github.com/lightly-ai/lightly">lightly-ai/lightly</a> · 3827 star · 持续跟踪<br>LightlySSL 是一个面向计算机视觉的 Python 框架，用于在图像上开展自监督学习与潜在世界模型训练，适合需要利用无标注图像学习表征或建模场景动态的研究者。它提供自监督学习与潜在世界模型相关能力，并已支持 LeJEPA 自监督学习方法及基于 LeWM 的世界模型训练与规划教程。</p>
+</li>
+<li>
+<p><strong>视觉运控</strong>：<a href="https://github.com/Unity-Technologies/ml-agents">Unity-Technologies/ml-agents</a> · 19817 star · 持续跟踪<br>Unity ML-Agents Toolkit 是一个开源项目，使游戏和仿真环境可用于训练智能体。它主要面向需要构建训练环境的研究者，支持使用深度强化学习和模仿学习来训练智能体。项目以 C# 实现，并提供包文档，涵盖安装、版本兼容、功能、教程与 API 参考等内容。</p>
+</li>
+</ul>
+<h3>视觉算法</h3>
+<ul>
+<li>
+<p><strong>理解</strong>：<a href="https://github.com/Neywa-Labs/mlx-vlm">Neywa-Labs/mlx-vlm</a> · 5790 star · 首次收录<br>MLX-VLM 是一个基于 MLX 的 Python 包，用于在 Mac（Apple Silicon）上对视觉语言模型进行推理和微调，支持文本、图像、视频和音频输入。它面向需要在本地运行和微调多模态模型的研究者，提供命令行界面、Gradio 聊天界面、FastAPI 服务端以及投机解码、连续批处理、前缀缓存、KV 缓存量化、视觉特征缓存和分布式推理等能力。</p>
+</li>
+<li>
+<p><strong>生成</strong>：<a href="https://github.com/enricoros/big-AGI">enricoros/big-AGI</a> · 7164 star · 持续跟踪<br>Big-AGI 是一个用 TypeScript 编写的 AI 套件，基于先进模型提供 AI/AGI 功能，面向需要高级 AI 交互能力的研究者与开发者。它主要解决多模型对话与多模态 AI 使用需求，提供 AI 人格、AGI 函数、Beam 多模型聊天、文本生成图像、语音、响应流式传输、代码高亮与执行、PDF 导入以及面向开发者的预设等功能。该套件支持本地部署或云端部署。</p>
+</li>
+</ul>
+<h2>3D 与电子设计</h2>
+<ul>
+<li><strong>打印与建模</strong>：<a href="https://github.com/armpro24-blip/cad-cae-copilot">armpro24-blip/cad-cae-copilot</a> · 86 star · 持续跟踪<br>CAD/CAE Copilot 是一个面向 AI 智能体的 AI 原生 CAD/CAE/CAX 工作台，用 Python 实现，支持从工程规格文本生成可编辑、可验证的真实 CAD 模型并延伸到 CAE 流程。它主要解决 AI CAD 工具只停留在生成图片、无法产出可复现工程产物的问题，面向需要文本转 CAD/CAE 的研究者与工程用户。关键技术能力包括基于 build123d/OpenCASCADE 的真实几何、STEP/STL/GLB 导出、命名零件与可编辑参数、稳定拓扑指针、确定性评审，以及 MCP 服务器工具，并将全部产物保存在可复现的 <code>.aieng</code> 包中。</li>
+</ul>
+<h2>量化交易</h2>
+<ul>
+<li><strong>综合</strong>：<a href="https://github.com/rootSunc/CNEquity">rootSunc/CNEquity</a> · 933 star · 首次收录<br>CNEquity 是一个开源的中国 A 股本地数据湖，用 Python 实现，将沪深股票行情、财务与期货数据、资金流向、公告、指数行业及宏观等数据集落到本地 Parquet，面向量化研究、量化交易与回测。它免注册、免 Token、可自托管，内置复权与历史成分、保留退市股、财报按公告日严格 PIT，并提供行级溯源与增量续跑，同时通过 MCP 原生支持让 AI 客户端直接查询 A 股数据。</li>
+</ul>
+        </div>
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Ravensea | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
