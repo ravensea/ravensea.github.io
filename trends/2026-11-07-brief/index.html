@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Ravensea">
+<title>GitHub 趋势日报 2026-11-07 | RAVENSEA HOME</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <script src="/js/tocbot.min.js"></script>
+<meta name="generator" content="trends-tracking"></head>
+
+<body>
+    <script>
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+            } else {
+                pagebody.classList.remove('dark-theme');
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">RAVENSEA HOME</a></div>
+            <div class="menu navbar-right">
+                    <a class="menu-item active" href="/trends">Trends</a>
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">RAVENSEA HOME</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                    <a class="menu-item active" href="/trends">Trends</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">GitHub 趋势日报 2026-11-07</h1>
+                <div class="post-meta">
+                        Author: <a itemprop="author" rel="author" href="/">Ravensea</a>
+                        <span class="post-time">
+                        Date: <a href="#">2026年11月7日</a>
+                        </span>
+                        <span class="post-category">
+                    Category:
+                                <a href="/trends/">Trends</a>
+                        </span>
+                </div>
+        </header>
+
+        <div class="post-content">
+<p>每个子方向只保留一项代表仓库，按下列优先级挑选：</p>
+<ol>
+<li>已出现在 GitHub 全球「今日」趋势榜的优先；</li>
+<li>其次看本跟踪器状态：首次收录 &gt; 显著涨星 &gt; 持续跟踪；</li>
+<li>同优先级再按 star 总数从高到低；</li>
+<li>同一 GitHub「This week」近 7 天内，更早日报已出现过的仓库不再入选；同日各子方向之间也不重复。</li>
+</ol>
+<h2>影像与相机形态</h2>
+<ul>
+<li>
+<p><strong>综合</strong>：<a href="https://github.com/whmou/insta360-auto-converter">whmou/insta360-auto-converter</a> · 96 star · 持续跟踪<br>这是一个面向 Insta360 全景视频处理的研究者与重度用户的自动化转换仓库：它从存储卡或 Google Drive 读取成对的 <code>.insv</code> 文件，用官方 Insta360 MediaSDK 拼接为 360° MP4 并注入、校验球面元数据，再通过 YouTube Data API 上传并加入播放列表。其亮点包括自动识别 <code>_00_</code>/<code>_10_</code> 配对、跳过不完整文件、源文件只读不改、断点续传、上传成功后才删除临时 MP4，以及用原子本地账本避免重启或盘符变化导致重复上传，并设有每日上传配额上限。当前工作流面向 Windows 与官方 MediaSDK，已在 Insta360 X3 素材上测试。</p>
+</li>
+<li>
+<p><strong>电子</strong>：<a href="https://github.com/rm0nroe/nvidia-jetson-toolkit">rm0nroe/nvidia-jetson-toolkit</a> · 7 star · 首次收录<br>这是一个面向 NVIDIA Jetson 的相机驱动工具包，用 C 语言实现，重点提供在 JetPack 6.2 的 Jetson Orin Nano 上可用的 IMX708（Raspberry Pi Camera Module 3）驱动。它针对 JetPack 6.2 上原有 RidgeRun、jetson-io 和 nvarguscamerasrc 路径失效的问题，给出经硬件验证的设备树与 CSI 参数，并说明哪些配置看似正确但实际不可用。材料还提到可借此实现 4608×2592 @ 14fps 的原始 Bayer 采集，并通过软件方式改善因缺少 NVIDIA ISP 调校而出现的色彩发白问题。</p>
+</li>
+<li>
+<p><strong>算法</strong>：<a href="https://github.com/mickeykang16/Ev-Stereo3D">mickeykang16/Ev-Stereo3D</a> · 13 star · 持续跟踪<br>Ev-Stereo3D 是 ICCV 2025 收录的研究仓库，提出首个仅依赖双目事件相机的连续时间三维目标检测框架，无需 LiDAR 或 RGB 传感器。它面向快速动态环境下的连续三维感知研究，通过双滤波机制从事件数据中提取语义与几何信息，并用以目标为中心的回归改善边界框对齐。仓库提供安装与训练流程及预训练模型，基于 Python 与 PyTorch 实现。</p>
+</li>
+</ul>
+<h2>视觉、世界模型与运控</h2>
+<ul>
+<li>
+<p><strong>世界模型</strong>：<a href="https://github.com/AlayaLab/AlayaWorld">AlayaLab/AlayaWorld</a> · 807 star · 持续跟踪<br>AlayaWorld 是 Alaya Lab 开源的全栈交互式长时程世界模型，用 Python 实现，面向长时程、可交互视频世界生成的研究与实验。它主要解决长时程生成中的记忆一致性以及实时交互控制问题，支持实时相机控制、生成过程中切换提示词，并提供浏览器内可玩的交互演示。项目已开源训练与推理代码、预训练权重及部分训练数据，采用自回归生成并结合 DMD 等技术。</p>
+</li>
+<li>
+<p><strong>视觉运控</strong>：<a href="https://github.com/FluxVLA/FluxVLA">FluxVLA/FluxVLA</a> · 781 star · 持续跟踪<br>FluxVLA 是一个面向具身智能的全栈、端到端 VLA 工程平台，旨在打通从数据到真实机器人部署的完整工程闭环。它主要服务于 VLA 研究与开发，通过统一配置、标准化接口、模块解耦和可部署性等设计，降低该领域的工程门槛，为产学研提供标准化基础。平台支持移动操作、桌面整理、双臂叠布和包内取物等真实机器人任务，并在 LIBERO 基准上给出性能结果。</p>
+</li>
+</ul>
+<h3>视觉算法</h3>
+<ul>
+<li>
+<p><strong>理解</strong>：<a href="https://github.com/Tencent/WeMM-Embedding">Tencent/WeMM-Embedding</a> · 1808 star · 持续跟踪<br>WeMM-Embedding 是腾讯微信视觉团队开发的多模态嵌入模型系列，为文本、图像、视频、视觉文档及交错多模态输入提供统一表示，面向多模态理解与检索任务。该系列包含 2B、4B、9B 三个规模，支持 Matryoshka 可变维度（如 64 至 4096），嵌入取自专用 <code>&lt;embedding&gt;</code> 位置的末层隐状态并做 L2 归一化，在多项基准上取得领先表现，目前不支持音频输入。</p>
+</li>
+<li>
+<p><strong>生成</strong>：<a href="https://github.com/SeminKim/selfix">SeminKim/selfix</a> · 3 star · 首次收录<br>这是论文 SelFix 的官方实现，面向 rectified flow 的反演研究。它提出一种基于轨迹直线性的定点反演方法，通过选择尽可能直的轨迹来改进 rectified-flow 反演。代码包含 PIE-Bench 重建与编辑运行脚本、论文配置、基线方法切换及逐样本指标记录，并基于 FireFlow 扩展了定点基线与 PIE-Bench 评估。</p>
+</li>
+</ul>
+<h2>3D 与电子设计</h2>
+<ul>
+<li><strong>打印与建模</strong>：<a href="https://github.com/Pan-Chera/Multi-Agent-CAD">Pan-Chera/Multi-Agent-CAD</a> · 1071 star · 持续跟踪<br>MAC 是一个面向文本到 CAD 生成任务的解耦式多智能体框架，由清华大学相关实验室发布，采用 Python 实现并基于 build123d。它可将自然语言设计需求转化为可编辑的工程几何，支持生成单个可打印零件，也能将机构拆解为多个部件分别生成、装配、验证并导出供下游检查与仿真使用的产物。其亮点包括约束测试时计算、视觉验证、独立 Judge 以及实验性的多部件装配生成，但装配流程仍属技术预览，制造或仿真前需验证生成几何与关节。</li>
+</ul>
+<h2>量化交易</h2>
+<ul>
+<li><strong>综合</strong>：<a href="https://github.com/9600dev/mmr">9600dev/mmr</a> · 133 star · 首次收录<br>MMR 是一个面向 Interactive Brokers 的 Python 算法交易平台，设计为可由人类和 LLM 共同操作，通过 ib_async 连接券商、ZeroMQ 做服务间消息传递、DuckDB 存储，并将所有操作暴露为返回 JSON 的 CLI 命令。它主要解决 LLM 代理自主交易时的可控性与上下文效率问题，采用“提议→审查→批准”流程，让 LLM 只生成带置信度和理由的交易提议，由自动仓位计算与组合风险检查辅助决策，人类可随时复核待处理提议。关键技术亮点包括 ATR 反向仓位 sizing、面向上下文窗口的紧凑组合快照与差异对比、交易前后风险报告（集中度 HHI、分组预算、相关性聚类），以及带预算的持仓分组管理。</li>
+</ul>
+        </div>
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Ravensea | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
