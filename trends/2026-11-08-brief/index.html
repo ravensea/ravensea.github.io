@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Ravensea">
+<title>GitHub 趋势日报 2026-11-08 | RAVENSEA HOME</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <script src="/js/tocbot.min.js"></script>
+<meta name="generator" content="trends-tracking"></head>
+
+<body>
+    <script>
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+            } else {
+                pagebody.classList.remove('dark-theme');
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">RAVENSEA HOME</a></div>
+            <div class="menu navbar-right">
+                    <a class="menu-item active" href="/trends">Trends</a>
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">RAVENSEA HOME</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                    <a class="menu-item active" href="/trends">Trends</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">GitHub 趋势日报 2026-11-08</h1>
+                <div class="post-meta">
+                        Author: <a itemprop="author" rel="author" href="/">Ravensea</a>
+                        <span class="post-time">
+                        Date: <a href="#">2026年11月8日</a>
+                        </span>
+                        <span class="post-category">
+                    Category:
+                                <a href="/trends/">Trends</a>
+                        </span>
+                </div>
+        </header>
+
+        <div class="post-content">
+<p>每个子方向只保留一项代表仓库，按下列优先级挑选：</p>
+<ol>
+<li>已出现在 GitHub 全球「今日」趋势榜的优先；</li>
+<li>其次看本跟踪器状态：首次收录 &gt; 显著涨星 &gt; 持续跟踪；</li>
+<li>同优先级再按 star 总数从高到低；</li>
+<li>同一 GitHub「This week」近 7 天内，更早日报已出现过的仓库不再入选；同日各子方向之间也不重复。</li>
+</ol>
+<h2>影像与相机形态</h2>
+<ul>
+<li>
+<p><strong>综合</strong>：<a href="https://github.com/vrwallace/Insta360-Link-1-and-2-Controller-for-Linux">vrwallace/Insta360-Link-1-and-2-Controller-for-Linux</a> · 33 star · 持续跟踪<br>这是一个用 Free Pascal / Lazarus 编写的 Linux 应用，用于控制 Insta360 Link、Link 2 和 Link 2 Pro 摄像头，为仅有 Windows/Mac 官方控制软件的情况提供功能完整的替代方案。它通过 V4L2 提供标准控制（平移/倾斜/缩放、图像调整、白平衡、曝光、对焦、背光补偿），并通过 UVC 扩展单元实现 AI 追踪、DeskView、白板、俯拍、预设位和云台复位等专有模式，还内置基于 V4L2 内存映射缓冲的实时预览（优先 MJPEG，回退 YUYV）。</p>
+</li>
+<li>
+<p><strong>电子</strong>：<a href="https://github.com/cruxopen-labs/openISP">cruxopen-labs/openISP</a> · 1550 star · 首次收录<br>openISP 是一个用 Python 实现的图像信号处理器，负责将图像传感器采集的 RAW 图像转换为 RGB/YUV 图像，供后续处理或显示使用。项目面向希望从硬件视角理解 ISP 整体流水线及调优功能的研究者，按模块实现了坏点校正、黑电平补偿、去马赛克、自动白平衡、伽马校正、颜色校正矩阵、色彩空间转换、边缘增强、伪彩抑制以及亮度/对比度控制等环节，并包含双边滤波和非局部均值等降噪方法。镜头阴影校正、部分亮度/色度降噪以及宽/高动态范围、时/空域降噪等高级功能尚未完成。</p>
+</li>
+<li>
+<p><strong>机械</strong>：<a href="https://github.com/tteimour/gimbal-for-fun">tteimour/gimbal-for-fun</a> · 16 star · 首次收录<br>这是一个面向小型无人机（≤3 kg）的两轴（偏航/俯仰）EO/IR 稳定云台仿真器，用 Python 实现，聚焦云台本身的动力学、稳定、传感器、跟踪与估计，不依赖 PX4 等自动驾驶仪。它提供 EO 与 LWIR 渲染、图像跟踪和地理锁定等能力，并附带 Baku 世界场景，可用于云台设计与仿真研究。</p>
+</li>
+<li>
+<p><strong>算法</strong>：<a href="https://github.com/worldbench/awesome-event-camera-vision">worldbench/awesome-event-camera-vision</a> · 11 star · 持续跟踪<br>这是面向事件相机视觉研究的综述仓库，以 TeX 撰写，围绕“大模型时代的事件相机视觉”梳理该领域的研究脉络。它主要服务于希望快速了解事件相机感知与重建方向的研究者，目录覆盖目标检测、语义分割、深度与光流估计、目标跟踪、动作识别与姿态估计，以及事件到视频重建等主题，并按 CNN/RNN/图方法、Transformer/注意力、SNN 等路线细分。</p>
+</li>
+</ul>
+<h2>视觉、世界模型与运控</h2>
+<ul>
+<li>
+<p><strong>世界模型</strong>：<a href="https://github.com/NVlabs/Sana">NVlabs/Sana</a> · 9785 star · 持续跟踪<br>NVlabs/Sana 是面向图像、视频与世界建模的高效生成模型及配套全栈训练与推理引擎，以 Python 实现。它主要服务于需要训练和部署生成模型的研究者，提供覆盖 SANA、SANA-1.5、SANA-Sprint、SANA-Video、SANA-WM、SANA-Streaming 与 Sol-RL 等方向的模型与工具链。材料还显示其具备低显存演示（如 4bit、ControlNet 场景）以及与 ComfyUI、SGLang、Cosmos-RL 等生态的对接能力。</p>
+</li>
+<li>
+<p><strong>视觉运控</strong>：<a href="https://github.com/starVLA/starVLA">starVLA/starVLA</a> · 3921 star · 持续跟踪<br>StarVLA 是一个面向通用机器人研究的开源视觉-语言-动作（VLA）模型开发代码库，采用类似乐高的模块化设计，将模型、数据、训练器、配置和评估等功能组件按自顶向下、高内聚低耦合的原则分离，支持即插即用、快速原型开发和独立调试。它旨在为研究者提供集成与探索前沿 VLA 技术的平台，并作为 StarVLA、StarVLA-α 和 VLAct 等团队工作的官方实现。</p>
+</li>
+</ul>
+<h3>视觉算法</h3>
+<ul>
+<li>
+<p><strong>理解</strong>：<a href="https://github.com/openclaw/Peekaboo">openclaw/Peekaboo</a> · 5456 star · 持续跟踪<br>Peekaboo 是一个用 Swift 编写的 macOS 命令行工具与可选 MCP 服务器，也提供菜单栏应用，用于截取单个应用或整个系统的屏幕截图，并可通过本地或远程 AI 模型进行可选的视觉问答。它面向需要让 AI 代理“看见”屏幕并执行原生 UI 自动化的研究者与开发者，支持屏幕捕获、辅助功能检查与原生 UI 自动化，既可单独使用，也能让内置代理规划多步任务，或将同一套工具集暴露给 MCP 客户端。</p>
+</li>
+<li>
+<p><strong>生成</strong>：<a href="https://github.com/adieyal/dynamicprompts">adieyal/dynamicprompts</a> · 167 star · 首次收录<br>Dynamic Prompts 是一个 Python 库，提供灵活直观的模板语言和工具，用于为 Stable Diffusion、MidJourney、Dall-e 2 等文本到图像生成器生成提示词，帮助开发者构建并管理可无缝接入现有生成流程的复杂提示词生成工作流。它支持从单一模板生成大量独特提示词、通配符文件与通配符库（文本、JSON、YAML）、模板的穷举生成、变量赋值以复用提示词片段，以及基于 Jinja 的高级模板创建。材料还提到 Magic Prompt 自动润色提示词、I'm Feeling Lucky 借助 Lexica.art 语义搜索查找相似提示词，以及 Attention Grabber 为支持注意力语法的系统随机强调短语。</p>
+</li>
+</ul>
+<h2>3D 与电子设计</h2>
+<ul>
+<li><strong>打印与建模</strong>：<a href="https://github.com/nanassound/mnft">nanassound/mnft</a> · 40 star · 持续跟踪<br>mnft 是一个用 Elixir 编写的文本到 CAD 工具，用户以自然语言描述零件，由语言模型生成 CAD 代码，再经受控引擎执行，输出 STL、STEP 文件及可在浏览器中旋转查看的 3D 预览。其核心 mnft_cad 为纯 Elixir/OTP 实现，包含可插拔引擎（build123d、OpenSCAD）、可插拔存储（默认 ETS 表加 fsync 日志）以及自带密钥的多提供商 LLM 接入，不依赖 Web 框架、认证层或数据库服务器。配套的 Python 与浏览器运行时分别在静态检查、rlimits 和硬性时限下执行 build123d 代码，或通过 replicad 在 WebAssembly 中运行 OCCT 8 内核，并提供 Phoenix、无头及纯浏览器三种参考示例。</li>
+</ul>
+<h2>量化交易</h2>
+<ul>
+<li><strong>综合</strong>：<a href="https://github.com/Crypto-toolbox/HFT-Orderbook">Crypto-toolbox/HFT-Orderbook</a> · 1389 star · 首次收录<br>这是一个面向高频交易场景的限价订单簿实现，按 WK Selph 的描述提供 C 与纯 Python 两套版本。C 版基于 AVL 限价树、订单队列和哈希表构建 Book API，支持价格-时间优先撮合、订单替换与撤销，并通过对象池和开放寻址哈希表实现稳态下每订单零分配；Python 版为无依赖的完整 LimitOrderBook，需 Python 3.9 以上。</li>
+</ul>
+        </div>
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Ravensea | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
