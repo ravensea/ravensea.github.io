@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Ravensea">
+<title>GitHub 趋势日报 2026-11-09 | RAVENSEA HOME</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <script src="/js/tocbot.min.js"></script>
+<meta name="generator" content="trends-tracking"></head>
+
+<body>
+    <script>
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+            } else {
+                pagebody.classList.remove('dark-theme');
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">RAVENSEA HOME</a></div>
+            <div class="menu navbar-right">
+                    <a class="menu-item active" href="/trends">Trends</a>
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">RAVENSEA HOME</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                    <a class="menu-item active" href="/trends">Trends</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">GitHub 趋势日报 2026-11-09</h1>
+                <div class="post-meta">
+                        Author: <a itemprop="author" rel="author" href="/">Ravensea</a>
+                        <span class="post-time">
+                        Date: <a href="#">2026年11月9日</a>
+                        </span>
+                        <span class="post-category">
+                    Category:
+                                <a href="/trends/">Trends</a>
+                        </span>
+                </div>
+        </header>
+
+        <div class="post-content">
+<p>每个子方向只保留一项代表仓库，按下列优先级挑选：</p>
+<ol>
+<li>已出现在 GitHub 全球「今日」趋势榜的优先；</li>
+<li>其次看本跟踪器状态：首次收录 &gt; 显著涨星 &gt; 持续跟踪；</li>
+<li>同优先级再按 star 总数从高到低；</li>
+<li>同一 GitHub「This week」近 7 天内，更早日报已出现过的仓库不再入选；同日各子方向之间也不重复。</li>
+</ol>
+<h2>影像与相机形态</h2>
+<ul>
+<li>
+<p><strong>综合</strong>：<a href="https://github.com/arsfabula/Insta360-Remote-CIQ">arsfabula/Insta360-Remote-CIQ</a> · 14 star · 首次收录<br>这是一个面向 Garmin 设备的 Connect IQ 小部件，用于通过蓝牙远程控制 Insta360 One R 模块化相机，主要代码位于 BLE Barrel 库，OneR Remote 与 OneR remote DF 目录分别提供小部件和数据字段的界面代码。它可自动扫描并连接相机，支持选择拍摄模式、开关 GPS 遥测、启停录制，并在停止时提供 Stop、Highlight 和 Track 选项；开启 GPS 遥测后可通过官方应用或 Studio 叠加 GPS 数据。该小部件在 360 模组上开发和测试，作者称可能兼容 One RS、One X、One X2、X3，但不兼容 GO、GO2、GO3、Ace 与 Ace pro，且仅支持具备 BLE 和 CIQ V3.1 及以上的 Garmin 设备。</p>
+</li>
+<li>
+<p><strong>电子</strong>：<a href="https://github.com/openmv/openmv">openmv/openmv</a> · 2896 star · 持续跟踪<br>OpenMV 是开源机器视觉项目，提供可用 Python3 编程的摄像头模块，面向初学者和研究者降低机器视觉与嵌入式 AI 的开发门槛。其固件包含丰富的图像处理库，支持图像滤波、特征检测、颜色追踪、二维码与条形码解码、AprilTag 识别以及 GIF/MJPEG 录制与流传输，并支持 TensorFlow、ST Edge AI 及基于 ARM Ethos-U55 和 ST Neural-ART 的 NPU 加速。最新一代包括基于 STM32N6 的 OpenMV-N6 和基于 Alif Ensemble E3 的超低功耗 OpenMV-AE3，后者可在 0.25 W 功耗下以 30 FPS 运行 YOLO 模型。</p>
+</li>
+<li>
+<p><strong>机械</strong>：<a href="https://github.com/faisalthaheem/surveillance-simulator">faisalthaheem/surveillance-simulator</a> · 25 star · 首次收录<br>这是一个基于ROS2与Gazebo的STANAG 4586兼容监视模拟器，用于在虚拟3D环境中为C2（指挥控制）应用开发提供光电与红外实时视频流。其载荷由可伸展桅杆和安装在两自由度云台上的相机组成，并配有激光测距仪，可模拟ISR任务模块的传感器与执行机构供远程控制。项目采用C++编写，依赖ROS Noetic、Gazebo与GStreamer，通过RTSP输出仿真环境视频；该公开GPL v3快照已归档冻结，后续开发转为闭源。</p>
+</li>
+<li>
+<p><strong>算法</strong>：<a href="https://github.com/SensorsINI/jaer">SensorsINI/jaer</a> · 208 star · 持续跟踪<br>jAER 是一款用 Java 开发的全功能跨平台桌面应用，支持 Linux、Windows 和 macOS，用于连接并采集各大厂商的神经形态事件相机与硅耳蜗输出。它面向事件传感器研究者与开发者，提供高效的 USB 采集流水线、统一的 DVS 像素偏置调节以优化传感器设置，以及快速准确的去噪算法，并支持通过文档扩展新设备。</p>
+</li>
+</ul>
+<h2>视觉、世界模型与运控</h2>
+<ul>
+<li>
+<p><strong>世界模型</strong>：<a href="https://github.com/NVIDIA/cosmos">NVIDIA/cosmos</a> · 12320 star · 持续跟踪<br>NVIDIA Cosmos 是一个面向物理 AI 的开放平台，汇集世界基础模型、数据集与工具，供开发者构建机器人、自动驾驶和智能基础设施等应用。其模型家族强调在同一体系中完成感知、推理、仿真与行动，覆盖物理感知生成、世界场景迁移、动作策略执行以及面向自动驾驶的合成数据与仿真等能力。</p>
+</li>
+<li>
+<p><strong>视觉运控</strong>：<a href="https://github.com/Genesis-Embodied-AI/genesis-world">Genesis-Embodied-AI/genesis-world</a> · 30200 star · 持续跟踪<br>Genesis World 是一个面向通用机器人学与具身智能学习的 Python 仿真平台，为物理 AI 开发提供统一的仿真接口。它把多物理引擎（刚体、FEM、MPM、粒子及 uipc 等共享同一场景与状态）、照片级渲染器 Nyx 和跨平台编译器 Quadrants 整合在 Pythonic 接口之后，并支持从单机笔记本扩展到数据中心级 GPU，便于研究者阅读、扩展和嵌入研究代码。</p>
+</li>
+</ul>
+<h3>视觉算法</h3>
+<ul>
+<li>
+<p><strong>理解</strong>：<a href="https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization">NVIDIA-AI-Blueprints/video-search-and-summarization</a> · 1969 star · 持续跟踪<br>这是 NVIDIA 面向视频搜索与摘要的 AI Blueprint（VSS），一个基于 Python 的 GPU 加速参考架构，用于构建能对实时或录制视频进行搜索、分析、摘要与推理的视频分析智能体。它面向需要自然语言视频检索、视觉问答、告警核验、片段提取和长视频摘要的研究与开发场景，结合 Cosmos 等视觉语言模型、Nemotron 等大语言模型、RAG 与 NVIDIA NIM 微服务，并按实时视频智能、下游分析、智能体与离线处理三部分组织处理流程。</p>
+</li>
+<li>
+<p><strong>生成</strong>：<a href="https://github.com/invoke-ai/InvokeAI">invoke-ai/InvokeAI</a> · 29027 star · 首次收录<br>InvokeAI 是一个面向专业人士、艺术家和爱好者的创意引擎，利用图像与视频生成模型来生成和创作视觉媒体。它提供业界领先的本地 Web 服务器与 React 界面，并包含统一画布（支持生成、内外补绘与画笔工具）以及基于节点的可定制工作流管理，便于构建和共享生成管线。该仓库以 TypeScript 为主要语言，采用商业友好许可，可作为多个商业产品的基础。</p>
+</li>
+</ul>
+<h2>3D 与电子设计</h2>
+<ul>
+<li><strong>打印与建模</strong>：<a href="https://github.com/earthtojake/text-to-cad">earthtojake/text-to-cad</a> · 25848 star · 持续跟踪<br>text-to-cad 是一个用 AI 设计实体产品的 Python 项目，让智能体根据用户对零件或装配体的描述编写 Python 脚本并运行，从而生成模型并在 CAD 查看器中展示。它主要面向需要快速产出可制造三维模型的研究者与工程用户，模型基于 build123d 和 OpenCASCADE 构建，可导出为 STEP、STL、3MF、GLB 以及用于激光和水刀切割的 DXF 轮廓与展开图，并支持机构关节与动画。其插件以技能和 MCP 服务器形式接入支持插件或技能的智能体，还提供电路板相关的 KiCad 原理图与板卡设计、ERC/DRC 检查能力。</li>
+</ul>
+<h2>量化交易</h2>
+<ul>
+<li><strong>综合</strong>：<a href="https://github.com/cinar/indicator">cinar/indicator</a> · 1917 star · 首次收录<br>这是一个用 Go 编写的高性能技术分析指标与回测框架，提供 80 多个技术分析指标、策略以及回测框架，主要面向研究与教育用途。其亮点包括零依赖、基于 Go channel 的流式输入输出（并提供切片与通道互转的辅助函数）、指标与策略完全可配置且无预设值，以及利用 Go 泛型支持多种数值格式。</li>
+</ul>
+        </div>
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Ravensea | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
