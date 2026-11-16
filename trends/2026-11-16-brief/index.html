@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Ravensea">
+<title>GitHub 趋势日报 2026-11-16 | RAVENSEA HOME</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <script src="/js/tocbot.min.js"></script>
+<meta name="generator" content="trends-tracking"></head>
+
+<body>
+    <script>
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+            } else {
+                pagebody.classList.remove('dark-theme');
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">RAVENSEA HOME</a></div>
+            <div class="menu navbar-right">
+                    <a class="menu-item active" href="/trends">Trends</a>
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">RAVENSEA HOME</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                    <a class="menu-item active" href="/trends">Trends</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">GitHub 趋势日报 2026-11-16</h1>
+                <div class="post-meta">
+                        Author: <a itemprop="author" rel="author" href="/">Ravensea</a>
+                        <span class="post-time">
+                        Date: <a href="#">2026年11月16日</a>
+                        </span>
+                        <span class="post-category">
+                    Category:
+                                <a href="/trends/">Trends</a>
+                        </span>
+                </div>
+        </header>
+
+        <div class="post-content">
+<p>每个子方向只保留一项代表仓库，按下列优先级挑选：</p>
+<ol>
+<li>已出现在 GitHub 全球「今日」趋势榜的优先；</li>
+<li>其次看本跟踪器状态：首次收录 &gt; 显著涨星 &gt; 持续跟踪；</li>
+<li>同优先级再按 star 总数从高到低；</li>
+<li>同一 GitHub「This week」近 7 天内，更早日报已出现过的仓库不再入选；同日各子方向之间也不重复。</li>
+</ol>
+<h2>影像与相机形态</h2>
+<ul>
+<li>
+<p><strong>综合</strong>：<a href="https://github.com/rhoenschrat/DJI-Remote">rhoenschrat/DJI-Remote</a> · 36 star · 首次收录<br>DJI-Remote 是一个用 C 语言编写的蓝牙遥控器项目，可同时控制最多三台 DJI Osmo Action/360 相机，面向多机位骑行拍摄等需要可靠、免分心操控的场景。它支持开始/停止录制、高光标记、休眠唤醒与休眠中快照、模式切换、开机自动扫描重连、多机动作协同，并向所有已连接相机转发实时 GPS 数据。项目基于 M5Stack Basic V2.7（ESP32）和 Waveshare ESP32-S3-LCD-1.9（ESP32-S3），使用 ESP-IDF 与 LVGL 9.5.0 实现硬件加速界面，并可选配 GPIO 外接按键。</p>
+</li>
+<li>
+<p><strong>电子</strong>：<a href="https://github.com/amd/mini-isp">amd/mini-isp</a> · 152 star · 首次收录<br>Mini-ISP 是面向 AMD FPGA、完全用 Verilog RTL 在可编程逻辑中实现的小型开源图像信号处理器，用于把相机传感器 RAW 数据转换为可供显示、后续处理或存储的图像，为缺少硬化 ISP 的 FPGA 与 SoC 提供 ISP 方案。其设计目标是在占用尽量少 PL 资源的前提下实现高吞吐、低延迟，并保证输出结果正确、图像质量对多数应用可接受。</p>
+</li>
+<li>
+<p><strong>机械</strong>：<a href="https://github.com/e-flare/toolkit">e-flare/toolkit</a> · 14 star · 首次收录<br>该仓库是面向事件相机镜头眩光去除的研究工具包，基于 Python 实现，对应论文《Learning to Remove Lens Flare in Event Camera》。它主要解决事件相机受镜头眩光影响而产生严重退化的问题：这种光学伪影在事件流中形成复杂的时空畸变，此前基本被忽视。材料显示其亮点是提出首个系统性的事件相机镜头眩光去除框架，并先通过推导基于物理的前向模型来建立理论基础，刻画非线性抑制过程。</p>
+</li>
+<li>
+<p><strong>算法</strong>：<a href="https://github.com/rmcao/noise2image">rmcao/noise2image</a> · 21 star · 首次收录<br>这是论文《Noise2Image: Noise-Enabled Static Scene Recovery for Event Cameras》的官方实现与数据仓库，面向事件相机静态场景恢复研究，提供噪声事件到图像的转换代码。仓库包含噪声事件到图像数据集、基于实验数据训练的预训练权重，以及推理、实验数据训练评估和合成数据训练三类脚本，并支持极性、像素分箱、时间分箱与积分时间等参数配置。</p>
+</li>
+</ul>
+<h2>视觉、世界模型与运控</h2>
+<ul>
+<li>
+<p><strong>世界模型</strong>：<a href="https://github.com/Thinklab-SJTU/Bench2Drive">Thinklab-SJTU/Bench2Drive</a> · 1979 star · 首次收录<br>Bench2Drive 是面向端到端自动驾驶（E2E-AD）的闭环基准与数据集，由世界模型强化学习专家 Think2Drive 增强，主要供自动驾驶研究者训练和评测端到端模型。其 0.0.4 版本强调数据分布，提供在 44 个场景×25 条路线（共 1,100 条路线）上严格均匀采集的训练集，新增 3D 占用模态，并设置 220 条路线的独立验证集以支持更可靠的评估。</p>
+</li>
+<li>
+<p><strong>视觉运控</strong>：<a href="https://github.com/terminators2025/RealMirror">terminators2025/RealMirror</a> · 785 star · 首次收录<br>RealMirror 是一个综合性的开源具身智能 VLA 平台，面向具身智能与机器人学习研究者，提供遥操作、数据采集与模型评测的一体化工具链。平台开源了 Isaac Sim 侧控制栈与 XR-Linker WebXR 传输的完整遥操作方案，并支持基于 PICO 的手势遥操作；同时提出 Seed2Scale 大规模上肢轨迹自动生成方案，配套视觉物理回放工具与量化评估结果。</p>
+</li>
+</ul>
+<h3>视觉算法</h3>
+<ul>
+<li>
+<p><strong>理解</strong>：<a href="https://github.com/MMMU-Benchmark/MMMU">MMMU-Benchmark/MMMU</a> · 601 star · 首次收录<br>该仓库是 MMMU 与 MMMU-Pro 两篇论文的官方评测代码，面向研究者评估多模态模型在需要大学水平学科知识与审慎推理的多学科任务上的表现。MMMU 包含约 1.15 万道来自考试、测验和教材的多模态题目，覆盖六大核心学科、30 个学科和 183 个子领域，涉及图表、示意图、地图、表格、乐谱和化学结构等 32 种异构图像类型；MMMU-Pro 则是更稳健的评测版本。仓库提供相应评测流程，并已发布测试集答案以支持本地评测，同时收录 EvalScope 作为社区维护的第三方评测工作流。</p>
+</li>
+<li>
+<p><strong>生成</strong>：<a href="https://github.com/brave-plum-co/leonardo-ai-desktop">brave-plum-co/leonardo-ai-desktop</a> · 476 star · 首次收录<br>这是一个面向 Windows 10/11 x64 的 Leonardo AI 离线独立部署包，由独立维护者打包发布，主要服务于隔离网络的设计工作站、带宽受限的实验室环境以及需要批量复现安装的团队。它把运行时、模型缓存加载器、资源管线和本地渲染依赖整合进单一分发包，免去首次启动时在线拉取模型，并同时支持便携模式与常规安装模式。材料还提到其覆盖文生图、微调模型、含局部重绘与外扩的画布编辑器、实时生成及图生动态等能力。</p>
+</li>
+</ul>
+<h2>3D 与电子设计</h2>
+<ul>
+<li><strong>打印与建模</strong>：<a href="https://github.com/earthtojake/text-to-cad">earthtojake/text-to-cad</a> · 26407 star · 持续跟踪<br>text-to-cad 是一个用 Python 开发的 AI 辅助实体产品设计仓库，目标是让用户通过智能体以文本需求生成零件与装配体的三维模型。它把模型写成基于 build123d 和 OpenCASCADE 的 Python 脚本，可导出 STEP、STL、3MF、GLB 及用于激光/水刀切割的 DXF 轮廓与展开图，并支持机构关节与动画、CAD 查看器实时展示，以及面向制造检查、3D 打印、钣金和 CNC 服务的连接；另含基于 KiCad 的电路板原理图相关能力。</li>
+</ul>
+<h2>量化交易</h2>
+<ul>
+<li><strong>综合</strong>：<a href="https://github.com/gbeced/pyalgotrade">gbeced/pyalgotrade</a> · 4678 star · 首次收录<br>PyAlgoTrade 是一个事件驱动的 Python 算法交易库，最初侧重回测，也可通过 Bitstamp 进行比特币的模拟交易与实盘交易。它支持市价、限价、止损和止损限价订单，可读取 CSV 格式的各类时间序列数据，并提供技术指标与过滤器、Sharpe 比率和回撤分析等绩效指标、Twitter 实时事件处理、事件分析器以及 TA-Lib 集成。该项目已废弃且不再维护，README 建议关注 Basana 等替代项目。</li>
+</ul>
+        </div>
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Ravensea | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
