@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Ravensea">
+<title>GitHub 趋势日报 2026-11-20 | RAVENSEA HOME</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <script src="/js/tocbot.min.js"></script>
+<meta name="generator" content="trends-tracking"></head>
+
+<body>
+    <script>
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+            } else {
+                pagebody.classList.remove('dark-theme');
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">RAVENSEA HOME</a></div>
+            <div class="menu navbar-right">
+                    <a class="menu-item active" href="/trends">Trends</a>
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">RAVENSEA HOME</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                    <a class="menu-item active" href="/trends">Trends</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">GitHub 趋势日报 2026-11-20</h1>
+                <div class="post-meta">
+                        Author: <a itemprop="author" rel="author" href="/">Ravensea</a>
+                        <span class="post-time">
+                        Date: <a href="#">2026年11月20日</a>
+                        </span>
+                        <span class="post-category">
+                    Category:
+                                <a href="/trends/">Trends</a>
+                        </span>
+                </div>
+        </header>
+
+        <div class="post-content">
+<p>每个子方向只保留一项代表仓库，按下列优先级挑选：</p>
+<ol>
+<li>已出现在 GitHub 全球「今日」趋势榜的优先；</li>
+<li>其次看本跟踪器状态：首次收录 &gt; 显著涨星 &gt; 持续跟踪；</li>
+<li>同优先级再按 star 总数从高到低；</li>
+<li>同一 GitHub「This week」近 7 天内，更早日报已出现过的仓库不再入选；同日各子方向之间也不重复。</li>
+</ol>
+<h2>影像与相机形态</h2>
+<ul>
+<li>
+<p><strong>综合</strong>：<a href="https://github.com/syncom/insta360-cli-utils">syncom/insta360-cli-utils</a> · 37 star · 首次收录<br>该仓库提供在命令行处理 Insta360 全景视频（.insv）的工具与操作说明，无需使用 Insta360 Studio 桌面软件，主要面向缺少官方 Linux 版 Studio 的 Linux 用户。其做法是借助 Insta360 媒体 SDK 构建 Docker 镜像，在容器内完成视频转换与拼接，并可按有无 NVIDIA GPU 选择 GPU 或 CPU 处理路径。</p>
+</li>
+<li>
+<p><strong>电子</strong>：<a href="https://github.com/openmv/openmv">openmv/openmv</a> · 2904 star · 持续跟踪<br>OpenMV 是开源机器视觉项目，提供可用 Python3 编程的摄像头模块，面向初学者和研究者降低机器视觉与嵌入式 AI 的开发门槛。其固件包含丰富的图像处理库，支持图像滤波、特征检测、颜色追踪、二维码与条形码解码、AprilTag 识别以及 GIF/MJPEG 录制与流传输，并支持 TensorFlow、ST Edge AI 及基于 ARM Ethos-U55 和 ST Neural-ART 的 NPU 加速。最新一代包括基于 STM32N6 的 OpenMV-N6 和基于 Alif Ensemble E3 的超低功耗 OpenMV-AE3，后者可在 0.25 W 功耗下以 30 FPS 运行 YOLO 模型。</p>
+</li>
+<li>
+<p><strong>机械</strong>：<a href="https://github.com/tteimour/gimbal-for-fun">tteimour/gimbal-for-fun</a> · 25 star · 持续跟踪<br>这是一个面向小型无人机（≤3 kg）的两轴（偏航/俯仰）EO/IR 稳定云台仿真器，用 Python 实现，聚焦云台本身的动力学、稳定、传感器、跟踪与估计，不依赖 PX4 等自动驾驶仪。它提供 EO 与 LWIR 渲染、图像跟踪和地理锁定等能力，并附带 Baku 世界场景，可用于云台设计与仿真研究。</p>
+</li>
+<li>
+<p><strong>算法</strong>：<a href="https://github.com/SensorsINI/jaer">SensorsINI/jaer</a> · 208 star · 持续跟踪<br>jAER 是一个用 Java 开发的全功能跨平台（Linux、Windows、macOS）桌面应用，面向神经形态事件相机与硅耳蜗，支持 inilabs、iniVation、Prophesee、NRV 等主要厂商的设备。它旨在替代厂商专有相机软件，提供即插即用的采集体验，并支持通过高效流水线捕获 USB 事件相机输出、统一调整 DVS 像素偏置以优化传感器设置。项目由发明 DVS 和 HVS 事件相机的实验室开发，积累了 20 年事件传感器实践经验，当前开发还包括多相机长时录制与打包分发支持。</p>
+</li>
+</ul>
+<h2>视觉、世界模型与运控</h2>
+<ul>
+<li>
+<p><strong>世界模型</strong>：<a href="https://github.com/NVlabs/Sana">NVlabs/Sana</a> · 9862 star · 持续跟踪<br>NVlabs/Sana 是面向图像、视频与世界建模的高效生成模型及配套全栈训练与推理引擎，以 Python 实现。它主要服务于需要训练和部署生成模型的研究者，提供覆盖 SANA、SANA-1.5、SANA-Sprint、SANA-Video、SANA-WM、SANA-Streaming 与 Sol-RL 等方向的模型与工具链。材料还显示其具备低显存演示（如 4bit、ControlNet 场景）以及与 ComfyUI、SGLang、Cosmos-RL 等生态的对接能力。</p>
+</li>
+<li>
+<p><strong>视觉运控</strong>：<a href="https://github.com/Genesis-Embodied-AI/genesis-world">Genesis-Embodied-AI/genesis-world</a> · 30268 star · 持续跟踪<br>Genesis World 是一个面向通用机器人学与具身智能学习的 Python 仿真平台，为物理 AI 开发提供统一的仿真接口。它把多物理引擎（刚体、FEM、MPM、粒子及 uipc 等共享同一场景与状态）、照片级渲染器 Nyx 和跨平台编译器 Quadrants 整合在 Pythonic 接口之后，并支持从单机笔记本扩展到数据中心级 GPU，便于研究者阅读、扩展和嵌入研究代码。</p>
+</li>
+</ul>
+<h3>视觉算法</h3>
+<ul>
+<li>
+<p><strong>理解</strong>：<a href="https://github.com/openclaw/Peekaboo">openclaw/Peekaboo</a> · 5503 star · 持续跟踪<br>Peekaboo 是一个用 Swift 编写的 macOS 命令行工具与可选 MCP 服务器，也提供菜单栏应用，用于截取单个应用或整个系统的屏幕截图，并可通过本地或远程 AI 模型进行可选的视觉问答。它面向需要让 AI 代理“看见”屏幕并执行原生 UI 自动化的研究者与开发者，支持屏幕捕获、辅助功能检查与原生 UI 自动化，既可单独使用，也能让内置代理规划多步任务，或将同一套工具集暴露给 MCP 客户端。</p>
+</li>
+<li>
+<p><strong>生成</strong>：<a href="https://github.com/notivn/AIEVv2">notivn/AIEVv2</a> · 146 star · 首次收录<br>AIEVv2 是一个面向越南语场景的自动 AI 视频剪辑系统，由 Claude 担任“导演”，驱动 HyperFrames（HTML + GSAP 动态图形）与 Remotion（时间线合成）完成剪辑并导出 MP4。它主要解决从素材到成片的自动化编辑问题，支持卡拉 OK 字幕、动态排版、音效、时间线编辑器、文本转视频、视频翻译与配音，并提供自托管 Web 仪表盘供研究者监督和调整。</p>
+</li>
+</ul>
+<h2>3D 与电子设计</h2>
+<ul>
+<li><strong>打印与建模</strong>：<a href="https://github.com/nanassound/mnft">nanassound/mnft</a> · 41 star · 持续跟踪<br>mnft 是一个用 Elixir 编写的文本到 CAD 工具，用户以自然语言描述零件，由语言模型生成 CAD 代码，再经受控引擎执行，输出 STL、STEP 文件及可在浏览器中旋转查看的 3D 预览。其核心 mnft_cad 为纯 Elixir/OTP 实现，包含可插拔引擎（build123d、OpenSCAD）、可插拔存储（默认 ETS 表加 fsync 日志）以及自带密钥的多提供商 LLM 接入，不依赖 Web 框架、认证层或数据库服务器。配套的 Python 与浏览器运行时分别在静态检查、rlimits 和硬性时限下执行 build123d 代码，或通过 replicad 在 WebAssembly 中运行 OCCT 8 内核，并提供 Phoenix、无头及纯浏览器三种参考示例。</li>
+</ul>
+<h2>量化交易</h2>
+<ul>
+<li><strong>综合</strong>：<a href="https://github.com/zacharias80/Polymarket-Prediction-Bot">zacharias80/Polymarket-Prediction-Bot</a> · 93 star · 首次收录<br>这是一个面向预测市场研究的开源 Python 工具包，提供 Polymarket CLOB 市场的终端浏览、实时订单簿查看、基于公平概率模型的边际检测、流动性提供与跨市场套利策略，并支持虚拟 USDC 的模拟交易及风险限额与敞口控制。它适合希望以教育目的研究预测市场定价与策略的研究者，默认采用模拟交易，实盘下单需自行配置 Polymarket API 凭证。项目为非官方社区项目，与 Polymarket 无关联，不构成财务建议。</li>
+</ul>
+        </div>
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Ravensea | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
