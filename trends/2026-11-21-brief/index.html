@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Ravensea">
+<title>GitHub 趋势日报 2026-11-21 | RAVENSEA HOME</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <script src="/js/tocbot.min.js"></script>
+<meta name="generator" content="trends-tracking"></head>
+
+<body>
+    <script>
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+            } else {
+                pagebody.classList.remove('dark-theme');
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">RAVENSEA HOME</a></div>
+            <div class="menu navbar-right">
+                    <a class="menu-item active" href="/trends">Trends</a>
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">RAVENSEA HOME</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                    <a class="menu-item active" href="/trends">Trends</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">GitHub 趋势日报 2026-11-21</h1>
+                <div class="post-meta">
+                        Author: <a itemprop="author" rel="author" href="/">Ravensea</a>
+                        <span class="post-time">
+                        Date: <a href="#">2026年11月21日</a>
+                        </span>
+                        <span class="post-category">
+                    Category:
+                                <a href="/trends/">Trends</a>
+                        </span>
+                </div>
+        </header>
+
+        <div class="post-content">
+<p>每个子方向只保留一项代表仓库，按下列优先级挑选：</p>
+<ol>
+<li>已出现在 GitHub 全球「今日」趋势榜的优先；</li>
+<li>其次看本跟踪器状态：首次收录 &gt; 显著涨星 &gt; 持续跟踪；</li>
+<li>同优先级再按 star 总数从高到低；</li>
+<li>同一 GitHub「This week」近 7 天内，更早日报已出现过的仓库不再入选；同日各子方向之间也不重复。</li>
+</ol>
+<h2>影像与相机形态</h2>
+<ul>
+<li>
+<p><strong>综合</strong>：<a href="https://github.com/NiklasVoigt/Insta360-Livestream">NiklasVoigt/Insta360-Livestream</a> · 30 star · 首次收录<br>该仓库是一个 Python 项目，通过逆向 Insta360 安卓应用（v1.18.2）、定位端口 6666 并分析手机与相机之间的 tcpdump，重建 TCP 通信，使电脑无需手机中转即可获取相机直播流。直播流为 HEVC/H.265 编码、1440x720 分辨率、30 FPS 的双鱼眼格式，可用 ffplay 播放或经 ffmpeg 转为 mp4。材料显示其在 BetaFPV SMO 360 和 Insta 360 One R 上测试通过（后者有丢帧），Insta360 X3 上相机显示闪烁且接收不到可用视频数据。</p>
+</li>
+<li>
+<p><strong>电子</strong>：<a href="https://github.com/cruxopen-labs/openISP">cruxopen-labs/openISP</a> · 1556 star · 持续跟踪<br>openISP 是一个用 Python 实现的图像信号处理器，负责将图像传感器采集的 RAW 图像转换为 RGB/YUV 图像，供后续处理或显示使用。项目面向希望从硬件视角理解 ISP 整体流水线及调优功能的研究者，按模块实现了坏点校正、黑电平补偿、去马赛克、自动白平衡、伽马校正、颜色校正矩阵、色彩空间转换、边缘增强、伪彩抑制以及亮度/对比度控制等环节，并包含双边滤波和非局部均值等降噪方法。镜头阴影校正、部分亮度/色度降噪以及宽/高动态范围、时/空域降噪等高级功能尚未完成。</p>
+</li>
+<li>
+<p><strong>机械</strong>：<a href="https://github.com/Thibault-GILLARD/box2boxcam-football-vision">Thibault-GILLARD/box2boxcam-football-vision</a> · 50 star · 首次收录<br>box2boxcam 是一个面向业余足球比赛拍摄的 Python 开源项目，目标是把 iPhone 装在约 160 欧元的手机云台上，让手机充当自动跟拍的“摄像师”。它主要解决业余比赛无人跟拍、球在夜间或远距离仅占几个像素时难以持续跟踪的问题，通过微调的小型 YOLO26 模型检测足球，并用混合规则同时跟随球和球员，使球被遮挡时比赛画面仍留在取景范围内，再由手机驱动云台电机转动。项目还提供 PyTorch 与 Core ML 格式的模型、带保留测试集的数据集，以及数据集构建、训练、留出评估和闭环相机引导基准测试代码，单元测试无需数据或网络即可运行。</p>
+</li>
+<li>
+<p><strong>算法</strong>：<a href="https://github.com/cli1980/vistaseen">cli1980/vistaseen</a> · 0 star · 首次收录<br>Vistas As Seen 是一个用 TypeScript 实现、面向风景画家与摄影者的深度感知计算摄影概念验证工具，旨在把风景照片处理成更能体现现场空间尺度感的绘画参考。它针对照片中远景容易失去存在感、摄影参考素材表现力有限的问题，提供固定位置相机旋转与基于深度的增强两种可单独或组合使用的手段，并在保留原图对照的情况下展示处理差异。其能力亮点包括本地深度估计（可选 Small、Base、Large 模型）、目标焦距与构图调整、盲对比，以及支持 JPEG、PNG、WebP、HEIC、HEIF 导入并在浏览器需要时本地转换 HEIC。</p>
+</li>
+</ul>
+<h2>视觉、世界模型与运控</h2>
+<ul>
+<li>
+<p><strong>世界模型</strong>：<a href="https://github.com/deeplethe/utopia">deeplethe/utopia</a> · 8740 star · 持续跟踪<br>Utopia 是 deeplethe 开源、以 Rust 构建的企业级世界模型（world model）项目，仓库自述为“全球首个开源企业世界模型”。材料未具体说明其解决的问题、目标用户及关键技术能力，仅能从 README 结构看到哲学、快速开始、特性与路线图等章节，以及 Apache 2.0 许可和 GHCR 容器镜像等工程配套信息。</p>
+</li>
+<li>
+<p><strong>视觉运控</strong>：<a href="https://github.com/Unity-Technologies/ml-agents">Unity-Technologies/ml-agents</a> · 19887 star · 持续跟踪<br>Unity ML-Agents Toolkit 是一个开源项目，使游戏和仿真环境可用于训练智能体。它主要面向需要构建训练环境的研究者，支持使用深度强化学习和模仿学习来训练智能体。项目以 C# 实现，并提供包文档，涵盖安装、版本兼容、功能、教程与 API 参考等内容。</p>
+</li>
+</ul>
+<h3>视觉算法</h3>
+<ul>
+<li>
+<p><strong>理解</strong>：<a href="https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization">NVIDIA-AI-Blueprints/video-search-and-summarization</a> · 2002 star · 持续跟踪<br>这是 NVIDIA 面向视频搜索与摘要的 AI Blueprint（VSS），一个基于 Python 的 GPU 加速参考架构，用于构建能对实时或录制视频进行搜索、分析、摘要与推理的视频分析智能体。它面向需要自然语言视频检索、视觉问答、告警核验、片段提取和长视频摘要的研究与开发场景，结合 Cosmos 等视觉语言模型、Nemotron 等大语言模型、RAG 与 NVIDIA NIM 微服务，并按实时视频智能、下游分析、智能体与离线处理三部分组织处理流程。</p>
+</li>
+<li>
+<p><strong>生成</strong>：<a href="https://github.com/invoke-ai/InvokeAI">invoke-ai/InvokeAI</a> · 29131 star · 持续跟踪<br>InvokeAI 是一个面向专业人士、艺术家和爱好者的创意引擎，利用图像与视频生成模型来生成和创作视觉媒体。它提供业界领先的本地 Web 服务器与 React 界面，并包含统一画布（支持生成、内外补绘与画笔工具）以及基于节点的可定制工作流管理，便于构建和共享生成管线。该仓库以 TypeScript 为主要语言，采用商业友好许可，可作为多个商业产品的基础。</p>
+</li>
+</ul>
+<h2>3D 与电子设计</h2>
+<ul>
+<li><strong>打印与建模</strong>：<a href="https://github.com/KittyCAD/text-to-cad-blender-addon">KittyCAD/text-to-cad-blender-addon</a> · 38 star · 持续跟踪<br>这是一个用于在 Blender 中调用 Zoo Text-to-CAD API 的 Python 插件，用户通过文本提示、输出格式和输出目录三项输入生成并下载 CAD 模型。插件需配置 KITTYCAD_API_TOKEN 环境变量，可通过快捷键 ctrl+shift+T 或对象模式下的 Add 菜单启动，处理提示时可能耗时数分钟，需在仪表盘查看进度。README 说明其更适合描述单一几何对象而非复杂装配体，并建议提示尽量明确具体。</li>
+</ul>
+<h2>量化交易</h2>
+<ul>
+<li><strong>综合</strong>：<a href="https://github.com/freqtrade/freqtrade">freqtrade/freqtrade</a> · 57111 star · 持续跟踪<br>Freqtrade 是一个用 Python 编写的免费开源加密货币交易机器人，面向需要自动化交易与策略研究的研究者，支持多家主流现货及期货交易所，并可通过 Telegram 或 WebUI 控制。它提供回测、绘图和资金管理工具，并支持通过机器学习进行策略优化，便于在实盘前进行策略验证与评估。</li>
+</ul>
+        </div>
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Ravensea | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
