@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Ravensea">
+<title>GitHub 趋势日报 2026-11-22 | RAVENSEA HOME</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <script src="/js/tocbot.min.js"></script>
+<meta name="generator" content="trends-tracking"></head>
+
+<body>
+    <script>
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+            } else {
+                pagebody.classList.remove('dark-theme');
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">RAVENSEA HOME</a></div>
+            <div class="menu navbar-right">
+                    <a class="menu-item active" href="/trends">Trends</a>
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">RAVENSEA HOME</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                    <a class="menu-item active" href="/trends">Trends</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">GitHub 趋势日报 2026-11-22</h1>
+                <div class="post-meta">
+                        Author: <a itemprop="author" rel="author" href="/">Ravensea</a>
+                        <span class="post-time">
+                        Date: <a href="#">2026年11月22日</a>
+                        </span>
+                        <span class="post-category">
+                    Category:
+                                <a href="/trends/">Trends</a>
+                        </span>
+                </div>
+        </header>
+
+        <div class="post-content">
+<p>每个子方向只保留一项代表仓库，按下列优先级挑选：</p>
+<ol>
+<li>已出现在 GitHub 全球「今日」趋势榜的优先；</li>
+<li>其次看本跟踪器状态：首次收录 &gt; 显著涨星 &gt; 持续跟踪；</li>
+<li>同优先级再按 star 总数从高到低；</li>
+<li>同一 GitHub「This week」近 7 天内，更早日报已出现过的仓库不再入选；同日各子方向之间也不重复。</li>
+</ol>
+<h2>影像与相机形态</h2>
+<ul>
+<li>
+<p><strong>综合</strong>：<a href="https://github.com/AdrianEddy/telemetry-parser">AdrianEddy/telemetry-parser</a> · 323 star · 持续跟踪<br>这是一个用 Rust 编写的遥测解析工具，用于从视频文件内嵌的实时元数据或其他来源（如 Betaflight blackbox）中提取遥测信息。它支持 GoPro、Sony、Insta360、DJI、Blackmagic RAW、RED RAW、ARRI、Betaflight blackbox、ArduPilot 日志及多种移动端传感器记录格式，并提供 Python 模块与在线演示。</p>
+</li>
+<li>
+<p><strong>电子</strong>：<a href="https://github.com/johnbaikie/carcounter">johnbaikie/carcounter</a> · 1 star · 首次收录<br>这是一个基于树莓派5的车辆计数仓库，利用TF-Luna激光雷达构成横跨道路的遮断光束，车辆遮挡光束即计一次数，并由Camera Module 3拍照、记录到CSV。它面向需要长期统计道路车流的研究者，提供局域网网页仪表盘查看当日计数、图表、照片、健康状态与可在线调整的参数，还包含SQLite快速查询副本、每小时维护、Pushover告警和可选UPS监控。</p>
+</li>
+<li>
+<p><strong>机械</strong>：<a href="https://github.com/faisalthaheem/surveillance-simulator">faisalthaheem/surveillance-simulator</a> · 25 star · 持续跟踪<br>这是一个基于ROS2与Gazebo的STANAG 4586兼容监视模拟器，用于在虚拟3D环境中为C2（指挥控制）应用开发提供光电与红外实时视频流。其载荷由可伸展桅杆和安装在两自由度云台上的相机组成，并配有激光测距仪，可模拟ISR任务模块的传感器与执行机构供远程控制。项目采用C++编写，依赖ROS Noetic、Gazebo与GStreamer，通过RTSP输出仿真环境视频；该公开GPL v3快照已归档冻结，后续开发转为闭源。</p>
+</li>
+<li>
+<p><strong>算法</strong>：<a href="https://github.com/neuromorphicsystems/neuromorphic-drivers">neuromorphicsystems/neuromorphic-drivers</a> · 45 star · 持续跟踪<br>Neuromorphic Drivers 是一个用 Rust 实现、同时提供 Python 和 Rust 接口的库，用于实时与 USB 和以太网事件相机交互，兼容 Linux、macOS 和 Windows 的主要架构，目标是支持尽可能多的商用设备。它本身不包含处理算法，而是作为采集层与其他库组合构建实时处理流水线，并自行实现相机的 USB 与以太网协议，不依赖 Metavision、libcaer 或 dv-processing，从而便于跨平台支持并提供轻量的预编译 Python wheel。</p>
+</li>
+</ul>
+<h2>视觉、世界模型与运控</h2>
+<ul>
+<li>
+<p><strong>世界模型</strong>：<a href="https://github.com/lightly-ai/lightly">lightly-ai/lightly</a> · 3833 star · 持续跟踪<br>LightlySSL 是一个面向计算机视觉的 Python 框架，用于在图像上开展自监督学习与潜在世界模型训练，适合需要利用无标注图像学习表征或建模场景动态的研究者。它提供自监督学习与潜在世界模型相关能力，并已支持 LeJEPA 自监督学习方法及基于 LeWM 的世界模型训练与规划教程。</p>
+</li>
+<li>
+<p><strong>视觉运控</strong>：<a href="https://github.com/starVLA/starVLA">starVLA/starVLA</a> · 3970 star · 持续跟踪<br>StarVLA 是一个面向通用机器人研究的开源视觉-语言-动作（VLA）模型开发代码库，采用类似乐高的模块化设计，将模型、数据、训练器、配置和评估等功能组件按自顶向下、高内聚低耦合的原则分离，支持即插即用、快速原型开发和独立调试。它旨在为研究者提供集成与探索前沿 VLA 技术的平台，并作为 StarVLA、StarVLA-α 和 VLAct 等团队工作的官方实现。</p>
+</li>
+</ul>
+<h3>视觉算法</h3>
+<ul>
+<li>
+<p><strong>理解</strong>：<a href="https://github.com/kairyou/agent-tools">kairyou/agent-tools</a> · 179 star · 首次收录<br>kairyou/agent-tools 是一个面向兼容编码代理的可复用技能与运行时能力集合，提供状态栏、供应商用量、图像理解和会话日志等功能，需 Node.js 22 及以上。它主要解决编码代理在提交、评审、重构和禅道任务处理等环节的自动化与规范化问题，包含 at-commit、at-review、at-simplify、at-zentao 等技能，并可通过 skills 安装器自动识别并安装到多数受支持代理的技能目录。</p>
+</li>
+<li>
+<p><strong>生成</strong>：<a href="https://github.com/hanzoai/wan2.2">hanzoai/wan2.2</a> · 3 star · 首次收录<br>Wan2.2 是 hanzoai 仓库中以 Python 实现的开源视频生成模型，支持文本生成视频与图像生成视频合成。它面向视频生成研究者，重点在视频扩散模型中引入混合专家（MoE）架构，通过按时间步分离去噪过程、由专门专家模型处理来扩大模型容量而保持计算成本不变。材料还提到其使用带光照、构图、对比度、色调等详细标签的美学数据以支持可控电影级风格生成，并称训练数据较 Wan2.1 增加 65.6% 图像和 83.2% 视频。</p>
+</li>
+</ul>
+<h2>3D 与电子设计</h2>
+<ul>
+<li><strong>打印与建模</strong>：<a href="https://github.com/Masoudjafaripour/Vibe_CADing">Masoudjafaripour/Vibe_CADing</a> · 16 star · 持续跟踪<br>Vibe-CADing 是一个面向文本到 CAD 设计流程的条件式 CAD 生成与检索项目，核心思路是“几何即代码”：由大语言模型将文本提示写成几何程序，执行后把错误回传给模型修复。它服务于需要从文本生成、细化与复用三维 CAD 零件的研究者，支持 CadQuery/build123d 的 B-rep 与 STEP 输出、GLSL SDF 隐式曲面、JSON 规格到 pythonOCC B-rep，以及基于开源 CAD 库的检索增强生成。其亮点包括体素扩散/VAE/VQ-VAE/自回归生成、PixelCNN 式二维 CAD 布局生成、几何反馈与可制造性评分，以及由 Planner/Retriever/Generator/Critic 组成的多智能体编排。</li>
+</ul>
+<h2>量化交易</h2>
+<ul>
+<li><strong>综合</strong>：<a href="https://github.com/MarkBrezina/Ctrl-Alt-DefeatTheMarket">MarkBrezina/Ctrl-Alt-DefeatTheMarket</a> · 173 star · 首次收录<br>这是一个面向 IMC Prosperity 算法交易的非官方指南与归档项目，主要服务于希望研究高频市场微观结构与系统性策略设计的研究者。项目围绕限价订单簿特征（如不平衡、订单流、VWAP/微价格）构建信号管线，并实现做市、均值回归和漂移感知策略，配合自定义的 tick 级回测与情景测试基础设施。其技术亮点包括模块化交易引擎、滚动回归与短期预测、库存感知报价及被动/主动混合执行逻辑。</li>
+</ul>
+        </div>
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Ravensea | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
