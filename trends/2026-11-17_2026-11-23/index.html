@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Ravensea">
+<title>GitHub 趋势周报 2026-11-17 ~ 2026-11-23 | RAVENSEA HOME</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <script src="/js/tocbot.min.js"></script>
+<meta name="generator" content="trends-tracking"></head>
+
+<body>
+    <script>
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+            } else {
+                pagebody.classList.remove('dark-theme');
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">RAVENSEA HOME</a></div>
+            <div class="menu navbar-right">
+                    <a class="menu-item active" href="/trends">Trends</a>
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">RAVENSEA HOME</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                    <a class="menu-item active" href="/trends">Trends</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">GitHub 趋势周报 2026-11-17 ~ 2026-11-23</h1>
+                <div class="post-meta">
+                        Author: <a itemprop="author" rel="author" href="/">Ravensea</a>
+                        <span class="post-time">
+                        Date: <a href="#">2026-11-17 ~ 2026-11-23</a>
+                        </span>
+                        <span class="post-category">
+                    Category:
+                                <a href="/trends/">Trends</a>
+                        </span>
+                </div>
+        </header>
+
+        <div class="post-content">
+<p>对应 GitHub Trending「This week」窗口：2026-11-17 ~ 2026-11-23。</p>
+<h2>影像与相机形态</h2>
+<h3>综合</h3>
+<ul>
+<li><a href="https://github.com/jagjordi/insta360-autostitcher">jagjordi/insta360-autostitcher</a> · Python · 29 star · 首次收录<br>这是一个用 Python 编写的 Insta360 视频自动拼接工具，会监控指定目录中的 <code>*.insv</code> 文件，并自动将它们拼接为 360 视频。它面向需要批量处理 Insta360 素材的用户，依赖需自行申请的 Insta360 MediaSDK，通过 Docker Compose 部署 Flask 后端（含拼接 worker 与缩略图生成）和 React 前端，运行数据统一存放在可配置的存储根目录下。<br>入选：insta360。来源：主题检索。</li>
+<li><a href="https://github.com/erik-sutton95/OpenPocketCine">erik-sutton95/OpenPocketCine</a> · Swift · 431 star · 持续跟踪<br>OpenPocketCine 是一个用 Swift 开发的开源 iOS 与 Android 现场监视器应用，面向使用 DJI Osmo Pocket 系列相机的拍摄者。它把专业示波器、曝光辅助、相机与云台控制、回放以及 LUT 导出等功能集成到手机上，作为外接现场监视工具使用。项目以 Apache 2.0 许可开源，并提供 iPhone/iPad 的 TestFlight 测试与 Android 测试版渠道。<br>入选：pocket camera。来源：主题检索。</li>
+<li><a href="https://github.com/AdrianEddy/telemetry-parser">AdrianEddy/telemetry-parser</a> · Rust · 323 star · 持续跟踪<br>这是一个用 Rust 编写的遥测解析工具，用于从视频文件内嵌的实时元数据或其他来源（如 Betaflight blackbox）中提取遥测信息。它支持 GoPro、Sony、Insta360、DJI、Blackmagic RAW、RED RAW、ARRI、Betaflight blackbox、ArduPilot 日志及多种移动端传感器记录格式，并提供 Python 模块与在线演示。<br>入选：insta360。来源：主题检索。</li>
+<li><a href="https://github.com/vulture-s/arkiv">vulture-s/arkiv</a> · Python · 81 star · 持续跟踪<br>arkiv 是一个本地优先的媒体资产管理器，面向个人 DIT 和小型团队，用于解决消费级 DAM 无法读取索尼 XAVC 侧车文件、FX 系列及 Insta360/GoPro Max 等 360 素材元数据的问题。它通过 FFmpeg、ChromaDB 和本地 LLM 为素材生成转录、视觉标签、氛围、能量与剪辑位置等 AI 元数据，支持中、日、英多语言语义搜索，并提供 Resolve 插件、EDL/FCPXML 导出及 API/MCP 接口。<br>入选：insta360。来源：主题检索。</li>
+<li><a href="https://github.com/jamakr4/MG4-360-Camera-App">jamakr4/MG4-360-Camera-App</a> · Java · 61 star · 持续跟踪<br>这是一个面向 MG4 EV（AAOS 9、2026 年改款前车型）的社区相机改装应用，用 Java 开发，旨在释放车辆内置 360° 摄像头的潜力。它提供实时鸟瞰与交互式 3D 环视、专用车轮与侧视图、后部 PDC 叠加、可选车身颜色，以及特斯拉式转向灯摄像头叠加、面向信息娱乐屏和仪表盘的数字后视镜和原生四摄像头行车记录与事件捕获。<br>入选：360°。来源：主题检索。</li>
+<li><a href="https://github.com/syncom/insta360-cli-utils">syncom/insta360-cli-utils</a> · Shell · 37 star · 持续跟踪<br>该仓库提供在命令行处理 Insta360 全景视频（.insv）的工具与操作说明，无需使用 Insta360 Studio 桌面软件，主要面向缺少官方 Linux 版 Studio 的 Linux 用户。其做法是借助 Insta360 媒体 SDK 构建 Docker 镜像，在容器内完成视频转换与拼接，并可按有无 NVIDIA GPU 选择 GPU 或 CPU 处理路径。<br>入选：insta360。来源：主题检索。</li>
+<li><a href="https://github.com/rhoenschrat/DJI-Remote">rhoenschrat/DJI-Remote</a> · C · 36 star · 持续跟踪<br>DJI-Remote 是一个用 C 语言编写的蓝牙遥控器项目，可同时控制最多三台 DJI Osmo Action/360 相机，面向多机位骑行拍摄等需要可靠、免分心操控的场景。它支持开始/停止录制、高光标记、休眠唤醒与休眠中快照、模式切换、开机自动扫描重连、多机动作协同，并向所有已连接相机转发实时 GPS 数据。项目基于 M5Stack Basic V2.7（ESP32）和 Waveshare ESP32-S3-LCD-1.9（ESP32-S3），使用 ESP-IDF 与 LVGL 9.5.0 实现硬件加速界面，并可选配 GPIO 外接按键。<br>入选：360 camera。来源：主题检索。</li>
+<li><a href="https://github.com/NiklasVoigt/Insta360-Livestream">NiklasVoigt/Insta360-Livestream</a> · Python · 30 star · 持续跟踪<br>该仓库是一个 Python 项目，通过逆向 Insta360 安卓应用（v1.18.2）、定位端口 6666 并分析手机与相机之间的 tcpdump，重建 TCP 通信，使电脑无需手机中转即可获取相机直播流。直播流为 HEVC/H.265 编码、1440x720 分辨率、30 FPS 的双鱼眼格式，可用 ffplay 播放或经 ffmpeg 转为 mp4。材料显示其在 BetaFPV SMO 360 和 Insta 360 One R 上测试通过（后者有丢帧），Insta360 X3 上相机显示闪烁且接收不到可用视频数据。<br>入选：insta360。来源：主题检索。</li>
+<li><a href="https://github.com/Ripwords/insta360-luna-ultra-desktop">Ripwords/insta360-luna-ultra-desktop</a> · TypeScript · 19 star · 持续跟踪<br>这是一个面向 Insta360 Luna Ultra 相机的非官方桌面伴侣应用，使用 TypeScript 开发，基于 Tauri 2、Nuxt 4、Nuxt UI 和 Three.js 构建，提供 macOS、Windows 与 Linux 原生版本并支持签名自动更新。它通过相机自身 Wi-Fi 网络连接设备，让用户从实时取景器操控相机、浏览媒体库、批量下载带官方水印的照片和视频、删除文件，并以交互式 3D 模型查看相机。主要能力包括带 HUD 的实时取景、1×–15× 变焦、六种拍摄模式、一键拍照录像，以及拖动画面或方向键控制云台平移俯仰、回中与翻转。<br>入选：insta360。来源：主题检索。</li>
+<li><a href="https://github.com/MapMindAI/EasyGaussianSplatting">MapMindAI/EasyGaussianSplatting</a> · Python · 16 star · 持续跟踪<br>EasyGaussianSplatting 是一个端到端流水线，用于把 Insta360 和 DJI 的 360° 全景素材转换为 Gaussian Splatting 重建结果。它把每帧全景重投影为针孔立方体面组成的 rig，用 SuperPoint、LightGlue 和经 EasyTensorRT 以 gRPC 提供的 SALAD 做特征提取与匹配，再通过全局 SfM 求解，并支持重力水平校正与基于 GPS 的可选对齐。流水线还包含人物与天空掩码、可选深度估计、gsplat 训练、TSDF 网格和查看器，并可通过一条命令驱动容器完成拼接、重建、掩码与训练，且能跳过磁盘上已有的阶段以支持中断续跑。<br>入选：insta360。来源：主题检索。</li>
+</ul>
+<h3>电子</h3>
+<ul>
+<li><a href="https://github.com/openmv/openmv">openmv/openmv</a> · C · 2905 star · 持续跟踪<br>OpenMV 是开源机器视觉项目，提供可用 Python3 编程的摄像头模块，面向初学者和研究者降低机器视觉与嵌入式 AI 的开发门槛。其固件包含丰富的图像处理库，支持图像滤波、特征检测、颜色追踪、二维码与条形码解码、AprilTag 识别以及 GIF/MJPEG 录制与流传输，并支持 TensorFlow、ST Edge AI 及基于 ARM Ethos-U55 和 ST Neural-ART 的 NPU 加速。最新一代包括基于 STM32N6 的 OpenMV-N6 和基于 Alif Ensemble E3 的超低功耗 OpenMV-AE3，后者可在 0.25 W 功耗下以 30 FPS 运行 YOLO 模型。<br>入选：camera module。来源：主题检索。</li>
+<li><a href="https://github.com/10x-Engineers/Infinite-ISP">10x-Engineers/Infinite-ISP</a> · Python · 415 star · 持续跟踪<br>Infinite-ISP 是一个面向硬件 ISP 全流程开发的全栈平台，核心是用 Python 实现的应用级相机 ISP 流水线模块，算法覆盖从简单到复杂。它主要服务于 ISP 算法开发与硬件实现研究者，提供定点参考模型、优化 RTL 设计、面向 Xilinx Kria KV260 的 FPGA 集成框架与固件，以及可针对不同传感器和应用调参的独立 Python 调优工具。平台还包含 Linux 软件方案（驱动与自定义应用开发栈），并配套自动化块级与多块级测试框架以保障设计位精确。<br>入选：image signal processor、isp。来源：主题检索。</li>
+<li><a href="https://github.com/amd/mini-isp">amd/mini-isp</a> · SystemVerilog · 154 star · 持续跟踪<br>Mini-ISP 是面向 AMD FPGA、完全用 Verilog RTL 在可编程逻辑中实现的小型开源图像信号处理器，用于把相机传感器 RAW 数据转换为可供显示、后续处理或存储的图像，为缺少硬化 ISP 的 FPGA 与 SoC 提供 ISP 方案。其设计目标是在占用尽量少 PL 资源的前提下实现高吞吐、低延迟，并保证输出结果正确、图像质量对多数应用可接受。<br>入选：image signal processor、isp。来源：主题检索。</li>
+<li><a href="https://github.com/404GamerNotFound/TBC-camera-manager">404GamerNotFound/TBC-camera-manager</a> · Python · 32 star · 持续跟踪<br>TBC 是一个基于 Docker 的模块化摄像头管理器，通过可安装的摄像头模块集成不同厂商设备，已提供 Reolink、Aqara、TP-Link/Tapo、Axis、Foscam、海康威视、大华（含 Amcrest/Annke OEM 设备）、Ubiquiti/UniFi Protect 和 SONOFF 的标准仓库，并内置通用 ONVIF 回退与仅 RTSP 的中立配置。它面向需要统一管理多品牌摄像头的用户，提供认证、摄像头管理、RTSP 流发现、仪表盘快照、事件与连续录像、片段及 SD 卡浏览、用户角色、MQTT 与 Home Assistant 集成、HLS 直播及可选 go2rtc 亚秒级 WebRTC、保留规则、通知、健康监控、AI 检测和 NVR 通道管理。界面默认英文，另可选南非荷兰语、保加利亚语、德语、西班牙语、法语、荷兰语、波兰语和葡萄牙语。<br>入选：camera module。来源：主题检索。</li>
+<li><a href="https://github.com/Lanxin-MRDVS/CameraSDK">Lanxin-MRDVS/CameraSDK</a> · C · 24 star · 持续跟踪<br>CameraSDK 是面向迈尔微视（MRDVS）3D 工业相机及相机模组的开发套件，提供运行时库、C/C++ 头文件、Python 包、C# 封装示例以及 ROS/ROS 2 工作空间，支持 Windows 与 Linux 平台。它主要解决将 MRDVS 视觉硬件集成到工业视觉与机器人系统时的设备发现与打开、数据流启停、RGB/深度/幅值/点云/激光点/IMU 等数据读取、相机参数配置以及 ROS/ROS 2 节点发布等问题。套件还包含单相机、多相机、回调采集、托盘定位、避障、视觉定位等示例流程，便于研究者快速接入与验证。<br>入选：camera module。来源：主题检索。</li>
+<li><a href="https://github.com/meinside/telegram-rpi-camera-bot">meinside/telegram-rpi-camera-bot</a> · Go · 16 star · 持续跟踪<br>这是一个用 Go 编写的 Telegram 机器人，用于通过树莓派摄像头模块拍摄图像，适合需要在树莓派上远程触发拍照的使用者。它通过配置文件设定允许的 Telegram 用户 ID、监控间隔和图像宽高等参数，并支持从 Infisical 获取 API token。项目提供手动构建、docker-compose 构建（区分不同树莓派型号）以及 systemd 服务或 docker-compose 运行方式。<br>入选：camera module。来源：主题检索。</li>
+<li><a href="https://github.com/viam-modules/viam-camera-oak">viam-modules/viam-camera-oak</a> · Python · 5 star · 持续跟踪<br>这是一个面向 Luxonis OAK 系列相机的 Viam Python 模块，通过 oak-d 和 oak-ffc-3p 两个组件模型实现相机 API，可获取彩色帧、立体深度帧与点云数据；同时以 yolo-detection-network 视觉服务模型在相机 VPU 上部署 YOLO 检测网络。模块可执行文件目前仅支持 linux/arm64、linux/amd64 和 darwin/arm64 架构。<br>入选：camera module。来源：主题检索。</li>
+<li><a href="https://github.com/viam-modules/viam-camera-realsense">viam-modules/viam-camera-realsense</a> · C++ · 3 star · 持续跟踪<br>这是一个用 C++ 编写的 Viam 相机模块，以 <code>viam:camera:realsense</code> 模型实现 <code>rdk:component:camera</code> API，用于将 Intel RealSense 系列相机的图像与深度数据流式传输到 Viam 机器。它主要面向需要在 Viam 平台上接入 RealSense 相机的研究者，支持通过发现服务或手动 JSON 配置，并可指定 color/depth 传感器、输出分辨率与序列号；若相机无法产生所请求的分辨率，组件构建会失败。<br>入选：camera module。来源：主题检索。</li>
+<li><a href="https://github.com/Camemake/RPI5_MIPI_DRIVERS">Camemake/RPI5_MIPI_DRIVERS</a> · C · 2 star · 持续跟踪<br>这是面向树莓派 5 的 Camemake 相机模块开源 MIPI CSI-2 驱动仓库，用 C 语言编写，在 CAM/DISP 0 接口上测试了 SC450AI、OX05B1S、GC4023、HM2170、SC233HGS、IMX675、IMX586、OV9281、AR0234CS、IMX908 等传感器。它主要解决树莓派相机应用不列出这些模块的问题，通过 Linux 内核模块、设备树 overlay 和仓库内预览页面走原始 V4L2 通路，并提供 install.sh 与 view.sh 脚本完成驱动安装和浏览器预览。该仓库定位为起步参考而非完整相机应用，且同一时间只能安装一个相机。<br>入选：camera module。来源：主题检索。</li>
+<li><a href="https://github.com/DamageZedd/Zone-Bodycam">DamageZedd/Zone-Bodycam</a> · Lua · 1 star · 持续跟踪<br>这是面向《S.T.A.L.K.E.R. Anomaly / G.A.M.M.A.》的 Lua 模组，把玩家视角呈现为胸挂式警用执法记录仪镜头。它主要解决沉浸式第一人称拍摄观感问题，提供鱼眼镜头与外壳、随身体动作的晃动、着色器内叠加的日期时间与录制计时等信息，以及可见潜行者和变异体的视线内战术标记。亮点包括雨滴与血迹镜头效果、夜间和地下自动红外模式、死亡时信号中断，以及可在 MCM 中逐项关闭的各类效果。<br>入选：cmos sensor。来源：主题检索。</li>
+<li><a href="https://github.com/ddwty/iphone-mujoco">ddwty/iphone-mujoco</a> · Python · 1 star · 持续跟踪<br>这是一个面向 MuJoCo 仿真研究的 Python 仓库，提供可复用的 iPhone RGB-D 相机模块、腕部数据集与机器人实验组件。它支持将 iPhone 相机模块安装到 MuJoCo 场景、机器人腕部或移动平台上，按机型、后置镜头与输出尺寸选择后，录制可回放的 RGB-D、标定与相机位姿数据，并可通过 PyPI 的 asmagic SDK 接入真实 iPhone 视频流。仓库还提供交互式 phone-lab 实验室，用于移动虚拟相机、扫描检查台并保存 RGB-D 与点云。<br>入选：camera module。来源：主题检索。</li>
+<li><a href="https://github.com/johnbaikie/carcounter">johnbaikie/carcounter</a> · Python · 1 star · 持续跟踪<br>这是一个基于树莓派5的车辆计数仓库，利用TF-Luna激光雷达构成横跨道路的遮断光束，车辆遮挡光束即计一次数，并由Camera Module 3拍照、记录到CSV。它面向需要长期统计道路车流的研究者，提供局域网网页仪表盘查看当日计数、图表、照片、健康状态与可在线调整的参数，还包含SQLite快速查询副本、每小时维护、Pushover告警和可选UPS监控。<br>入选：camera module。来源：主题检索。</li>
+<li><a href="https://github.com/arsatyants/imx708-OrangePi-zero3w-A733-driver">arsatyants/imx708-OrangePi-zero3w-A733-driver</a> · C · 1 star · 持续跟踪<br>这是一个将 Raspberry Pi Camera Module 3（IMX708）传感器驱动移植到 Orange Pi Zero 3W（Allwinner A733，BSP 内核 6.6.98-sun60iw2）VIN 框架的树外驱动仓库，使该 12 MP 相机能在板载两个 MIPI-CSI 接口上工作。仓库提供 VIN 传感器驱动、寄存器表、设备树 overlay、安装脚本，以及运行 ISP 3A（AE/AWB）的用户态采集工具和兼容 rpicam-vid 的封装脚本，并附带 PASS/FAIL 验证与重启后检查脚本。当前支持 2 lane RAW10 的三种传感器模式，VIN/ISP 可缩放输出；自动对焦、HDR、PDAF 和 IMX708 专用 ISP 调优尚未实现。<br>入选：isp、camera module。来源：主题检索。</li>
+<li><a href="https://github.com/viam-modules/orbbec">viam-modules/orbbec</a> · C++ · 0 star · 持续跟踪<br>这是一个面向 Viam 平台的 C++ 相机模块，用于接入兼容 Orbbec CPP SDK v2 的 Orbbec 相机，提供彩色与深度传感器访问并据此生成点云。模块支持 Astra 2 与 Gemini 335Le 等型号，通过序列号选择设备，并可配置彩色、深度传感器的分辨率与格式。<br>入选：camera module。来源：主题检索。</li>
+</ul>
+<h3>机械</h3>
+<ul>
+<li><a href="https://github.com/simplefoc/Arduino-SimpleFOCShield">simplefoc/Arduino-SimpleFOCShield</a> · 未知语言 · 635 star · 持续跟踪<br>这是面向中功率 FOC 应用的开源低成本 BLDC/步进电机驱动板，与 SimpleFOC 库配合，为 Arduino UNO 及标准 Arduino 排针板卡提供即插即用的 BLDC 电机硬件控制方案。其亮点包括最高 10A 双向在线电流检测（INA240 电流检测放大器）、集成 8V 稳压器、电源电压检测、可堆叠双电机运行、编码器/霍尔与 I2C 接口可配置上拉，以及 QWIIC/STEMMA 和 SPI 连接器。<br>入选：gimbal。来源：主题检索。</li>
+<li><a href="https://github.com/Thibault-GILLARD/box2boxcam-football-vision">Thibault-GILLARD/box2boxcam-football-vision</a> · Python · 76 star · 持续跟踪<br>box2boxcam 是一个面向业余足球比赛拍摄的 Python 开源项目，目标是把 iPhone 装在约 160 欧元的手机云台上，让手机充当自动跟拍的“摄像师”。它主要解决业余比赛无人跟拍、球在夜间或远距离仅占几个像素时难以持续跟踪的问题，通过微调的小型 YOLO26 模型检测足球，并用混合规则同时跟随球和球员，使球被遮挡时比赛画面仍留在取景范围内，再由手机驱动云台电机转动。项目还提供 PyTorch 与 Core ML 格式的模型、带保留测试集的数据集，以及数据集构建、训练、留出评估和闭环相机引导基准测试代码，单元测试无需数据或网络即可运行。<br>入选：gimbal。来源：主题检索。</li>
+<li><a href="https://github.com/SpaceMonkeyAlfa/PAL9000-Desktop-Robot">SpaceMonkeyAlfa/PAL9000-Desktop-Robot</a> · Python · 22 star · 持续跟踪<br>PAL9000 是一个用 Python 驱动的 2 自由度桌面云台机器人项目，由 Pico W 控制云台，并借助旧安卓手机作为“大脑”完成本地处理。它面向想搭建低成本桌面机器人原型的研究者与爱好者，目标是实现人脸跟踪、用眼和颈部跟随人脸、实时显示表情、语音转写，以及把任务转发给各类 API 或 AI 服务。项目以开源代码和博客教程形式提供搭建说明，当前运行依赖安卓手机（Termux）、摄像头、Mac/MacBook、Pico W 和 2 自由度云台等多设备协作。<br>入选：gimbal。来源：主题检索。</li>
+<li><a href="https://github.com/FerdiCildiz/pocket-plus">FerdiCildiz/pocket-plus</a> · 未知语言 · 18 star · 持续跟踪<br>Pocket+ 是一款免费的 macOS 应用（提供可选 Pro 升级），用于从 Mac 控制 DJI Osmo Pocket 2、3、4 和 4P，可录制、拍照、操控云台、变焦和进行人脸追踪。它主要解决 DJI Mimo 没有 Mac 版的问题，适合把 Pocket 放在 Mac 旁作为桌面摄像头使用的研究者。其能力亮点包括 USB-C 实时预览与录制（H.264/HEVC）、人脸追踪与群体追踪、直方图与网格/地平线辅助，以及 Pro 版提供的最高 4K 录制、场景保存、自动构图、竖屏视频和曝光/色彩调整。<br>入选：gimbal。来源：主题检索。</li>
+</ul>
+<h3>算法</h3>
+<ul>
+<li><a href="https://github.com/oindreechatterjee/cs180">oindreechatterjee/cs180</a> · HTML · 0 star · 首次收录<br>该仓库是 cs180 的课程项目代码库，主题为计算机视觉与计算摄影，主要面向学习或研究该方向的研究者参考。材料仅说明其语言为 HTML，未给出具体技术方案或功能细节，因此无法确认其解决的问题与能力亮点。<br>入选：computational photography。来源：主题检索。</li>
+<li><a href="https://github.com/SensorsINI/jaer">SensorsINI/jaer</a> · Java · 208 star · 持续跟踪<br>jAER 是一个用 Java 开发的全功能跨平台（Linux、Windows、macOS）桌面应用，面向神经形态事件相机与硅耳蜗，支持 inilabs、iniVation、Prophesee、NRV 等主要厂商的设备。它旨在替代厂商专有相机软件，提供即插即用的采集体验，并支持通过高效流水线捕获 USB 事件相机输出、统一调整 DVS 像素偏置以优化传感器设置。项目由发明 DVS 和 HVS 事件相机的实验室开发，积累了 20 年事件传感器实践经验，当前开发还包括多相机长时录制与打包分发支持。<br>入选：event camera。来源：主题检索。</li>
+<li><a href="https://github.com/neuromorphicsystems/neuromorphic-drivers">neuromorphicsystems/neuromorphic-drivers</a> · Rust · 45 star · 持续跟踪<br>Neuromorphic Drivers 是一个用 Rust 实现、同时提供 Python 和 Rust 接口的库，用于实时与 USB 和以太网事件相机交互，兼容 Linux、macOS 和 Windows 的主要架构，目标是支持尽可能多的商用设备。它本身不包含处理算法，而是作为采集层与其他库组合构建实时处理流水线，并自行实现相机的 USB 与以太网协议，不依赖 Metavision、libcaer 或 dv-processing，从而便于跨平台支持并提供轻量的预编译 Python wheel。<br>入选：event camera。来源：主题检索。</li>
+<li><a href="https://github.com/rmcao/noise2image">rmcao/noise2image</a> · Python · 21 star · 持续跟踪<br>这是论文《Noise2Image: Noise-Enabled Static Scene Recovery for Event Cameras》的官方实现与数据仓库，面向事件相机静态场景恢复研究，提供噪声事件到图像的转换代码。仓库包含噪声事件到图像数据集、基于实验数据训练的预训练权重，以及推理、实验数据训练评估和合成数据训练三类脚本，并支持极性、像素分箱、时间分箱与积分时间等参数配置。<br>入选：event camera。来源：主题检索。</li>
+<li><a href="https://github.com/NAIL-HNU/SDEVO">NAIL-HNU/SDEVO</a> · Python · 19 star · 持续跟踪<br>SDEVO 是面向双目事件相机的深度视觉里程计算法实现，对应作者发表于 IEEE RA-L 2025 的论文，仓库提供 Python 与 C++（ROS）节点代码。它主要解决事件相机在视觉里程计中的位姿估计问题，供相关研究者复现与使用。系统基于 ROS Noetic、OpenCV、Eigen 与 CUDA 环境运行，通过左右事件相机的图像表示节点与 sdevo 节点联合处理重打包的 rosbag 数据，并输出插值轨迹文件。<br>入选：event camera。来源：主题检索。</li>
+<li><a href="https://github.com/afauzan-885/Pixel-Refine">afauzan-885/Pixel-Refine</a> · Perl · 2 star · 持续跟踪<br>Pixel Refine 是一个用 Perl 编写的计算摄影工具，通过多帧融合与对齐算法降低图像噪声并增强细节，旨在弥合单反/无反相机与现代智能手机计算摄影功能之间的差距。它面向需要改善老款手机原厂相机处理效果或替代已停更工具的研究者与用户，支持 JPG、TIFF、PNG 及多种 RAW 格式（RAW 输出暂不支持 DNG 导出）。其对齐算法包括 AKAZE、ORB 和基于深度学习的 LightGlue，降噪提供平均、中值及基于像素相似性的自定义方法，并含暂时禁用的插值超分辨率。<br>入选：computational photography。来源：主题检索。</li>
+<li><a href="https://github.com/risehgal/180">risehgal/180</a> · HTML · 1 star · 持续跟踪<br>这是加州大学伯克利分校 CS 180 计算机视觉与计算摄影入门课程的项目作品集，以 HTML 构建并发布为个人网页。仓库主要汇集作者在该课程中的项目成果，供课程学习记录与作品展示使用；材料未说明具体技术实现或能力亮点。<br>入选：computational photography。来源：主题检索。</li>
+<li><a href="https://github.com/fecusoooo/spike-camera-image-reconstruction">fecusoooo/spike-camera-image-reconstruction</a> · Python · 1 star · 持续跟踪<br>这是一个面向脉冲相机图像重建的计算摄影课程项目，复现了 BSF 方法，并在真实录制数据与公开脉冲数据上将其与 TFI、TFP、SSML 三种方法进行对比。项目使用 Spike M1K40-H2-Gen3 相机采集脉冲流，梳理了该相机 .dat 格式所需的数据解码与预处理流程，并对 BSF 的 MODF 特征融合阶段尝试引入物理先验门控进行探索性修改。<br>入选：computational photography。来源：主题检索。</li>
+</ul>
+<h2>视觉、世界模型与运控</h2>
+<h3>世界模型</h3>
+<ul>
+<li><a href="https://github.com/NVIDIA/cosmos">NVIDIA/cosmos</a> · 未知语言 · 12432 star · 持续跟踪<br>NVIDIA Cosmos 是一个面向物理 AI 的开放平台，提供世界模型、数据集和工具，供开发者构建面向机器人、自动驾驶和智能基础设施等场景的物理 AI 应用。其核心是 Cosmos 世界基础模型家族，强调在同一模型体系中实现感知、推理、模拟与行动，并支持物理感知生成、世界场景迁移、动作策略执行和自动驾驶仿真等能力。材料还显示其提供模型集合、技术报告、快速上手与示例手册等资源，便于研究者进一步了解和使用。<br>入选：world model、world models。来源：主题检索。</li>
+<li><a href="https://github.com/NVlabs/Sana">NVlabs/Sana</a> · Python · 9866 star · 持续跟踪<br>NVlabs/Sana 是面向图像、视频与世界建模的高效生成模型及配套全栈训练与推理引擎，以 Python 实现。它主要服务于需要训练和部署生成模型的研究者，提供覆盖 SANA、SANA-1.5、SANA-Sprint、SANA-Video、SANA-WM、SANA-Streaming 与 Sol-RL 等方向的模型与工具链。材料还显示其具备低显存演示（如 4bit、ControlNet 场景）以及与 ComfyUI、SGLang、Cosmos-RL 等生态的对接能力。<br>入选：world model。来源：主题检索。</li>
+<li><a href="https://github.com/deeplethe/utopia">deeplethe/utopia</a> · Rust · 8693 star · 持续跟踪<br>Utopia 是 deeplethe 开源、以 Rust 构建的企业级世界模型（world model）项目，仓库自述为“全球首个开源企业世界模型”。材料未具体说明其解决的问题、目标用户及关键技术能力，仅能从 README 结构看到哲学、快速开始、特性与路线图等章节，以及 Apache 2.0 许可和 GHCR 容器镜像等工程配套信息。<br>入选：world model。来源：主题检索。</li>
+<li><a href="https://github.com/lightly-ai/lightly">lightly-ai/lightly</a> · Python · 3833 star · 持续跟踪<br>LightlySSL 是一个面向计算机视觉的 Python 框架，用于在图像上开展自监督学习与潜在世界模型训练，适合需要利用无标注图像学习表征或建模场景动态的研究者。它提供自监督学习与潜在世界模型相关能力，并已支持 LeJEPA 自监督学习方法及基于 LeWM 的世界模型训练与规划教程。<br>入选：world model、world models。来源：主题检索。</li>
+<li><a href="https://github.com/NVlabs/LongLive">NVlabs/LongLive</a> · Python · 2895 star · 持续跟踪<br>NVlabs/LongLive 是 NVIDIA 面向长视频生成、世界模型与具身世界动作模型的研究基础设施，仓库按项目分目录组织，各项目自带代码、文档与模型权重。它主要服务于需要训练或部署长视频生成模型、以及在 YAM、Franka、Unitree G1 等平台上训练评估机器人策略的研究者。关键技术能力包括：Long-WAM 的长上下文世界动作建模，LongLive-Plug 的一次性蒸馏并跨下游模型复用，LongLive2.0 的 NVFP4 量化与序列并行训练推理，以及 LongLive1.0 的实时交互式长视频生成。<br>入选：world model。来源：主题检索。</li>
+<li><a href="https://github.com/Thinklab-SJTU/Bench2Drive">Thinklab-SJTU/Bench2Drive</a> · Python · 1979 star · 持续跟踪<br>Bench2Drive 是面向端到端自动驾驶（E2E-AD）的闭环基准与数据集，由世界模型强化学习专家 Think2Drive 增强，主要供自动驾驶研究者训练和评测端到端模型。其 0.0.4 版本强调数据分布，提供在 44 个场景×25 条路线（共 1,100 条路线）上严格均匀采集的训练集，新增 3D 占用模态，并设置 220 条路线的独立验证集以支持更可靠的评估。<br>入选：world model。来源：主题检索。</li>
+<li><a href="https://github.com/HybridRobotics/supermimic">HybridRobotics/supermimic</a> · Python · 1948 star · 持续跟踪<br>SuperMimic 是一个用 Python 实现的人形机器人全身运动跟踪项目，基于 mjlab 构建，通过单一可微分世界模型训练运动跟踪器。它面向人形机器人运动跟踪研究，提供广义坐标与最大坐标两种表示的任务（SuperMimic-GenCoord-G1、SuperMimic-MaxCoord-G1），并附带世界模型与策略的训练及回放脚本。<br>入选：world model。来源：主题检索。</li>
+<li><a href="https://github.com/AlayaLab/Evoke">AlayaLab/Evoke</a> · Python · 986 star · 持续跟踪<br>这是 EVOKE 的官方实现，一个三步、无需 CFG 的交互式世界模型，主要面向需要长时程、可交互视频生成的研究者。它通过外部、以相机索引的世界状态库保存场景几何，仅检索当前视角所需信息，使上下文长度有界，从而支持无限时长会话，并可在生成过程中修改提示词。其教师模型采用分块分组、远帧检索和线性注意力全局状态，使记忆与计算随长度线性增长，支撑 30 秒自强制监督；据材料称在 WBench 上取得 SOTA，单张 H200 上每 2.11 秒生成 1.5 秒 384×640 视频。<br>入选：world model。来源：主题检索。</li>
+<li><a href="https://github.com/Junchao-cs/SolarWM">Junchao-cs/SolarWM</a> · Python · 873 star · 持续跟踪<br>SolarWM 是一个面向交互式世界模型的开源框架，提供开放数据、可扩展训练、长时程视频生成与实时部署的代码，包含 SolarWM 与 SolarRenderer 两个项目。它主要服务于长时程视频世界模型的研究与训练，配套公开数据集和模型权重，并附有训练、推理与部署文档。<br>入选：world model、world models、video world model。来源：主题检索。</li>
+<li><a href="https://github.com/NucleoidAI/Nucleoid">NucleoidAI/Nucleoid</a> · Rust · 772 star · 持续跟踪<br>Nucleoid 是一个用 Rust 实现、面向世界模型的逻辑编程语言，基于结构化对象及其关系扩展传统知识图谱，主要供需要可靠逻辑表示与推理的研究者使用。它采用最小 token 的声明式语法和声明式执行模型，使 LLM 无需手动管理控制流与状态传播，并提供可执行的逻辑图以及接近确定性的结构化推理。其 CLI 提供编辑器与聊天两种共享同一运行时的模式，支持结果以文本、JSON 或表格形式查看，聊天模式为代码与结果记录且不发起网络调用。<br>入选：world model、world models。来源：主题检索。</li>
+<li><a href="https://github.com/NVlabs/GRAIL">NVlabs/GRAIL</a> · Python · 621 star · 持续跟踪<br>GRAIL 是 NVIDIA 推出的全数字化数据生成流水线，用于合成人形机器人移动操作（loco-manipulation）数据。它组合 3D 资产、仿真就绪场景、机器人比例角色与视频基础模型先验，生成带度量尺度的 4D 人—物交互轨迹，再重定向到 Unitree G1，并训练面向抓取、全身操作、坐下和地形穿越等任务的通用策略。仅使用 GRAIL 生成的数据，所得第一人称视觉策略即可迁移到真实世界的物体抓取与爬楼梯任务。<br>入选：world model、world models。来源：主题检索。</li>
+<li><a href="https://github.com/shengshu-ai/Motus2">shengshu-ai/Motus2</a> · Python · 599 star · 持续跟踪<br>Motus2 是面向灵巧操作的自进化通用世界模型，旨在让具身智能体在统一系统中完成感知、预测、行动、评估与改进。它用共享权重的单一模型提供策略、模拟器和评估器三种控制接口，将候选动作生成、视觉后果预测与结果评估耦合成闭环决策学习回路，并利用失败与次优交互辅助动力学建模和价值学习。数据方面从大规模单目第一视角数据扩展到同步立体第一视角数据，再经机器人轨迹与人类—机器人对齐数据做域适应，同时探索滑动窗口上下文的全局自回归与混合记忆扩展、触觉反馈和仿生平台实例化。<br>入选：world model。来源：主题检索。</li>
+<li><a href="https://github.com/NVIDIA/flashdreams">NVIDIA/flashdreams</a> · Python · 548 star · 持续跟踪<br>FlashDreams 是 NVIDIA 推出的高性能推理与服务库，面向交互式自回归视频模型和世界模型。它最初作为 NVIDIA OmniDreams 闭环演示的优化运行时，现已发展为面向游戏、自动驾驶、机器人及仿真虚拟环境等实时世界模型应用的通用平台。该库提供 Demo API 与 Inferencing API，分别支持演示开发和模型实现，并附带交互式驾驶、机器人出租车等示例。<br>入选：world model、world models。来源：主题检索。</li>
+<li><a href="https://github.com/luohongk/Embodied-AI-Daily">luohongk/Embodied-AI-Daily</a> · HTML · 510 star · 持续跟踪<br>Embodied-AI-Daily 是一个面向具身智能研究者的 arXiv 论文自动追踪仓库，按预设关键词每日抓取并汇总 VLN、VLA、World Model、SLAM、Gaussian Splatting 与非线性优化等方向的最新论文。README 中各分区对应一个检索关键词，每区最多展示 20 篇，完整列表（每关键词最多 80 篇）放在 papers/ 目录，issue 区域则列出最新 10 篇。项目还提供基于 DeepSeek API 的论文 AI 深度总结，并支持通过 Watch 仓库接收每日邮件通知。<br>入选：world model。来源：主题检索。</li>
+<li><a href="https://github.com/Sunbeam23333/WorldDistill">Sunbeam23333/WorldDistill</a> · Python · 60 star · 持续跟踪<br>WorldDistill 是一个面向视频生成模型与世界模型的统一蒸馏与加速工具包，采用 Python 编写，核心基于 PyTorch。它把面向研究的训练与运行时层（含可执行训练循环、缓存与显存策略、CUDA 流原语、模型与配置元数据）与基于 LightX2V 的多模态推理后端结合起来，供研究者对视频及动作条件世界模型进行蒸馏和推理部署。其亮点是覆盖多种蒸馏路径（如 Step、CFG-aware、Self-Forcing、Consistency、MeanFlow、DMD 类等）并支持音视频联合蒸馏，同时提供 CPU 契约测试等验证手段。<br>入选：world model、world models。来源：主题检索。</li>
+</ul>
+<h3>视觉运控</h3>
+<ul>
+<li><a href="https://github.com/Genesis-Embodied-AI/genesis-world">Genesis-Embodied-AI/genesis-world</a> · Python · 30290 star · 持续跟踪<br>Genesis World 是一个面向通用机器人学与具身智能学习的 Python 仿真平台，为物理 AI 开发提供统一的仿真接口。它把多物理引擎（刚体、FEM、MPM、粒子及 uipc 等共享同一场景与状态）、照片级渲染器 Nyx 和跨平台编译器 Quadrants 整合在 Pythonic 接口之后，并支持从单机笔记本扩展到数据中心级 GPU，便于研究者阅读、扩展和嵌入研究代码。<br>入选：embodied ai。来源：主题检索。</li>
+<li><a href="https://github.com/Unity-Technologies/ml-agents">Unity-Technologies/ml-agents</a> · C# · 19890 star · 持续跟踪<br>Unity ML-Agents Toolkit 是一个开源项目，使游戏和仿真环境可用于训练智能体。它主要面向需要构建训练环境的研究者，支持使用深度强化学习和模仿学习来训练智能体。项目以 C# 实现，并提供包文档，涵盖安装、版本兼容、功能、教程与 API 参考等内容。<br>入选：imitation learning。来源：主题检索。</li>
+<li><a href="https://github.com/starVLA/starVLA">starVLA/starVLA</a> · Python · 3972 star · 持续跟踪<br>StarVLA 是一个面向通用机器人研究的开源视觉-语言-动作（VLA）模型开发代码库，采用类似乐高的模块化设计，将模型、数据、训练器、配置和评估等功能组件按自顶向下、高内聚低耦合的原则分离，支持即插即用、快速原型开发和独立调试。它旨在为研究者提供集成与探索前沿 VLA 技术的平台，并作为 StarVLA、StarVLA-α 和 VLAct 等团队工作的官方实现。<br>入选：vision-language-action。来源：主题检索。</li>
+<li><a href="https://github.com/dexmal/dexbotic">dexmal/dexbotic</a> · Python · 3239 star · 持续跟踪<br>Dexbotic 是一个基于 PyTorch 的开源视觉-语言-动作（VLA）开发工具箱，面向具身智能研究，提供预训练、微调、推理与评估的统一流程。它内置 π0、CogACT、OFT、MemVLA 等主流策略的环境配置与优化预训练模型，并采用分层配置、工厂注册和入口调度的模块化架构，便于改配置、换模型或加任务。该工具箱支持云端与本地训练，并为 UR5、Franka、ALOHA 等机器人提供统一训练数据格式和部署脚本。<br>入选：vision-language-action。来源：主题检索。</li>
+<li><a href="https://github.com/StanfordVL/BEHAVIOR-1K">StanfordVL/BEHAVIOR-1K</a> · Python · 1805 star · 持续跟踪<br>BEHAVIOR-1K 是一个面向具身智能研究的综合仿真基准，用于在 1000 项日常家务活动中训练和评估智能体，任务涵盖清洁、烹饪与整理等，均选自真实人类时间使用调查和偏好研究。该仓库为单体式代码库，提供训练与评估所需的全部组件，并配有支持模块化安装的安装脚本，可按需只安装所需部分。<br>入选：embodied ai。来源：主题检索。</li>
+<li><a href="https://github.com/robfiras/loco-mujoco">robfiras/loco-mujoco</a> · Python · 1489 star · 持续跟踪<br>LocoMuJoCo 是一个基于 MuJoCo、面向全身控制的模仿学习基准，提供四足、人形及（肌肉）骨骼人体模型等多类环境及配套数据集，主要供研究者在复杂运动任务上开展模仿学习与强化学习评测。其亮点包括支持 MuJoCo 单环境与 MJX/MJWarp 并行环境、内置 SuperMimic/PPO/GAIL/AMP/DeepMimic 等 JAX 算法、动作捕捉数据重定向与机器人间重定向、JAX 轨迹比较指标、域与地形随机化，并可通过 LocoMuJoCo Real 在 AgiBot X2 Ultra 和 Unitree G1 上部署。<br>入选：imitation learning。来源：主题检索。</li>
+<li><a href="https://github.com/RainBowLuoCS/Gamer">RainBowLuoCS/Gamer</a> · 未知语言 · 1327 star · 持续跟踪<br>Gamer 是一个面向长时程实时游戏智能体的通用视觉-语言-动作基础模型官方实现，采用端到端架构将感知、记忆管理与多步推理结合，支持在传统 2D 图形界面和复杂 3D 模拟环境中交互。其共享的训练与部署流程面向需要长时程任务处理的研究者与游戏智能体开发者。<br>入选：vision-language-action。来源：主题检索。</li>
+<li><a href="https://github.com/lagadic/visp">lagadic/visp</a> · C++ · 948 star · 持续跟踪<br>ViSP 是一个用 C++ 实现的开源视觉伺服平台，面向从事视觉伺服研究与机器人视觉应用的研究者。它主要解决视觉伺服相关算法的开发与集成问题，并提供跨平台构建支持，覆盖 Ubuntu、macOS、iOS、Windows 以及 ROS2 多个发行版，同时包含 Valgrind、Sanitizer 和代码覆盖率等质量保障流程。<br>入选：visual servoing。来源：主题检索。</li>
+<li><a href="https://github.com/haosulab/SAPIEN">haosulab/SAPIEN</a> · C++ · 873 star · 持续跟踪<br>SAPIEN 是一个面向具身智能研究的真实感、富物理模拟环境，承载大规模铰接物体数据集（延续 ShapeNet 与 PartNet），支持需要部件级精细理解的机器人视觉与交互任务，由 UCSD、Stanford 和 SFU 研究者合作开发。它通过 PyPI 以 <code>pip install sapien</code> 分发，需在带 NVIDIA、AMD 或 Intel GPU 的 Linux 上运行，并支持无显示 GPU 服务器的离屏渲染与虚拟桌面配置。3.0 版本重构核心为实体-组件系统，并支持 PhysX 5 GPU 模拟，可用于构建机器人学习环境。<br>入选：embodied ai。来源：主题检索。</li>
+<li><a href="https://github.com/FluxVLA/FluxVLA">FluxVLA/FluxVLA</a> · Python · 796 star · 持续跟踪<br>FluxVLA 是一个面向具身智能的全栈、端到端 VLA 工程平台，旨在打通从数据到真实机器人部署的完整工程闭环。它主要服务于 VLA 研究与开发，通过统一配置、标准化接口、模块解耦和可部署性等设计，降低该领域的工程门槛，为产学研提供标准化基础。平台支持移动操作、桌面整理、双臂叠布和包内取物等真实机器人任务，并在 LIBERO 基准上给出性能结果。<br>入选：embodied ai。来源：主题检索。</li>
+<li><a href="https://github.com/sou350121/VLA-Handbook">sou350121/VLA-Handbook</a> · HTML · 790 star · 持续跟踪<br>VLA-Handbook 是一份面向希望进入 VLA（Vision-Language-Action）领域的算法工程师的全中文、实战导向学习与面试手册，重点覆盖机器人领域特有的挑战而非通用 CV/NLP 面试内容。仓库还提供按 15 个 VLA 方法族统计论文流量与趋势的 Daily Pulse、主题文章与论文订阅入口，以及数据采集选型、前沿论文解析和行业情报等专题材料。<br>入选：vision-language-action。来源：主题检索。</li>
+<li><a href="https://github.com/terminators2025/RealMirror">terminators2025/RealMirror</a> · JavaScript · 786 star · 持续跟踪<br>RealMirror 是一个综合性的开源具身智能 VLA 平台，面向具身智能与机器人学习研究者，提供遥操作、数据采集与模型评测的一体化工具链。平台开源了 Isaac Sim 侧控制栈与 XR-Linker WebXR 传输的完整遥操作方案，并支持基于 PICO 的手势遥操作；同时提出 Seed2Scale 大规模上肢轨迹自动生成方案，配套视觉物理回放工具与量化评估结果。<br>入选：embodied ai。来源：主题检索。</li>
+<li><a href="https://github.com/H-EmbodVis/TurboVLA">H-EmbodVis/TurboVLA</a> · Python · 729 star · 持续跟踪<br>TurboVLA 是面向机器人视觉-语言-动作（VLA）研究的官方实现，针对传统以 LLM 为中心的 V→L→A 路径计算与内存开销大的问题，提出紧凑的 VLA 架构。其亮点是在 RTX 4090 上以 32 Hz 实时推理且显存占用低于 1 GB，并提供训练与评测代码、模型检查点及 LIBERO 推理延迟基准代码；材料还提到其在 RoboTwin 2.0 上取得 88.06% 的平均成功率。<br>入选：vision-language-action。来源：主题检索。</li>
+<li><a href="https://github.com/spear-sim/spear">spear-sim/spear</a> · C++ · 625 star · 持续跟踪<br>SPEAR 是一个面向真实感具身智能研究的模拟器，其核心是可通过模块化插件架构连接并编程控制任意 Unreal Engine 应用的 Python 库，旨在解决现有真实感模拟器在通用性、可编程性和渲染速度上的不足。它向 Python 暴露超过 1.4 万个 UE 函数，单实例能以 73 帧每秒将 1920x1080 真实感图像直接渲染到 NumPy 数组，并提供非漫反射本征图像分解、材质 ID 和基于物理的着色参数等真值模态。它还引入高层编程模型，支持在单个 UE 帧内确定性执行带任意数据依赖的复杂工作图，并已在多种具身智能体控制、城市级渲染和与 MuJoCo 协同仿真等示例中得到验证。<br>入选：embodied ai。来源：主题检索。</li>
+</ul>
+<h3>视觉算法</h3>
+<h4>理解</h4>
+<ul>
+<li><a href="https://github.com/Neywa-Labs/mlx-vlm">Neywa-Labs/mlx-vlm</a> · Python · 5917 star · 持续跟踪<br>MLX-VLM 是一个基于 MLX 的 Python 包，用于在 Apple Silicon Mac 上本地运行和微调视觉语言模型，支持文本、图像、视频和音频输入。它面向需要在本地进行多模态模型推理与微调的研究者，提供命令行、Gradio 聊天界面和 FastAPI 服务等使用方式，并包含投机解码、连续批处理、前缀缓存、KV 缓存量化、视觉特征缓存和分布式推理等能力。<br>入选：vision language model。来源：主题检索。</li>
+<li><a href="https://github.com/openclaw/Peekaboo">openclaw/Peekaboo</a> · Swift · 5511 star · 持续跟踪<br>Peekaboo 是一个用 Swift 编写的 macOS 命令行工具与可选 MCP 服务器，也提供菜单栏应用，用于截取单个应用或整个系统的屏幕截图，并可通过本地或远程 AI 模型进行可选的视觉问答。它面向需要让 AI 代理“看见”屏幕并执行原生 UI 自动化的研究者与开发者，支持屏幕捕获、辅助功能检查与原生 UI 自动化，既可单独使用，也能让内置代理规划多步任务，或将同一套工具集暴露给 MCP 客户端。<br>入选：visual question answering。来源：主题检索。</li>
+<li><a href="https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization">NVIDIA-AI-Blueprints/video-search-and-summarization</a> · Python · 2005 star · 持续跟踪<br>这是 NVIDIA 面向视频搜索与摘要的 AI Blueprint（VSS），一个基于 Python 的 GPU 加速参考架构，用于构建能对实时或录制视频进行搜索、分析、摘要与推理的视频分析智能体。它面向需要自然语言视频检索、视觉问答、告警核验、片段提取和长视频摘要的研究与开发场景，结合 Cosmos 等视觉语言模型、Nemotron 等大语言模型、RAG 与 NVIDIA NIM 微服务，并按实时视频智能、下游分析、智能体与离线处理三部分组织处理流程。<br>入选：vision language model。来源：主题检索。</li>
+<li><a href="https://github.com/MMMU-Benchmark/MMMU">MMMU-Benchmark/MMMU</a> · Python · 601 star · 持续跟踪<br>该仓库是 MMMU 与 MMMU-Pro 两篇论文的官方评测代码，面向研究者评估多模态模型在需要大学水平学科知识与审慎推理的多学科任务上的表现。MMMU 包含约 1.15 万道来自考试、测验和教材的多模态题目，覆盖六大核心学科、30 个学科和 183 个子领域，涉及图表、示意图、地图、表格、乐谱和化学结构等 32 种异构图像类型；MMMU-Pro 则是更稳健的评测版本。仓库提供相应评测流程，并已发布测试集答案以支持本地评测，同时收录 EvalScope 作为社区维护的第三方评测工作流。<br>入选：multimodal understanding。来源：主题检索。</li>
+<li><a href="https://github.com/MugheesMehdi07/langvio">MugheesMehdi07/langvio</a> · Python · 406 star · 持续跟踪<br>Langvio 是一个 Python 库，用于连接语言模型与视觉模型，让用户用自然语言对图像和视频进行视觉分析。它主要面向需要视频理解、目标检测与上下文分析的研究者，核心由 Qwen-VL 驱动查询解析、目标定位与解释生成，并支持图像和视频多模态输入。其能力亮点包括默认通过 OpenAI 兼容接口调用、无密钥时可回退到本地 Qwen2.5-VL 权重，保留 YOLO-World v2 与 ByteTracker 的开放词汇检测路径，以及提供属性匹配、视频跟踪摘要、计数与空间关系分析、可视化标注输出和 Flask Web 界面。<br>入选：video understanding。来源：主题检索。</li>
+<li><a href="https://github.com/zfkarl/MedJev">zfkarl/MedJev</a> · Python · 190 star · 持续跟踪<br>MedJev 是论文《MedJev: A System One Vision-Language Decision Model for Fast and Effective Medical Image Understanding》的官方代码仓库，用 Python 实现，面向需要快速、准确理解医学图像的研究者。它主要解决医学视觉语言模型逐 token 生成答案导致延迟随回答长度增长的问题：MedJev-4B 将图像、问题和全部候选答案一次性输入，在单次前向中为每个候选打分，不生成 token，也无需解码循环和答案解析器。其关键技术是在 Qwen3.5-4B 上做语言侧深度削减（保留前 23 层完整、删除第 24 至 31 层、第 32 层仅留 query 和 key 投影）并加入残差决策头，以预训练 query–key 几何给出匹配分、由零初始化的逐候选 MLP 学习修正；材料称其平均准确率较自身骨干提升 7.93 个百分点、回答速度提升 6.04 倍。<br>入选：image understanding。来源：主题检索。</li>
+<li><a href="https://github.com/kairyou/agent-tools">kairyou/agent-tools</a> · JavaScript · 180 star · 持续跟踪<br>kairyou/agent-tools 是一个面向兼容编码代理的可复用技能与运行时能力集合，提供状态栏、供应商用量、图像理解和会话日志等功能，需 Node.js 22 及以上。它主要解决编码代理在提交、评审、重构和禅道任务处理等环节的自动化与规范化问题，包含 at-commit、at-review、at-simplify、at-zentao 等技能，并可通过 skills 安装器自动识别并安装到多数受支持代理的技能目录。<br>入选：image understanding。来源：主题检索。</li>
+<li><a href="https://github.com/Xuchen-Li/llm-arxiv-daily">Xuchen-Li/llm-arxiv-daily</a> · Python · 146 star · 持续跟踪<br>该仓库是一个用 Python 实现的 arXiv 论文自动追踪工具，借助 GitHub Actions 定期更新 LLM Reasoning、LLM Evaluation、LLM &amp; MLLM 以及 Video Understanding 方向的最新论文。它面向需要持续跟进上述研究方向的研究者，按主题分区并以表格列出发布日期、标题、作者、PDF 链接与代码链接，便于快速扫读与筛选。<br>入选：video understanding。来源：主题检索。</li>
+<li><a href="https://github.com/uni-medical/SlideChat">uni-medical/SlideChat</a> · Python · 142 star · 持续跟踪<br>SlideChat 是面向全切片病理图像理解的大型视觉语言助手，主要用于生成全切片图像的综合性描述和与上下文相关的回答，服务计算病理研究。仓库同时开源 SlideInstruction（由病理报告衍生的大规模 WSI 指令跟随数据集）和 SlideBench（涵盖描述/报告与封闭式 VQA 的 WSI 多模态基准），并在 SlideBench-VQA-TCGA 上报告了初始版本 75.23%、扩展版本 74.12% 的准确率。<br>入选：image understanding。来源：主题检索。</li>
+<li><a href="https://github.com/yoloytang/BVB">yoloytang/BVB</a> · Python · 124 star · 持续跟踪<br>BVB（Blender-VideoBench）是一个用 Python 实现的基准测试，要求智能体把真实世界视频重建为 Blender 动画场景，以此检验其是否真正理解视频内容。它面向视频理解与智能体能力评测的研究者，所有智能体都通过统一的轻量框架 Mini-BVB、在同一沙箱和相同成本限制下完成重建，且不允许使用外部素材库，以保证比较公平。<br>入选：video understanding。来源：主题检索。</li>
+</ul>
+<h4>生成</h4>
+<ul>
+<li><a href="https://github.com/Aroralayla99/capcut-seedance-win">Aroralayla99/capcut-seedance-win</a> · 未知语言 · 371 star · 首次收录<br>这是一个面向 Windows 10/11 的 CapCut Seedance 参考与安装指南，所介绍的工具用于把文本提示和静态图片生成短视频片段，并支持图像动画与运动效果调节。它面向希望快速产出社交素材的新手，以及需要快速概念预览或 B-roll 草稿的专业人士，生成结果可接入 CapCut 编辑时间线继续调整。材料提到的亮点包括提示词驱动的工作区、运动控制、预设视觉效果和 GPU 加速渲染，整体流程支持反复生成变体。<br>入选：text-to-video。来源：主题检索。</li>
+<li><a href="https://github.com/Cloudcode04/runway-ml-pro-win">Cloudcode04/runway-ml-pro-win</a> · 未知语言 · 365 star · 首次收录<br>该仓库是 Runway ML Pro 这一 AI 视频生成平台在 Windows 10/11 上的参考与设置指南，面向初次接触生成式媒体的新手以及需要快速概念素材、故事板预览或风格化视觉资产的专业人士。它围绕文本生成视频、图像动画和 Motion Brush（在画面区域上绘制并定义运动方式）等生成式工具，并涵盖局部重绘、风格迁移和镜头运动能力；其云端处理意味着结果更多取决于网络连接与创作方向，而非本地高性能 GPU。<br>入选：text-to-video。来源：主题检索。</li>
+<li><a href="https://github.com/JieFedorov81/runway-ml-pro-win">JieFedorov81/runway-ml-pro-win</a> · 未知语言 · 364 star · 首次收录<br>该仓库是 Runway ML Pro 的 Windows 参考与安装指南，面向初次接触生成式媒体的新手和需要快速概念素材、分镜预览或风格化视觉资产的专业人士，介绍在 Windows 10/11 上的平台能力、系统配置与首次使用流程。它围绕文生视频、图像动画和 Motion Brush（在画面区域上绘制并定义运动方式）展开，并涵盖局部重绘、风格迁移和镜头运动等工具，典型流程从提示词或源图开始，经生成与细化后导出片段再进入常规剪辑软件。平台采用云端处理，效果更多取决于网络连接与创作方向而非本地高端 GPU，且社区分享的提示词、工作流与教程有助于稳定产出。<br>入选：text-to-video。来源：主题检索。</li>
+<li><a href="https://github.com/josephyoung28/capcut-seedance-win">josephyoung28/capcut-seedance-win</a> · 未知语言 · 360 star · 首次收录<br>该仓库是面向 Windows 10/11 的 CapCut Seedance 参考与安装指南，介绍这款 AI 视频生成工具如何将文本提示和静态图片转为短视频片段，并说明首次使用流程。它面向希望快速产出社交素材的新手，以及需要快速概念预览或 B-roll 草稿的专业人员，生成内容可接入 CapCut 编辑时间线。材料提到的能力包括提示词驱动工作区、带运动控制的图像动画、预设视觉效果和 GPU 加速渲染，工作流支持快速重新生成变体。<br>入选：text-to-video。来源：主题检索。</li>
+<li><a href="https://github.com/PierrunoYT/Z-Image-Pinokio">PierrunoYT/Z-Image-Pinokio</a> · Python · 6 star · 首次收录<br>这是一个面向 Pinokio 的 Z-Image-Turbo 图像生成 Gradio 界面，基于通义 MAI 的 6B 参数 Turbo 模型，支持 8 步快速出图，并提供尺寸、步数、引导系数和随机种子的可调控制。它主要解决模型依赖安装与运行环境配置问题：Pinokio 可一键创建虚拟环境、按 GPU 平台安装 PyTorch 与固定版本依赖，并下载约 12GB 模型。技术亮点包括 CUDA/ROCm 下可选的 sequential、model、none 三档显存卸载模式，以及首次生成加载模型、后续请求复用模型的机制。<br>入选：image generation model。来源：主题检索。</li>
+<li><a href="https://github.com/jomify/MangaTrans-Diffusion">jomify/MangaTrans-Diffusion</a> · Python · 3 star · 首次收录<br>MangaTrans-Diffusion 是一个用 Python 实现、从零训练的 119.3M 参数扩散 Transformer，用于把调用方给定的中文文本渲染到漫画页面的文字区域，并合成回原图。它面向研究者提供文字渲染方法，检测、翻译与文本框规划需由调用方提供；技术上采用源页面与字形图像条件、rectified flow 采样和重叠分块，代码以 MIT 发布并公开 v3 权重。<br>入选：rectified flow、diffusion transformer。来源：主题检索。</li>
+<li><a href="https://github.com/invoke-ai/InvokeAI">invoke-ai/InvokeAI</a> · TypeScript · 29144 star · 持续跟踪<br>InvokeAI 是一个面向专业人士、艺术家和爱好者的创意引擎，利用图像与视频生成模型来生成和创作视觉媒体。它提供业界领先的本地 Web 服务器与 React 界面，并包含统一画布（支持生成、内外补绘与画笔工具）以及基于节点的可定制工作流管理，便于构建和共享生成管线。该仓库以 TypeScript 为主要语言，采用商业友好许可，可作为多个商业产品的基础。<br>入选：video generation model。来源：主题检索。</li>
+<li><a href="https://github.com/FurkanGozukara/Stable-Diffusion">FurkanGozukara/Stable-Diffusion</a> · Jupyter Notebook · 2785 star · 持续跟踪<br>这是一个以 Jupyter Notebook 为主要载体的生成式 AI 教程与资源仓库，内容覆盖 FLUX、Stable Diffusion、SDXL、SD3 等模型，以及 LoRA、DreamBooth、微调训练、ComfyUI、Automatic1111、Forge WebUI、SwarmUI、ControlNet 等工具与流程。它面向希望系统学习图像生成、模型训练、动画与文本转视频、TTS 与语音克隆、DeepFake 等主题的研究者和开发者，提供教程、指南、课程与 Notebook 形式的实践材料，并涉及 Google Colab、RunPod、Kaggle 等运行环境。<br>入选：text to video。来源：主题检索。</li>
+<li><a href="https://github.com/xdit-project/xDiT">xdit-project/xDiT</a> · Python · 2756 star · 持续跟踪<br>xDiT 是一个面向扩散 Transformer（DiTs）的可扩展推理引擎，用 Python 实现，可在单设备或多设备上运行图像、视频与音视频扩散模型。它通过 <code>xdit</code> 命令行工具选择模型、配置并行执行并保存生成结果与测量数据，支持大规模并行推理，例如用 <code>--ulysses_degree</code> 将注意力分布到多张 GPU 上。基础包包含 DistVAE 与 Yunchang，并提供 Cache-DiT 缓存和 TorchAO 量化等可选能力，具体功能因模型和硬件而异。<br>入选：diffusion transformer。来源：主题检索。</li>
+<li><a href="https://github.com/visualbruno/3DGenStudio">visualbruno/3DGenStudio</a> · JavaScript · 817 star · 持续跟踪<br>3DGenStudio 是一个基于 JavaScript 的开源 AI 三维网格生产工作台，在单一可视化界面中编排从文生图、图像编辑、网格生成、UV 展开到贴图的完整三维生成流程，底层由 ComfyUI 与外部 API 驱动。它面向需要搭建和批量执行三维资产管线的研究者与创作者，提供 AutoRetopo、AutoUV、AutoRig、UltraTex 贴图、批处理项目与 MCP 接口等能力，并支持在桌面端调用远程计算机上的服务。<br>入选：text-to-image。来源：主题检索。</li>
+<li><a href="https://github.com/lucidrains/rectified-flow-pytorch">lucidrains/rectified-flow-pytorch</a> · Python · 490 star · 持续跟踪<br>这是 lucidrains/rectified-flow-pytorch，一个用 PyTorch 实现 rectified flow 及其后续研究与改进的 Python 库，面向需要复现或试验该类流模型的研究者。它提供 RectifiedFlow、Reflow、Unet 等模块，并支持基于 accelerate 的 Trainer 训练与采样流程，示例涵盖 Oxford Flowers 数据集。材料还提到 LSD flow、SoFlow、Split Mean Flow、Unconstrained Alignment Flow 和 Laplacian 多尺度流匹配等实现。<br>入选：rectified flow。来源：主题检索。</li>
+<li><a href="https://github.com/mrbizarro/Phosphene">mrbizarro/Phosphene</a> · Python · 466 star · 持续跟踪<br>Phosphene 是一款面向 Apple Silicon Mac 用户的免费开源本地 AI 视频生成应用，可在离线环境下生成带声音的视频、图片、语音和歌曲，无需云端、API 密钥或 NVIDIA GPU。它主要解决在 Mac 上本地运行视频与图像生成模型的需求，支持 LTX-2.5、MiniMax H3（Hailuo）等模型的文生视频、图生视频、唇形同步和角色 LoRA 训练，并提供 Mac 应用或 Pinokio 两种安装方式，兼容 Claude Code、Codex 及任意 MCP 代理。<br>入选：text-to-video。来源：主题检索。</li>
+<li><a href="https://github.com/wideeyededi/uncensored-nsfw-ai-video-api">wideeyededi/uncensored-nsfw-ai-video-api</a> · 未知语言 · 448 star · 持续跟踪<br>该仓库是 123vips.com（Vipeak AI）成人向 AI 视频生成 API 的开发者文档集合，本身不含站点生产代码、用户数据、密钥或部署配置。它面向开发者，说明 Seedance Spicy 与 Wan NSFW 模型线的文生视频/图生视频接入，并覆盖异步任务、webhook 回调、积分计费与服务端安全要求，同时指引登录后通过 API Access 获取官方文档。仓库还提示“NSFW API”常被用于内容检测与审核，而此处聚焦生成而非审核。<br>入选：text-to-video。来源：主题检索。</li>
+<li><a href="https://github.com/Luciferbobo/KiT">Luciferbobo/KiT</a> · Python · 367 star · 持续跟踪<br>KiT 是一个基于扩散 Transformer 的金融 K 线（蜡烛图）时间序列预测基础模型，面向需要多粒度、多市场走势预测的研究者。它把多周期 K 线预测建模为条件路径生成，将原始 OHLCV 编码为五维对数比状态，并用流匹配在统一 token 序列上生成未来区间，同时保持历史部分逐位不变。模型在美国股票、中国 A 股和加密货币的七种时间粒度（1 分钟至 1 天）数据上训练，材料称其在收益预测和波动率预测上达到 SOTA，并提供已训练权重、评估与简单回测代码及演示数据。<br>入选：diffusion transformer。来源：主题检索。</li>
+<li><a href="https://github.com/Anil-matcha/Seedance-2-API">Anil-matcha/Seedance-2-API</a> · Python · 363 star · 持续跟踪<br>这是一个面向 Python 开发者的封装库，用于调用字节跳动 Seedance 2.0、2.5、2.5 Flash 与 2 Mini 视频生成 API，支持文生视频与图生视频。它主要解决在 Python 中便捷接入上述模型的问题，并突出逼真人脸、1080p 输出与角色一致性等能力；其中 2 Mini 定位为更快、更低成本的轻量选项。<br>入选：text-to-video。来源：主题检索。</li>
+<li><a href="https://github.com/viiika/Meissonic">viiika/Meissonic</a> · Python · 347 star · 持续跟踪<br>Meissonic 是 ICLR 2025 论文的官方 Python 实现，聚焦于用掩码生成式 Transformer 进行高效高分辨率文本到图像合成。该仓库面向研究文本到图像生成的研究者，提供复兴掩码生成式 Transformer 路线、兼顾高分辨率与效率的实现代码。<br>入选：text-to-image。来源：主题检索。</li>
+<li><a href="https://github.com/beckettharriman/openfill">beckettharriman/openfill</a> · Python · 325 star · 持续跟踪<br>OpenFill 是一个基于 Python 与 ComfyUI 的本地生成式图像编辑插件，面向 PhotoCraft 和 GIMP 3 用户，在自有 GPU 上完成生成式填充、对象移除、画布扩展和文生图。它主要解决在免费图像编辑器中延续类似 Photoshop 的 AI 编辑工作流的问题：选区即蒙版，结果落在可编辑图层上，ComfyUI 后端自动启停，无需终端或浏览器。材料显示其支持 Windows、Linux 及部分 macOS 场景，并已适配 AMD 显卡，但整体仍处于 Beta 阶段。<br>入选：text to image。来源：主题检索。</li>
+<li><a href="https://github.com/brave-plum-co/leonardo-ai-desktop">brave-plum-co/leonardo-ai-desktop</a> · C++ · 303 star · 持续跟踪<br>这是一个面向 Windows 10/11 x64 的 Leonardo AI 离线独立部署包，由独立维护者打包发布，主要服务于隔离网络的设计工作站、带宽受限的实验室环境以及需要批量复现安装的团队。它把运行时、模型缓存加载器、资源管线和本地渲染依赖整合进单一分发包，免去首次启动时在线拉取模型，并同时支持便携模式与常规安装模式。材料还提到其覆盖文生图、微调模型、含局部重绘与外扩的画布编辑器、实时生成及图生动态等能力。<br>入选：text-to-image。来源：主题检索。</li>
+<li><a href="https://github.com/neopen/story-shot-agent">neopen/story-shot-agent</a> · Python · 244 star · 持续跟踪<br>PenShot 是一个基于 Python 的剧本分镜智能体，面向电影、动漫、短剧、小说等剧本创作者与研究者，将任意格式剧本自动解析为分镜片段并生成 Sora、Veo、Runway 等模型可用的连贯 text-to-video 提示词。其核心能力包括基于 LLM 与 LangGraph、LlamaIndex 的多智能体协作解析，保持角色与剧情跨片段一致，并支持 MCP、REST API、Function Calls、A2A 等方式集成。<br>入选：text-to-video。来源：主题检索。</li>
+<li><a href="https://github.com/fujc683/seedance-2-5-flash-camera-movements">fujc683/seedance-2-5-flash-camera-movements</a> · 未知语言 · 209 star · 持续跟踪<br>这是一个面向文生视频创作者的相机运动提示词参考仓库，整理了 12 种值得掌握的镜头运动（如推拉、环绕、跟拍、升降、手持、甩镜等），并为每种运动给出可直接复制的提示短语及适用场景。它主要解决文生视频模型在未指定镜头时会自行选择运动、导致画面不可控的问题，同时提供提示词模板（主体动作、镜头运动、镜头、光线、节奏）和常见错误修正建议，帮助研究者更稳定地控制生成视频的镜头语言。<br>入选：text-to-video。来源：主题检索。</li>
+<li><a href="https://github.com/fujc683/seedance-2-5-flash-api">fujc683/seedance-2-5-flash-api</a> · 未知语言 · 207 star · 持续跟踪<br>该仓库是 Seedance 2.5 Flash 文生视频 API 的调用说明，面向需要接入该模型的研究者与开发者，整理了异步任务接口的请求方式、参数规则与常见错误。内容涵盖通过提交生成任务获取 task_id 后轮询结果、时长 4–30 秒与多种画面比例及 480p/720p 分辨率限制（1080p 会返回 400），并给出按输出秒数计费的价格与实测成本。<br>入选：text-to-video。来源：主题检索。</li>
+<li><a href="https://github.com/KupynOrest/epipolar-dpo">KupynOrest/epipolar-dpo</a> · Python · 95 star · 持续跟踪<br>这是论文《Epipolar Geometry Improves Video Generation Models》的官方代码仓库，用 Python 实现，面向研究视频扩散模型几何一致性的研究者。它针对视频生成模型普遍存在的几何不一致问题，将经典对极几何约束作为奖励信号，在 Flow-DPO 框架下通过偏好优化对齐视频扩散模型，以提升生成视频的3D一致性与运动稳定性。仓库提供 Flow-DPO 训练流程、对极误差等3D一致性评测指标、从生成到评估的模块化四步流程，以及基于 LoRA 的高效微调能力。<br>入选：video generation model。来源：主题检索。</li>
+<li><a href="https://github.com/marianlupascu/OT-RF">marianlupascu/OT-RF</a> · Python · 12 star · 持续跟踪<br>该仓库是 WACV 2026 论文《Optimal Transport for Rectified Flow Image Editing: Unifying Inversion-Based and Direct Methods》的官方 Python 代码，提出 Transport-Guided Rectified Flow Image Editing 统一框架，将 rectified flow 与最优传输理论结合用于语义图像编辑。它同时涵盖基于反演的编辑（RF-Inversion+OTC）与免反演的编辑（FlowEdit+OTC）两类方法，面向图像编辑研究者使用。代码扩展 Hugging Face Diffusers 以支持 FLUX 模型上的 OT 引导 rectified flow 反演与编辑，并提供模型与演示页面。<br>入选：rectified flow。来源：主题检索。</li>
+<li><a href="https://github.com/ShiromiyaG/ShiroRVC">ShiromiyaG/ShiroRVC</a> · Python · 9 star · 持续跟踪<br>ShiroRVC 是一个基于 Applio 分支的语音转换仓库，面向说话与歌唱场景，将源声音转换为目标音色并保留原表演的旋律、时序与情感。其核心是以 rectified-flow 声学模型把内容、音高、响度、气声与说话人信息渲染为梅尔频谱，再由独立的 ChouwaGAN 声码器合成音频；声码器不含说话人输入，因此一个声码器可服务多个声音模型，无需逐声音重训，同时经典 RVC 流程仍并行保留。<br>入选：rectified flow。来源：主题检索。</li>
+<li><a href="https://github.com/Siriuslala/physics">Siriuslala/physics</a> · Python · 7 star · 持续跟踪<br>该仓库是文本到视频扩散模型中运动规划可解释性研究的配套代码，面向研究视频生成物理合理性的研究者。它分析 Wan2.1-T2V 在早期去噪阶段如何形成物体轨迹，定位驱动该过程的注意力头回路，并指出 3D RoPE 的空间锚定偏差是物理错误的原因之一。方法上通过缩放早期步骤中高度和宽度方向的 RoPE 频率（可选 LoRA 适配）提升物理常识，无需额外物理模拟器或教师模型，也不改动官方 Wan 源码，分析以运行时 monkey patch 实现。<br>入选：video generation model。来源：主题检索。</li>
+<li><a href="https://github.com/CodeAndCanvas728/eyegen-playground">CodeAndCanvas728/eyegen-playground</a> · Python · 5 star · 持续跟踪<br>EyeGen Playground 是一个面向 Apple Silicon 的本地图像生成工作区，提供原生 macOS 图形界面和完整命令行工具，完全离线运行、无需 API 密钥。它主要解决在本地统一调用多种主流图像生成模型的问题，内置 MLX（diffusionkit）、MFLUX、OllamaDiffuser（GGUF）、Bonsai、CoreML 和 stable-diffusion.cpp 六种后端，可根据模型名自动识别或手动选择，并支持在 models.json 中描述工具尚不认识的模型后照常运行。<br>入选：image generation model。来源：主题检索。</li>
+<li><a href="https://github.com/GeorgH93/z_ai_image_gen_mcp">GeorgH93/z_ai_image_gen_mcp</a> · TypeScript · 3 star · 持续跟踪<br>这是一个基于 TypeScript 实现的 MCP 服务器，为 LLM 应用接入 Z.AI 的图像与视频生成模型，支持 GLM-Image、CogView-4 图像模型以及 CogVideoX-3、Vidu Q1、Vidu 2 视频模型。它面向需要为 LLM 客户端补充多模态生成能力的研究者与开发者，提供文生图/视频、图生视频、首尾帧动画等多种输入模式。其亮点包括异步任务提交与轮询、生成后自动下载、带指数退避的自动重试、输入校验与完整 TypeScript 类型定义，并可通过环境变量配置默认模型、尺寸、超时与重试参数。<br>入选：image generation model。来源：主题检索。</li>
+<li><a href="https://github.com/hanzoai/wan2.2">hanzoai/wan2.2</a> · Python · 3 star · 持续跟踪<br>Wan2.2 是 hanzoai 仓库中以 Python 实现的开源视频生成模型，支持文本生成视频与图像生成视频合成。它面向视频生成研究者，重点在视频扩散模型中引入混合专家（MoE）架构，通过按时间步分离去噪过程、由专门专家模型处理来扩大模型容量而保持计算成本不变。材料还提到其使用带光照、构图、对比度、色调等详细标签的美学数据以支持可控电影级风格生成，并称训练数据较 Wan2.1 增加 65.6% 图像和 83.2% 视频。<br>入选：text-to-video、video generation model。来源：主题检索。</li>
+</ul>
+<h2>3D 与电子设计</h2>
+<h3>打印与建模</h3>
+<ul>
+<li><a href="https://github.com/earthtojake/text-to-cad">earthtojake/text-to-cad</a> · Python · 27167 star · 持续跟踪<br>text-to-cad 是一个用 AI 设计实体产品的 Python 项目，通过插件形式接入 Claude Code、Codex、Cursor 等多种智能体，让用户用自然语言请求零件或装配体。智能体据此编写基于 build123d 与 OpenCASCADE 的 Python 脚本，生成 STEP、GLB、STL、3MF 等三维模型及用于激光和水刀切割的 DXF 轮廓与展开图，并支持机构关节与动画、在查看器中实时显示。它还提供面向制造检查、绘图以及连接 3D 打印、钣金和 CNC 服务的本地工作流，并包含电路板相关能力。<br>入选：text-to-cad。来源：主题检索。</li>
+<li><a href="https://github.com/nanassound/mnft">nanassound/mnft</a> · Elixir · 41 star · 持续跟踪<br>mnft 是一个用 Elixir 编写的文本到 CAD 工具，用户以自然语言描述零件，由语言模型生成 CAD 代码，再经受控引擎执行，输出 STL、STEP 文件及可在浏览器中旋转查看的 3D 预览。其核心 mnft_cad 为纯 Elixir/OTP 实现，包含可插拔引擎（build123d、OpenSCAD）、可插拔存储（默认 ETS 表加 fsync 日志）以及自带密钥的多提供商 LLM 接入，不依赖 Web 框架、认证层或数据库服务器。配套的 Python 与浏览器运行时分别在静态检查、rlimits 和硬性时限下执行 build123d 代码，或通过 replicad 在 WebAssembly 中运行 OCCT 8 内核，并提供 Phoenix、无头及纯浏览器三种参考示例。<br>入选：openscad、text-to-cad。来源：主题检索。</li>
+<li><a href="https://github.com/KittyCAD/text-to-cad-blender-addon">KittyCAD/text-to-cad-blender-addon</a> · Python · 38 star · 持续跟踪<br>这是一个用于在 Blender 中调用 Zoo Text-to-CAD API 的 Python 插件，用户通过文本提示、输出格式和输出目录三项输入生成并下载 CAD 模型。插件需配置 KITTYCAD_API_TOKEN 环境变量，可通过快捷键 ctrl+shift+T 或对象模式下的 Add 菜单启动，处理提示时可能耗时数分钟，需在仪表盘查看进度。README 说明其更适合描述单一几何对象而非复杂装配体，并建议提示尽量明确具体。<br>入选：blender、text-to-cad。来源：主题检索。</li>
+<li><a href="https://github.com/Masoudjafaripour/Vibe_CADing">Masoudjafaripour/Vibe_CADing</a> · C++ · 16 star · 持续跟踪<br>Vibe-CADing 是一个面向文本到 CAD 设计流程的条件 CAD 生成与检索仓库，核心思路是“几何即代码”：由 LLM 将形状写成程序，程序执行后把错误回传给 LLM 修复。它面向需要从文本提示生成、细化与复用三维 CAD 零件的研究者，提供 CadQuery/build123d 的 B-rep/STEP 生成与 GLSL SDF 隐式曲面渲染，并包含体素生成模型、自回归二维 CAD 布局生成、基于开源 CAD 库的 RAG、几何反馈与可制造性评分以及多智能体编排等模块。<br>入选：text-to-cad。来源：主题检索。</li>
+<li><a href="https://github.com/SSSSSia/CadAgent">SSSSSia/CadAgent</a> · Python · 9 star · 持续跟踪<br>CadAgent 是一个基于 LLM Agent 的 FreeCAD 工作台插件，让研究者用中英文自然语言描述来生成和修改 3D 机械模型（text-to-cad）。它通过 ReAct 循环完成推理、生成 CadQuery 风格代码、执行与自纠错，并内置质量门禁、参数化重放、多文档装配、STEP/IGES/STL/OBJ 导出及视口截图与参考图分析等能力，减少建模中的常见布尔运算与几何错误。<br>入选：freecad、text-to-cad。来源：主题检索。</li>
+</ul>
+<h2>量化交易</h2>
+<h3>综合</h3>
+<ul>
+<li><a href="https://github.com/loudonline/metatrader-5-pro-win">loudonline/metatrader-5-pro-win</a> · 未知语言 · 370 star · 首次收录<br>这是一个面向 Windows 10/11 的 MetaQuotes MetaTrader 5 Pro 参考与安装指南仓库，围绕该电子交易平台的多资产图表、技术分析和算法交易能力整理系统配置与首次运行流程。材料说明其适用于从初学者到专业交易者的日常交易工作流，涵盖图表环境、市场报价、订单与持仓管理以及内置策略测试器，并支持自定义指标、用 MQL5 编写交易逻辑及在历史数据上运行自动交易专家顾问。<br>入选：algorithmic trading。来源：主题检索。</li>
+<li><a href="https://github.com/freqtrade/freqtrade">freqtrade/freqtrade</a> · Python · 57169 star · 持续跟踪<br>Freqtrade 是一个用 Python 编写的免费开源加密货币交易机器人，面向需要自动化交易与策略研究的研究者，支持多家主流现货及期货交易所，并可通过 Telegram 或 WebUI 控制。它提供回测、绘图和资金管理工具，并支持通过机器学习进行策略优化，便于在实盘前进行策略验证与评估。<br>入选：freqtrade。来源：主题检索。</li>
+<li><a href="https://github.com/vnpy/vnpy">vnpy/vnpy</a> · Python · 46458 star · 持续跟踪<br>VeighNa（vnpy）是基于 Python 的开源量化交易系统开发框架，面向私募基金、证券与期货公司等机构及量化研究者，支持在 Windows、Linux、macOS 上进行策略与模块的二次开发。4.0 版本新增 vnpy.alpha 模块，提供多因子机器学习策略的一站式开发、投研与实盘交易能力，涵盖因子特征工程（含 Alpha 158 因子集）、标准化模型训练（Lasso、LightGBM、MLP）、截面与时序策略构建以及集成回测的投研流程管理。<br>入选：vnpy。来源：主题检索。</li>
+<li><a href="https://github.com/QuantConnect/Lean">QuantConnect/Lean</a> · C# · 22658 star · 持续跟踪<br>QuantConnect/Lean 是一个用 C# 编写、支持 Python 与 C# 的事件驱动算法交易引擎，面向量化研究者与交易策略开发者。它提供开箱即用的另类数据与实盘交易支持，并采用模块化设计，各组件可插拔、可定制，且为主要插件点附带模型。<br>入选：algorithmic trading。来源：主题检索。</li>
+<li><a href="https://github.com/OpenByteInc/QuantDinger">OpenByteInc/QuantDinger</a> · Python · 13916 star · 持续跟踪<br>QuantDinger 是 Open Byte Inc. 开源的自托管 AI 量化研究平台，面向需要把交易想法落地为可审计流程的研究者与开发者。它将 AI 研究、Python 策略编写、因子发现、回测、优化、模拟与实盘多资产执行、风险控制、监控、MCP 及多租户 SaaS 整合在同一套自托管技术栈中，支持从研究到策略代码、回测、模拟/实盘执行再到监控的完整链路。<br>入选：backtesting、backtest。来源：主题检索。</li>
+<li><a href="https://github.com/StockSharp/StockSharp">StockSharp/StockSharp</a> · C# · 11150 star · 持续跟踪<br>StockSharp（简称 S#）是一个用 C# 编写的免费开源算法交易与量化交易平台，面向需要在全球多类市场开发交易机器人的研究者与开发者，支持股票、期货、期权、外汇、加密货币和比特币等市场的手动与自动交易（含常规及高频策略）。平台提供 Designer 可视化策略设计器（支持鼠标搭建策略、内置 C# 编辑器、自定义指标、调试器与团队共享），以及 Hydra 市场数据自动加载与存储工具（多数据源、高压缩比、API 访问、导出与定时任务）。其连接能力覆盖 Binance、MT4/MT5、FIX/FAST、InteractiveBrokers、Coinbase、Kraken 等大量交易接口。<br>入选：quantitative trading、algorithmic trading。来源：主题检索。</li>
+<li><a href="https://github.com/Superalgos/Superalgos">Superalgos/Superalgos</a> · JavaScript · 5816 star · 持续跟踪<br>Superalgos 是一个免费、开源的加密货币交易机器人平台，采用 JavaScript 开发，面向希望以可视化方式设计交易策略的零售交易者与研究者。它主要解决从策略设计到验证部署的完整流程问题，提供集成图表系统、数据挖掘、回测、模拟交易以及多服务器机器人部署等能力。项目同时以社区所有、代币激励的去中心化社交交易网络形式组织，鼓励贡献者参与开发。<br>入选：backtesting、backtest、algorithmic trading。来源：主题检索。</li>
+<li><a href="https://github.com/chrisleekr/binance-trading-bot">chrisleekr/binance-trading-bot</a> · TypeScript · 5617 star · 持续跟踪<br>这是一个用 TypeScript 编写的自动化币安交易机器人，自托管运行，用户通过 API 密钥连接自己的币安账户，由机器人监控行情并代为下单。它主要面向需要自动化交易与策略验证的研究者，提供可插拔策略（现有 trailing-trade、momentum、rebalance 三种，可按配置档案选择）、历史回测和实时仪表盘，并支持通过 MCP 接入 AI 代理。README 同时提示项目仍在活跃开发中，不建议用于真实资金。<br>入选：backtesting、backtest。来源：主题检索。</li>
+<li><a href="https://github.com/atilaahmettaner/tradingview-mcp">atilaahmettaner/tradingview-mcp</a> · Python · 5328 star · 持续跟踪<br>这是一个用 Python 实现的 MCP 服务器，为 Claude、ChatGPT、Cursor、Copilot 等 AI 助手提供市场数据与技术分析能力，覆盖加密货币、股票、外汇和期货。它主要解决在 AI 对话中直接获取实时行情、筛选器、多周期技术分析、回测与情绪数据的问题，共提供 39 个工具。该服务器支持免费自托管，也可使用托管版 TradingMCP。<br>入选：backtest。来源：主题检索。</li>
+<li><a href="https://github.com/gbeced/pyalgotrade">gbeced/pyalgotrade</a> · Python · 4678 star · 持续跟踪<br>PyAlgoTrade 是一个事件驱动的 Python 算法交易库，最初侧重回测，也可通过 Bitstamp 进行比特币的模拟交易与实盘交易。它支持市价、限价、止损和止损限价订单，可读取 CSV 格式的各类时间序列数据，并提供技术指标与过滤器、Sharpe 比率和回撤分析等绩效指标、Twitter 实时事件处理、事件分析器以及 TA-Lib 集成。该项目已废弃且不再维护，README 建议关注 Basana 等替代项目。<br>入选：algorithmic trading。来源：主题检索。</li>
+<li><a href="https://github.com/fasiondog/hikyuu">fasiondog/hikyuu</a> · C++ · 3734 star · 持续跟踪<br>Hikyuu 是一个用 C++/Python 编写的开源高性能量化研究框架，主要面向策略分析与回测，服务于交易模型研发者。它强调交易理论与金融语义的完整性和正确性，覆盖成交、成本、除权除息、绩效约定等完整交易链条，并支持组合与策略同构、任意深度嵌套及组件自由替换。其高性能引擎面向全市场多策略研究，材料示例显示在 ARM 单板计算机上对 3547 只非指数证券进行 2015—2026 年回测约需 13 秒。<br>入选：quantitative trading、backtesting、backtest。来源：主题检索。</li>
+<li><a href="https://github.com/edtechre/pybroker">edtechre/pybroker</a> · Python · 3726 star · 持续跟踪<br>PyBroker 是一个基于 Python 的算法交易框架，重点支持使用机器学习开发交易策略，面向希望用 Python 与机器学习改进交易策略的研究者。它提供基于 NumPy 构建并用 Numba 加速的快速回测引擎，便于创建交易规则与模型并在多标的、多时间间隔上整合交易信号。其能力还包括接入 Alpaca、Yahoo Finance、AKShare 或自定义数据源的历史数据，使用 Walkforward Analysis 进行模型训练与回测，采用随机 bootstrapping 计算交易指标，并借助 Optuna 进行参数优化。<br>入选：algorithmic trading。来源：主题检索。</li>
+<li><a href="https://github.com/iterativv/NostalgiaForInfinity">iterativv/NostalgiaForInfinity</a> · Python · 3548 star · 持续跟踪<br>NostalgiaForInfinity 是面向 Freqtrade 加密货币交易机器人的 Python 交易策略，供研究者回测与部署使用。它建议同时开 6 至 12 笔交易、搭配 40 至 80 个交易对，优先稳定币交易对并屏蔽杠杆代币，且要求使用 5 分钟时间框架。仓库还提供独立脚本与 Docker Compose 的 nfi-updater 边车服务，用于自动更新策略、黑名单和交易对列表，并可选重启容器和发送 Telegram 通知。<br>入选：freqtrade。来源：主题检索。</li>
+<li><a href="https://github.com/diced/zipline">diced/zipline</a> · TypeScript · 3520 star · 持续跟踪<br>Zipline 是一个用 TypeScript 开发的 ShareX/文件上传服务器，面向需要自建文件分享服务的研究者与团队，主打易用、功能丰富和快速部署。它支持上传任意文件，并提供文件夹、标签、URL 短链、嵌入、OAuth2、2FA、Passkeys、密码保护、图片压缩、视频缩略图、API、PWA、配额与自定义主题等能力，推荐通过 Docker 配合 PostgreSQL 运行。<br>入选：zipline。来源：主题检索。</li>
+<li><a href="https://github.com/pmorissette/bt">pmorissette/bt</a> · Python · 3045 star · 持续跟踪<br>bt 是一个面向 Python 的灵活回测库，用于构建、测试和比较投资策略。它把策略逻辑与历史价格数据结合，跟踪组合持仓与交易，并通过 ffn 提供绩效统计和图表。其亮点是可用可复用的 Python 组件组合调度、选券、加权与再平衡算法，支持策略嵌套成组合树、配置佣金与交易成本模型，并比较收益、权重、交易和回撤等结果。<br>入选：backtesting、backtest。来源：主题检索。</li>
+<li><a href="https://github.com/quantskills/quantskills">quantskills/quantskills</a> · JavaScript · 2869 star · 持续跟踪<br>QuantSkills 是面向 AI Agent 的开源量化 Skill 与 Agent 社区目录，汇集数据、因子研究、回测验证、风险监控与交易自动化等可复用能力，供研究者和 AI Agent 发现、安装、审阅与组合。它通过分类目录、工作流地图、注册表和模板，帮助使用者按说明、数据来源与风险边界自行验证，并支持贡献者提交可检查的能力包与元数据。<br>入选：backtesting、backtest。来源：主题检索。</li>
+<li><a href="https://github.com/cashapp/zipline">cashapp/zipline</a> · C · 2320 star · 持续跟踪<br>Zipline 是一个让 Kotlin/JVM 和 Kotlin/Native 程序运行 Kotlin/JS 库的库，主要面向需要在移动应用中实现持续部署、用户可定制行为与插件系统、业务规则更新或内容刷新的开发者。它通过嵌入小巧快速的 QuickJS JavaScript 引擎来执行 JavaScript 代码，并提供 ZiplineLoader 处理代码下载、缓存与加载，使获取代码像获取数据一样简单。<br>入选：zipline。来源：主题检索。</li>
+<li><a href="https://github.com/coding-kitties/investing-algorithm-framework">coding-kitties/investing-algorithm-framework</a> · Python · 2252 star · 持续跟踪<br>Investing Algorithm Framework 是一个基于 Python 的量化交易框架，面向需要开发、回测和部署自动化交易算法与交易机器人的研究者与开发者。它旨在解决策略从研究到上线需重复改写的问题，支持一次定义策略后依次进行向量化回测、事件驱动模拟验证、在交互式仪表盘中查看结果，并直接部署同一策略而无需重写。<br>入选：quantitative trading、backtesting、backtest。来源：主题检索。</li>
+<li><a href="https://github.com/Lumiwealth/lumibot">Lumiwealth/lumibot</a> · Python · 2247 star · 持续跟踪<br>LumiBot 是一个免费开源的 Python 交易框架，用于构建交易机器人，支持用户编写交易规则、由 AI 代理做决策或两者结合。它面向量化研究者与交易策略开发者，解决从策略回测到实盘执行的一致性问题：同一策略类可在历史数据上回测并查看图表、成交与日志，也可切换数据源和券商运行器进行模拟或实盘交易。其亮点包括原生 AI 交易代理可直接下单、覆盖股票、期权、期货、外汇、加密货币和预测市场等多类资产，并支持在 12 家券商上交易，同时提供按历史时点可见的 SEC 基本面数据以避免回测使用未来信息。<br>入选：backtest。来源：主题检索。</li>
+<li><a href="https://github.com/cinar/indicator">cinar/indicator</a> · Go · 1923 star · 持续跟踪<br>这是一个用 Go 编写的高性能技术分析指标与回测框架，提供 80 多个技术分析指标、策略以及回测框架，主要面向研究与教育用途。其亮点包括零依赖、基于 Go channel 的流式输入输出（并提供切片与通道互转的辅助函数）、指标与策略完全可配置且无预设值，以及利用 Go 泛型支持多种数值格式。<br>入选：backtesting、backtest。来源：主题检索。</li>
+<li><a href="https://github.com/goldspanlabs/optopsy">goldspanlabs/optopsy</a> · Python · 1522 star · 持续跟踪<br>Optopsy 是一个用 Python 编写的轻量级期权策略回测与统计库，面向需要快速评估期权策略表现的研究者。它内置 38 种策略，支持按每条腿的 delta 选择行权价，并提供止损、止盈、最大持仓天数等提前退出规则，以及佣金、滑点和风险指标计算。该库还包含按时间顺序模拟交易与多策略组合回测能力，支持 80 多种基于技术指标的入场信号和自定义信号，并可通过插件系统扩展策略、信号与数据源。<br>入选：backtesting、backtest。来源：主题检索。</li>
+<li><a href="https://github.com/DemonDamon/FinnewsHunter">DemonDamon/FinnewsHunter</a> · Python · 1519 star · 持续跟踪<br>FinnewsHunter 是一个基于 AgenticX 框架构建的多智能体金融新闻分析平台，面向量化研究者与投资决策场景，实时监控新浪财经、每日经济新闻、证券时报等多个财经新闻源。它通过 NewsAnalyst、Researcher 等智能体团队结合大语言模型完成新闻深度解读、情感分析与市场影响评估，并借助知识图谱挖掘潜在投资机会与风险，输出决策级 alpha 信号。系统支持五家 LLM 提供商一键切换、批量新闻分析、基于 akshare 的股票 K 线与智能搜索，以及异步向量化，技术栈为 FastAPI、PostgreSQL、Milvus、Redis 与 React，并可通过 Docker Compose 一键部署。<br>入选：alpha factor。来源：主题检索。</li>
+<li><a href="https://github.com/facioquo/stock-indicators-dotnet">facioquo/stock-indicators-dotnet</a> · C# · 1253 star · 持续跟踪<br>这是一个 C# NuGet 包，用于将股票、商品、外汇和加密货币等市场的原始价格行情转换为技术指标与交易洞察，面向构建算法交易、技术分析、机器学习或图表工具的研究者与开发者。它接收历史 OHLCV 价格数据并返回移动平均线、相对强弱指数、随机振荡指标、抛物线 SAR 等指标，多数指标支持批量、增量缓冲和实时流式三种计算方式。<br>入选：algorithmic trading。来源：主题检索。</li>
+<li><a href="https://github.com/freqtrade/frequi">freqtrade/frequi</a> · Vue · 1129 star · 持续跟踪<br>FreqUI 是 Freqtrade 的前端界面，基于 Vue.js 与 Nuxt UI 构建，为使用 Freqtrade 的研究者提供图形化操作入口。它需配合已配置并启用 API 的 Freqtrade 实例运行，2021.2 及更新版本已内置该界面，也可通过 Docker 以独立方式部署，但独立版仍需正确配置 CORS 才能连接机器人 API。项目提供开发环境的热重载、生产构建、代码检查及 Docker 构建等脚本，便于二次开发与定制。<br>入选：freqtrade。来源：主题检索。</li>
+<li><a href="https://github.com/Superior-Trade/trading-terminal">Superior-Trade/trading-terminal</a> · TypeScript · 1101 star · 持续跟踪<br>这是一个面向 Hyperliquid 的自托管 AI 交易终端，用 TypeScript 编写。用户在图表上画出自己的行情判断后，代理会读取图表内容并生成包含入场、止损、目标的交易方案，对多个方案排序，再把选中的方案写成可验证的 Freqtrade/Nautilus-Trader 策略并部署实盘，同时拒绝不安全的策略。<br>入选：freqtrade。来源：主题检索。</li>
+<li><a href="https://github.com/rootSunc/CNEquity">rootSunc/CNEquity</a> · Python · 1074 star · 持续跟踪<br>CNEquity 是一个开源的中国 A 股本地数据湖，用 Python 实现，把沪深股票行情、财务与期货数据、资金流向、公告、指数行业与宏观等 86 个日更数据集落到本地 Parquet，面向量化研究、量化交易与回测。它主要解决取数工具需自行落盘与增量、退市股和 PIT 财报支持不一、缺少行级溯源等问题，内置复权与历史成分、保留退市股、财报按公告日严格 PIT，每行带来源、版本和抓取时间。基础采集免注册免 Token、可自托管，支持增量续跑与中断续传，并可通过 MCP 以只读方式接入 AI 客户端直接查询 A 股。<br>入选：backtesting、backtest。来源：主题检索。</li>
+<li><a href="https://github.com/merovinh/best-of-algorithmic-trading">merovinh/best-of-algorithmic-trading</a> · 未知语言 · 1041 star · 持续跟踪<br>这是一个面向算法交易研究者的开源资源排名清单，汇集了120个开源项目（涵盖库、框架、机器人、工具、书籍、社区与教育材料），按基于GitHub及包管理器指标自动计算的项目质量分排序，并分为8个类别，每周更新。清单还标注了项目活跃度、趋势、许可证风险与贡献者等信息，便于快速筛选和比较。<br>入选：algorithmic trading。来源：主题检索。</li>
+<li><a href="https://github.com/billpwchan/futu_algo">billpwchan/futu_algo</a> · Python · 629 star · 持续跟踪<br>futu_algo 是一个基于富途 OpenAPI 的 Python 港股量化交易系统，面向需要本地化数据与策略研究的量化研究者。它提供本地 K 线 Parquet 缓存、通达信风格指标策略、按港股真实费用与港交所价位表滑点计算的回测，以及逐笔与回测一致的模拟盘引擎，并支持富途服务器端选股、邮件与 Telegram 通知和网页控制台操作。<br>入选：algorithmic trading。来源：主题检索。</li>
+<li><a href="https://github.com/joaquinbejar/OrderBook-rs">joaquinbejar/OrderBook-rs</a> · Rust · 559 star · 持续跟踪<br>这是一个用 Rust 编写的高性能、线程安全限价订单簿实现，提供面向低延迟交易系统的完整订单撮合引擎，重点服务于高并发访问场景。其核心亮点包括基于原子操作与无锁数据结构降低竞争、支持限价单及冰山单、只挂单、FOK、IOC、GTT、追踪止损、挂钩单等多种订单类型，并允许各价格档位被多线程独立并发修改。材料还提到高效撮合算法、内置性能统计与面向百万级订单的内存效率设计。<br>入选：order book。来源：主题检索。</li>
+<li><a href="https://github.com/alexanderwanyoike/the0">alexanderwanyoike/the0</a> · TypeScript · 439 star · 持续跟踪<br>the0 是一个用 TypeScript 实现的开源算法交易引擎，定位为自托管的交易机器人运行时，主要解决策略在本地验证后投入日常运行所需的运维问题。它让机器人运行在独立容器中，支持 Python、TypeScript、Rust、C++、C#、Scala 和 Haskell，并提供按实例的 cron 调度、跨运行与重启保留的键值状态、结构化日志与指标，以及可随机器人发布的 React 实时仪表盘。回测仍留在本地研究环境，the0 负责策略准备实盘交易后的运行阶段。<br>入选：algorithmic trading。来源：主题检索。</li>
+<li><a href="https://github.com/FinancialComputingUCL/LOBFrame">FinancialComputingUCL/LOBFrame</a> · Python · 264 star · 持续跟踪<br>LOBFrame 是一个面向大规模限价订单簿（LOB）数据处理的开源 Python 代码库，旨在为相关研究提供统一、可复现的实验框架。它覆盖数据变换与处理、训练验证测试以及通过交易模拟评估模型输出质量的完整流程，并提供超快的训练与测试实现。该框架支持集成新模型以保持可扩展性，配套复现两篇 LOB 预测研究论文的实验教程，代码基于 LOBSTER 数据。<br>入选：order book。来源：主题检索。</li>
+<li><a href="https://github.com/Synpath-ai/synpath">Synpath-ai/synpath</a> · Python · 229 star · 持续跟踪<br>Synpath 是一个面向预测市场的开源 Python API，旨在让研究者与开发者无需分别对接各家平台即可统一访问和交易。它通过单一 SDK 提供跨场所的统一市场数据、智能订单路由和高级订单类型，并支持进程内调用以及 REST、WebSocket 接入。其亮点包括覆盖 Kalshi、Polymarket 等多家场所，以及提供 Kalshi 逐笔级订单簿历史数据查询。<br>入选：order book。来源：主题检索。</li>
+<li><a href="https://github.com/MarkBrezina/Ctrl-Alt-DefeatTheMarket">MarkBrezina/Ctrl-Alt-DefeatTheMarket</a> · 未知语言 · 173 star · 持续跟踪<br>这是一个面向 IMC Prosperity 算法交易的非官方指南与归档项目，主要服务于希望研究高频市场微观结构与系统性策略设计的研究者。项目围绕限价订单簿特征（如不平衡、订单流、VWAP/微价格）构建信号管线，并实现做市、均值回归和漂移感知策略，配合自定义的 tick 级回测与情景测试基础设施。其技术亮点包括模块化交易引擎、滚动回归与短期预测、库存感知报价及被动/主动混合执行逻辑。<br>入选：algorithmic trading。来源：主题检索。</li>
+<li><a href="https://github.com/Karlheinzniebuhr/LiquidityMapperFast">Karlheinzniebuhr/LiquidityMapperFast</a> · TypeScript · 139 star · 持续跟踪<br>LiquidityMapperFast 是一个用 TypeScript 编写的免费开源实时流动性热力图、订单簿与足迹图工具，面向需要同时观察多市场订单簿的研究者，覆盖比特币及约 150 种币、默认 7 家交易所最多 11 个现货与永续市场。它在浏览器中直接连接交易所公开数据源，在 Web Worker 中绘制热力图，并整合累计成交量差、成交流水、足迹、未平仓量、资金费率、多空比与清算等衍生品数据，还提供 VWAP、TPO、成交量分布、脚本指标与高亮提醒等图表工具。设置与布局保存在本地，另有两个小型服务补充历史订单簿和 Hyperliquid 的 BTC 清算水平，也可在本地运行记录最多一周历史的服务器。<br>入选：order book。来源：主题检索。</li>
+<li><a href="https://github.com/9600dev/mmr">9600dev/mmr</a> · Python · 132 star · 持续跟踪<br>MMR 是一个面向 Interactive Brokers 的 Python 算法交易平台，设计为可由人类和 LLM 共同操作，通过 ib_async 连接券商、ZeroMQ 做服务间消息传递、DuckDB 存储，并将所有操作暴露为返回 JSON 的 CLI 命令。它主要解决 LLM 代理自主交易时的可控性与上下文效率问题，采用“提议→审查→批准”流程，让 LLM 只生成带置信度和理由的交易提议，由自动仓位计算与组合风险检查辅助决策，人类可随时复核待处理提议。关键技术亮点包括 ATR 反向仓位 sizing、面向上下文窗口的紧凑组合快照与差异对比、交易前后风险报告（集中度 HHI、分组预算、相关性聚类），以及带预算的持仓分组管理。<br>入选：algorithmic trading。来源：主题检索。</li>
+<li><a href="https://github.com/taylorwilsdon/quantconnect-mcp">taylorwilsdon/quantconnect-mcp</a> · Python · 126 star · 持续跟踪<br>这是一个基于 Python 的 QuantConnect MCP 服务器，通过 Model Context Protocol 让 AI 助手接入 QuantConnect 云平台，完成 LEAN 算法编写、编译、回测、优化与实盘交易管理。它提供覆盖 QuantConnect REST API v2 的 61 个工具，支持研究循环、网格搜索参数优化、实盘部署监控、对象存储管理以及 LEAN 编码辅助，适合希望以智能体方式设计和研究交易策略的研究者使用。<br>入选：algorithmic trading。来源：主题检索。</li>
+<li><a href="https://github.com/7skooooo/mql5-systems-mirror">7skooooo/mql5-systems-mirror</a> · HTML · 116 star · 持续跟踪<br>这是 7skooooo/mql5-systems-mirror，一个以 HTML 为主、面向 MetaTrader 5 的 MQL5 算法交易代码镜像仓库，同步自作者的 ForgeMQL5 工作区，用于备份和协作。它面向系统化交易者、量化分析师和策略开发者，汇集专家顾问、自定义指标、脚本和可复用包含文件，采用模块化组织，并支持趋势跟随、均值回归、突破检测和基于波动率的仓位管理等策略范式。<br>入选：algorithmic trading。来源：主题检索。</li>
+<li><a href="https://github.com/s-stolz/algotrader">s-stolz/algotrader</a> · Python · 85 star · 持续跟踪<br>AlgoTrader 是一个基于 Python 的实验性算法交易项目，用于采集市场数据、借助 Lightweight Charts 可视化实时与历史行情，并以固定或可变参数运行历史回测。它面向希望参考其架构与实现的研究者，通过 cTrader Open API 接入经纪商账户，采用 Redis Streams 与 TimescaleDB/PostgreSQL 支撑数据摄取、指标计算和回测服务。项目处于活跃开发阶段，不保证向后兼容，官方建议仅作参考而非稳定库使用。<br>入选：algorithmic trading。来源：主题检索。</li>
+</ul>
+<h2>运行说明</h2>
+<ul>
+<li>全球日榜解析到 16 个仓库。</li>
+<li>全球周榜解析到 13 个仓库。</li>
+<li>影像与相机形态 检索到 40 个仓库，Search 剩余 28。</li>
+<li>视觉、世界模型与运控 检索到 100 个仓库，Search 剩余 23。</li>
+<li>3D 与电子设计 检索到 20 个仓库，Search 剩余 20。</li>
+<li>量化交易 检索到 40 个仓库，Search 剩余 18。</li>
+<li>本周日报去重：跳过已出现过的 40 个仓库。</li>
+<li>周报窗口 2026-11-17 ~ 2026-11-23（GitHub Trending This week）。</li>
+<li>DeepSeek 摘要：新写 42 条，缓存命中 104 条（未启用 search/fetch）。</li>
+</ul>
+        </div>
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Ravensea | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Ravensea">
+<title>GitHub 趋势日报 2026-11-23 | RAVENSEA HOME</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <script src="/js/tocbot.min.js"></script>
+<meta name="generator" content="trends-tracking"></head>
+
+<body>
+    <script>
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+            } else {
+                pagebody.classList.remove('dark-theme');
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">RAVENSEA HOME</a></div>
+            <div class="menu navbar-right">
+                    <a class="menu-item active" href="/trends">Trends</a>
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">RAVENSEA HOME</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                    <a class="menu-item active" href="/trends">Trends</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">GitHub 趋势日报 2026-11-23</h1>
+                <div class="post-meta">
+                        Author: <a itemprop="author" rel="author" href="/">Ravensea</a>
+                        <span class="post-time">
+                        Date: <a href="#">2026年11月23日</a>
+                        </span>
+                        <span class="post-category">
+                    Category:
+                                <a href="/trends/">Trends</a>
+                        </span>
+                </div>
+        </header>
+
+        <div class="post-content">
+<p>每个子方向只保留一项代表仓库，按下列优先级挑选：</p>
+<ol>
+<li>已出现在 GitHub 全球「今日」趋势榜的优先；</li>
+<li>其次看本跟踪器状态：首次收录 &gt; 显著涨星 &gt; 持续跟踪；</li>
+<li>同优先级再按 star 总数从高到低；</li>
+<li>同一 GitHub「This week」近 7 天内，更早日报已出现过的仓库不再入选；同日各子方向之间也不重复。</li>
+</ol>
+<h2>影像与相机形态</h2>
+<ul>
+<li>
+<p><strong>综合</strong>：<a href="https://github.com/jagjordi/insta360-autostitcher">jagjordi/insta360-autostitcher</a> · 29 star · 首次收录<br>这是一个用 Python 编写的 Insta360 视频自动拼接工具，会监控指定目录中的 <code>*.insv</code> 文件，并自动将它们拼接为 360 视频。它面向需要批量处理 Insta360 素材的用户，依赖需自行申请的 Insta360 MediaSDK，通过 Docker Compose 部署 Flask 后端（含拼接 worker 与缩略图生成）和 React 前端，运行数据统一存放在可配置的存储根目录下。</p>
+</li>
+<li>
+<p><strong>电子</strong>：<a href="https://github.com/10x-Engineers/Infinite-ISP">10x-Engineers/Infinite-ISP</a> · 415 star · 持续跟踪<br>Infinite-ISP 是一个面向硬件 ISP 全流程开发的全栈平台，核心是用 Python 实现的应用级相机 ISP 流水线模块，算法覆盖从简单到复杂。它主要服务于 ISP 算法开发与硬件实现研究者，提供定点参考模型、优化 RTL 设计、面向 Xilinx Kria KV260 的 FPGA 集成框架与固件，以及可针对不同传感器和应用调参的独立 Python 调优工具。平台还包含 Linux 软件方案（驱动与自定义应用开发栈），并配套自动化块级与多块级测试框架以保障设计位精确。</p>
+</li>
+<li>
+<p><strong>机械</strong>：<a href="https://github.com/SpaceMonkeyAlfa/PAL9000-Desktop-Robot">SpaceMonkeyAlfa/PAL9000-Desktop-Robot</a> · 22 star · 持续跟踪<br>PAL9000 是一个用 Python 驱动的 2 自由度桌面云台机器人项目，由 Pico W 控制云台，并借助旧安卓手机作为“大脑”完成本地处理。它面向想搭建低成本桌面机器人原型的研究者与爱好者，目标是实现人脸跟踪、用眼和颈部跟随人脸、实时显示表情、语音转写，以及把任务转发给各类 API 或 AI 服务。项目以开源代码和博客教程形式提供搭建说明，当前运行依赖安卓手机（Termux）、摄像头、Mac/MacBook、Pico W 和 2 自由度云台等多设备协作。</p>
+</li>
+<li>
+<p><strong>算法</strong>：<a href="https://github.com/oindreechatterjee/cs180">oindreechatterjee/cs180</a> · 0 star · 首次收录<br>该仓库是 cs180 的课程项目代码库，主题为计算机视觉与计算摄影，主要面向学习或研究该方向的研究者参考。材料仅说明其语言为 HTML，未给出具体技术方案或功能细节，因此无法确认其解决的问题与能力亮点。</p>
+</li>
+</ul>
+<h2>视觉、世界模型与运控</h2>
+<ul>
+<li>
+<p><strong>世界模型</strong>：<a href="https://github.com/NVlabs/LongLive">NVlabs/LongLive</a> · 2895 star · 持续跟踪<br>NVlabs/LongLive 是 NVIDIA 面向长视频生成、世界模型与具身世界动作模型的研究基础设施，仓库按项目分目录组织，各项目自带代码、文档与模型权重。它主要服务于需要训练或部署长视频生成模型、以及在 YAM、Franka、Unitree G1 等平台上训练评估机器人策略的研究者。关键技术能力包括：Long-WAM 的长上下文世界动作建模，LongLive-Plug 的一次性蒸馏并跨下游模型复用，LongLive2.0 的 NVFP4 量化与序列并行训练推理，以及 LongLive1.0 的实时交互式长视频生成。</p>
+</li>
+<li>
+<p><strong>视觉运控</strong>：<a href="https://github.com/dexmal/dexbotic">dexmal/dexbotic</a> · 3239 star · 持续跟踪<br>Dexbotic 是一个基于 PyTorch 的开源视觉-语言-动作（VLA）开发工具箱，面向具身智能研究，提供预训练、微调、推理与评估的统一流程。它内置 π0、CogACT、OFT、MemVLA 等主流策略的环境配置与优化预训练模型，并采用分层配置、工厂注册和入口调度的模块化架构，便于改配置、换模型或加任务。该工具箱支持云端与本地训练，并为 UR5、Franka、ALOHA 等机器人提供统一训练数据格式和部署脚本。</p>
+</li>
+</ul>
+<h3>视觉算法</h3>
+<ul>
+<li>
+<p><strong>理解</strong>：<a href="https://github.com/MMMU-Benchmark/MMMU">MMMU-Benchmark/MMMU</a> · 601 star · 持续跟踪<br>该仓库是 MMMU 与 MMMU-Pro 两篇论文的官方评测代码，面向研究者评估多模态模型在需要大学水平学科知识与审慎推理的多学科任务上的表现。MMMU 包含约 1.15 万道来自考试、测验和教材的多模态题目，覆盖六大核心学科、30 个学科和 183 个子领域，涉及图表、示意图、地图、表格、乐谱和化学结构等 32 种异构图像类型；MMMU-Pro 则是更稳健的评测版本。仓库提供相应评测流程，并已发布测试集答案以支持本地评测，同时收录 EvalScope 作为社区维护的第三方评测工作流。</p>
+</li>
+<li>
+<p><strong>生成</strong>：<a href="https://github.com/Aroralayla99/capcut-seedance-win">Aroralayla99/capcut-seedance-win</a> · 371 star · 首次收录<br>这是一个面向 Windows 10/11 的 CapCut Seedance 参考与安装指南，所介绍的工具用于把文本提示和静态图片生成短视频片段，并支持图像动画与运动效果调节。它面向希望快速产出社交素材的新手，以及需要快速概念预览或 B-roll 草稿的专业人士，生成结果可接入 CapCut 编辑时间线继续调整。材料提到的亮点包括提示词驱动的工作区、运动控制、预设视觉效果和 GPU 加速渲染，整体流程支持反复生成变体。</p>
+</li>
+</ul>
+<h2>3D 与电子设计</h2>
+<ul>
+<li><strong>打印与建模</strong>：<a href="https://github.com/earthtojake/text-to-cad">earthtojake/text-to-cad</a> · 27167 star · 持续跟踪<br>text-to-cad 是一个用 AI 设计实体产品的 Python 项目，通过插件形式接入 Claude Code、Codex、Cursor 等多种智能体，让用户用自然语言请求零件或装配体。智能体据此编写基于 build123d 与 OpenCASCADE 的 Python 脚本，生成 STEP、GLB、STL、3MF 等三维模型及用于激光和水刀切割的 DXF 轮廓与展开图，并支持机构关节与动画、在查看器中实时显示。它还提供面向制造检查、绘图以及连接 3D 打印、钣金和 CNC 服务的本地工作流，并包含电路板相关能力。</li>
+</ul>
+<h2>量化交易</h2>
+<ul>
+<li><strong>综合</strong>：<a href="https://github.com/loudonline/metatrader-5-pro-win">loudonline/metatrader-5-pro-win</a> · 370 star · 首次收录<br>这是一个面向 Windows 10/11 的 MetaQuotes MetaTrader 5 Pro 参考与安装指南仓库，围绕该电子交易平台的多资产图表、技术分析和算法交易能力整理系统配置与首次运行流程。材料说明其适用于从初学者到专业交易者的日常交易工作流，涵盖图表环境、市场报价、订单与持仓管理以及内置策略测试器，并支持自定义指标、用 MQL5 编写交易逻辑及在历史数据上运行自动交易专家顾问。</li>
+</ul>
+        </div>
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Ravensea | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
