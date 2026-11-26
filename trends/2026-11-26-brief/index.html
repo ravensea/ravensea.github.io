@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Ravensea">
+<title>GitHub 趋势日报 2026-11-26 | RAVENSEA HOME</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <script src="/js/tocbot.min.js"></script>
+<meta name="generator" content="trends-tracking"></head>
+
+<body>
+    <script>
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+            } else {
+                pagebody.classList.remove('dark-theme');
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">RAVENSEA HOME</a></div>
+            <div class="menu navbar-right">
+                    <a class="menu-item active" href="/trends">Trends</a>
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">RAVENSEA HOME</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                    <a class="menu-item active" href="/trends">Trends</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">GitHub 趋势日报 2026-11-26</h1>
+                <div class="post-meta">
+                        Author: <a itemprop="author" rel="author" href="/">Ravensea</a>
+                        <span class="post-time">
+                        Date: <a href="#">2026年11月26日</a>
+                        </span>
+                        <span class="post-category">
+                    Category:
+                                <a href="/trends/">Trends</a>
+                        </span>
+                </div>
+        </header>
+
+        <div class="post-content">
+<p>每个子方向只保留一项代表仓库，按下列优先级挑选：</p>
+<ol>
+<li>已出现在 GitHub 全球「今日」趋势榜的优先；</li>
+<li>其次看本跟踪器状态：首次收录 &gt; 显著涨星 &gt; 持续跟踪；</li>
+<li>同优先级再按 star 总数从高到低；</li>
+<li>同一 GitHub「This week」近 7 天内，更早日报已出现过的仓库不再入选；同日各子方向之间也不重复。</li>
+</ol>
+<h2>影像与相机形态</h2>
+<ul>
+<li>
+<p><strong>综合</strong>：<a href="https://github.com/Mario-smith54/kolor-autopano-video">Mario-smith54/kolor-autopano-video</a> · 183 star · 显著涨星<br>Kolor Autopano Video 是一款面向 Windows 10/11 的桌面端 360 视频拼接软件，用于将多机位运动相机或全景相机阵列拍摄的素材合成为单条球面全景视频。它主要服务于 360 视频拍摄者、VR 内容制作及后期团队，在同一时间线内完成片段同步、镜头间曝光与色彩校正、接缝融合，并支持重新取景、稳定处理和等距柱状投影等格式导出。软件利用 64 位处理与 GPU 加速，适合固定机位、需要批量且可重复拼接的工作流，也可与 Autopano Giga 配合进行静态全景的接缝精修。</p>
+</li>
+<li>
+<p><strong>电子</strong>：<a href="https://github.com/rushiranpise/S25CameraMod">rushiranpise/S25CameraMod</a> · 2 star · 首次收录<br>这是一个面向 Galaxy S25 Ultra 相机的 LSPosed 模块，用 Kotlin 编写，主要解决原厂相机变焦上限受限、隐藏功能不可见的问题。它可将照片与视频变焦上限提升至 100.0×–999.9×（默认 100×），按拍摄模式分别开关，并恢复带可配置高倍变焦预设的快捷栏。模块还提供对 Camera 17.0.00.43 中 243 个功能标志的浏览、搜索与覆盖，以及避免小数变焦读数崩溃的安全显示处理；需 root 与 LSPosed，属实验性修改。</p>
+</li>
+<li>
+<p><strong>机械</strong>：<a href="https://github.com/simplefoc/Arduino-SimpleFOCShield">simplefoc/Arduino-SimpleFOCShield</a> · 635 star · 持续跟踪<br>这是面向中功率 FOC 应用的开源低成本 BLDC/步进电机驱动板，与 SimpleFOC 库配合，为 Arduino UNO 及标准 Arduino 排针板卡提供即插即用的 BLDC 电机硬件控制方案。其亮点包括最高 10A 双向在线电流检测（INA240 电流检测放大器）、集成 8V 稳压器、电源电压检测、可堆叠双电机运行、编码器/霍尔与 I2C 接口可配置上拉，以及 QWIIC/STEMMA 和 SPI 连接器。</p>
+</li>
+<li>
+<p><strong>算法</strong>：<a href="https://github.com/NAIL-HNU/SDEVO">NAIL-HNU/SDEVO</a> · 19 star · 持续跟踪<br>SDEVO 是面向双目事件相机的深度视觉里程计算法实现，对应作者发表于 IEEE RA-L 2025 的论文，仓库提供 Python 与 C++（ROS）节点代码。它主要解决事件相机在视觉里程计中的位姿估计问题，供相关研究者复现与使用。系统基于 ROS Noetic、OpenCV、Eigen 与 CUDA 环境运行，通过左右事件相机的图像表示节点与 sdevo 节点联合处理重打包的 rosbag 数据，并输出插值轨迹文件。</p>
+</li>
+</ul>
+<h2>视觉、世界模型与运控</h2>
+<ul>
+<li>
+<p><strong>世界模型</strong>：<a href="https://github.com/Tencent-Hunyuan/HY-WorldPlay">Tencent-Hunyuan/HY-WorldPlay</a> · 1637 star · 首次收录<br>HY-WorldPlay 是腾讯混元推出的 HY-World 1.5 交互式世界建模系统框架，以 Python 实现，面向研究者提供实时延迟与几何一致性兼顾的世界模型构建方案。仓库开源了 WorldPlay-5B（基于 WAN 的轻量模型，可适配小显存 GPU）与 WorldPlay-8B（基于 HY Video）的训练代码，并包含 WorldCompass 强化学习后训练代码，同时提供量化与工程优化后的推理代码以提升推理速度。</p>
+</li>
+<li>
+<p><strong>视觉运控</strong>：<a href="https://github.com/RainBowLuoCS/Gamer">RainBowLuoCS/Gamer</a> · 1549 star · 持续跟踪<br>Gamer 是一个面向长时程实时游戏智能体的通用视觉-语言-动作基础模型官方实现，采用端到端架构将感知、记忆管理与多步推理结合，支持在传统 2D 图形界面和复杂 3D 模拟环境中交互。其共享的训练与部署流程面向需要长时程任务处理的研究者与游戏智能体开发者。</p>
+</li>
+</ul>
+<h3>视觉算法</h3>
+<ul>
+<li>
+<p><strong>理解</strong>：<a href="https://github.com/Neywa-Labs/mlx-vlm">Neywa-Labs/mlx-vlm</a> · 5936 star · 持续跟踪<br>MLX-VLM 是一个基于 MLX 的 Python 包，用于在 Apple Silicon Mac 上本地运行和微调视觉语言模型，支持文本、图像、视频和音频输入。它面向需要在本地进行多模态模型推理与微调的研究者，提供命令行、Gradio 聊天界面和 FastAPI 服务等使用方式，并包含投机解码、连续批处理、前缀缓存、KV 缓存量化、视觉特征缓存和分布式推理等能力。</p>
+</li>
+<li>
+<p><strong>生成</strong>：<a href="https://github.com/Tencent-Hunyuan/HunyuanWorld-Voyager">Tencent-Hunyuan/HunyuanWorld-Voyager</a> · 1611 star · 首次收录<br>HunyuanWorld-Voyager 是腾讯混元开源的 Python 视频扩散框架，能够以单张图像和用户指定的相机路径为条件，生成世界一致的 RGBD 视频与三维点云序列。它主要面向需要沿自定义相机轨迹进行世界探索、并高效直接完成三维重建的研究者与开发者。其关键能力在于同时输出对齐的深度与 RGB 视频，并支持实时三维重建。</p>
+</li>
+</ul>
+<h2>3D 与电子设计</h2>
+<ul>
+<li><strong>打印与建模</strong>：<a href="https://github.com/Adam-CAD/CADAM">Adam-CAD/CADAM</a> · 5456 star · 持续跟踪<br>CADAM 是一个开源文本到 CAD 的 Web 应用，用 TypeScript 开发，面向需要在浏览器中快速生成三维 CAD 模型的研究者与开发者。它主要解决从自然语言和图像生成 CAD 模型的问题，并提供参数化滑块用于即时调整尺寸。关键技术能力包括基于 WebAssembly 在浏览器内运行、支持导出 .STL、.SCAD 和 .DXF 格式，以及集成 BOSL、BOSL2 和 MCAD 库。</li>
+</ul>
+<h2>量化交易</h2>
+<ul>
+<li><strong>综合</strong>：<a href="https://github.com/alkalescent/hyperdrive">alkalescent/hyperdrive</a> · 162 star · 首次收录<br>hyperdrive 是一个用 Python 编写的算法交易库，由量化研究机构 Algotrade.io 使用，主要面向量化研究场景，侧重数据收集与量化研究而非单纯回测。它支持从 Polygon、Robinhood 和 BLS 聚合市场数据，结合 S3 存储历史数据，并借助 vectorbt 进行策略回测、用 AutoGluon 做机器学习预测，同时支持在 Binance、Alpaca 和 Kraken 上交易，并提供 GitHub Actions 工作流用于自动化数据更新。</li>
+</ul>
+        </div>
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Ravensea | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
