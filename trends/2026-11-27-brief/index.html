@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Ravensea">
+<title>GitHub 趋势日报 2026-11-27 | RAVENSEA HOME</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <script src="/js/tocbot.min.js"></script>
+<meta name="generator" content="trends-tracking"></head>
+
+<body>
+    <script>
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+            } else {
+                pagebody.classList.remove('dark-theme');
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">RAVENSEA HOME</a></div>
+            <div class="menu navbar-right">
+                    <a class="menu-item active" href="/trends">Trends</a>
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">RAVENSEA HOME</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                    <a class="menu-item active" href="/trends">Trends</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">GitHub 趋势日报 2026-11-27</h1>
+                <div class="post-meta">
+                        Author: <a itemprop="author" rel="author" href="/">Ravensea</a>
+                        <span class="post-time">
+                        Date: <a href="#">2026年11月27日</a>
+                        </span>
+                        <span class="post-category">
+                    Category:
+                                <a href="/trends/">Trends</a>
+                        </span>
+                </div>
+        </header>
+
+        <div class="post-content">
+<p>每个子方向只保留一项代表仓库，按下列优先级挑选：</p>
+<ol>
+<li>已出现在 GitHub 全球「今日」趋势榜的优先；</li>
+<li>其次看本跟踪器状态：首次收录 &gt; 显著涨星 &gt; 持续跟踪；</li>
+<li>同优先级再按 star 总数从高到低；</li>
+<li>同一 GitHub「This week」近 7 天内，更早日报已出现过的仓库不再入选；同日各子方向之间也不重复。</li>
+</ol>
+<h2>影像与相机形态</h2>
+<ul>
+<li>
+<p><strong>综合</strong>：<a href="https://github.com/erik-sutton95/OpenPocketCine">erik-sutton95/OpenPocketCine</a> · 444 star · 持续跟踪<br>OpenPocketCine 是一个用 Swift 开发的开源 iOS 与 Android 现场监视器应用，面向使用 DJI Osmo Pocket 系列相机的拍摄者。它把专业示波器、曝光辅助、相机与云台控制、回放以及 LUT 导出等功能集成到手机上，作为外接现场监视工具使用。项目以 Apache 2.0 许可开源，并提供 iPhone/iPad 的 TestFlight 测试与 Android 测试版渠道。</p>
+</li>
+<li>
+<p><strong>电子</strong>：<a href="https://github.com/openmv/openmv">openmv/openmv</a> · 2903 star · 持续跟踪<br>OpenMV 是开源机器视觉项目，提供可用 Python3 编程的摄像头模块，面向初学者和研究者降低机器视觉与嵌入式 AI 的开发门槛。其固件包含丰富的图像处理库，支持图像滤波、特征检测、颜色追踪、二维码与条形码解码、AprilTag 识别以及 GIF/MJPEG 录制与流传输，并支持 TensorFlow、ST Edge AI 及基于 ARM Ethos-U55 和 ST Neural-ART 的 NPU 加速。最新一代包括基于 STM32N6 的 OpenMV-N6 和基于 Alif Ensemble E3 的超低功耗 OpenMV-AE3，后者可在 0.25 W 功耗下以 30 FPS 运行 YOLO 模型。</p>
+</li>
+<li>
+<p><strong>算法</strong>：<a href="https://github.com/SensorsINI/jaer">SensorsINI/jaer</a> · 208 star · 持续跟踪<br>jAER 是一个用 Java 开发的全功能跨平台（Linux、Windows、macOS）桌面应用，面向神经形态事件相机与硅耳蜗，支持 inilabs、iniVation、Prophesee、NRV 等主要厂商的设备。它旨在替代厂商专有相机软件，提供即插即用的采集体验，并支持通过高效流水线捕获 USB 事件相机输出、统一调整 DVS 像素偏置以优化传感器设置。项目由发明 DVS 和 HVS 事件相机的实验室开发，积累了 20 年事件传感器实践经验，当前开发还包括多相机长时录制与打包分发支持。</p>
+</li>
+</ul>
+<h2>视觉、世界模型与运控</h2>
+<ul>
+<li>
+<p><strong>世界模型</strong>：<a href="https://github.com/NVIDIA/cosmos">NVIDIA/cosmos</a> · 12473 star · 持续跟踪<br>NVIDIA Cosmos 是一个面向物理 AI 的开放平台，提供世界模型、数据集和工具，供开发者构建面向机器人、自动驾驶和智能基础设施等场景的物理 AI 应用。其核心是 Cosmos 世界基础模型家族，强调在同一模型体系中实现感知、推理、模拟与行动，并支持物理感知生成、世界场景迁移、动作策略执行和自动驾驶仿真等能力。材料还显示其提供模型集合、技术报告、快速上手与示例手册等资源，便于研究者进一步了解和使用。</p>
+</li>
+<li>
+<p><strong>视觉运控</strong>：<a href="https://github.com/Genesis-Embodied-AI/genesis-world">Genesis-Embodied-AI/genesis-world</a> · 30324 star · 持续跟踪<br>Genesis World 是一个面向通用机器人学与具身智能学习的 Python 仿真平台，为物理 AI 开发提供统一的仿真接口。它把多物理引擎（刚体、FEM、MPM、粒子及 uipc 等共享同一场景与状态）、照片级渲染器 Nyx 和跨平台编译器 Quadrants 整合在 Pythonic 接口之后，并支持从单机笔记本扩展到数据中心级 GPU，便于研究者阅读、扩展和嵌入研究代码。</p>
+</li>
+</ul>
+<h3>视觉算法</h3>
+<ul>
+<li>
+<p><strong>理解</strong>：<a href="https://github.com/openclaw/Peekaboo">openclaw/Peekaboo</a> · 5542 star · 持续跟踪<br>Peekaboo 是一个用 Swift 编写的 macOS 命令行工具与可选 MCP 服务器，也提供菜单栏应用，用于截取单个应用或整个系统的屏幕截图，并可通过本地或远程 AI 模型进行可选的视觉问答。它面向需要让 AI 代理“看见”屏幕并执行原生 UI 自动化的研究者与开发者，支持屏幕捕获、辅助功能检查与原生 UI 自动化，既可单独使用，也能让内置代理规划多步任务，或将同一套工具集暴露给 MCP 客户端。</p>
+</li>
+<li>
+<p><strong>生成</strong>：<a href="https://github.com/CodeGoat24/Pref-GRPO">CodeGoat24/Pref-GRPO</a> · 282 star · 首次收录<br>Pref-GRPO 是论文《Pref-GRPO: Pairwise Preference Reward-based GRPO for Stable Text-to-Image Reinforcement Learning》的官方实现，用 Python 编写，面向文本到图像生成的研究者。它主要解决文本到图像强化学习中的稳定性问题，采用基于成对偏好奖励的 GRPO 方法。材料显示其支持 Z-Image、FLUX.1-Kontext-dev、FLUX.2-Klein、Qwen-Image-Edit、Wan2.2 等模型，并支持基于 UnifiedReward-Flex 的图像与视频生成 Pref-GRPO。</p>
+</li>
+</ul>
+<h2>3D 与电子设计</h2>
+<p>今日无命中。</p>
+<h2>量化交易</h2>
+<ul>
+<li><strong>综合</strong>：<a href="https://github.com/QuantConnect/Lean">QuantConnect/Lean</a> · 22738 star · 持续跟踪<br>QuantConnect/Lean 是一个用 C# 编写、支持 Python 与 C# 的事件驱动算法交易引擎，面向量化研究者与交易策略开发者。它提供开箱即用的另类数据与实盘交易支持，并采用模块化设计，各组件可插拔、可定制，且为主要插件点附带模型。</li>
+</ul>
+        </div>
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Ravensea | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
